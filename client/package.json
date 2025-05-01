@@ -1,0 +1,10 @@
+{
+	"name": "ats-lsp-client",
+	"description": "VSCode part of a language server",
+	"engines": {
+		"vscode": "^1.75.0"
+	},
+	"dependencies": {
+		"vscode-languageclient": "^9.0.1"
+	}
+}
