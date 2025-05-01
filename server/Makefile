@@ -26,6 +26,6 @@ $(CAT) $(XATS2JSD)/runtime/xats2js_js1emit.js >> out/$@_out.js
 ats_lsp:: ; \
 $(CAT) $(XATS2JSD)/runtime/xats2js_prelude.js >> out/$@_out.js
 ats_lsp:: ; \
-$(CAT) ./lsp_wrapper.js >> out/$@_out.js
+$(CAT) ./lsp_bootstrap.js >> out/$@_out.js
 ats_lsp:: src/DATS/main.dats; \
 $(NODE) --stack-size=8192 $(XATS2JS_JSEMIT01) $< >> out/$@_out.js

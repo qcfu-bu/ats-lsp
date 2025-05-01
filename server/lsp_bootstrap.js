@@ -1,6 +1,48 @@
 const node = require('vscode-languageserver/node');
 const text = require('vscode-languageserver-textdocument');
 
+// -------------------------------------------------------------------
+
+// diagnostic severity
+function diagnostic_severity$error() {
+  return node.DiagnosticSeverity.Error;
+}
+
+function diagnostic_severity$warn() {
+  return node.DiagnosticSeverity.Warning;
+}
+
+function diagnostic_severity$hint() {
+  return node.DiagnosticSeverity.Hint;
+}
+
+function diagnostic_severity$info() {
+  return node.DiagnosticSeverity.Information;
+}
+
+// position
+function position$mk(line, offs) {
+  return { 
+    line: line, 
+    character: offs 
+  };
+}
+
+// diagnostic
+function diagnostic$mk(severity, start, end, message, source) {
+  return { 
+    severity: severity,
+    range: {
+      start: start,
+      end: end
+    },
+    message: message,
+    source: source
+  };
+}
+
+// -------------------------------------------------------------------
+
 const connection = node.createConnection(node.ProposedFeatures.all);
 const documents = new node.TextDocuments(text.TextDocument);
 
@@ -60,61 +102,35 @@ connection.onInitialized(() => {
   }
 });
 
-connection.languages.diagnostics.on(async (params) => {
-  const document = documents.get(params.textDocument.uri);
-  if (document !== undefined) {
-    return {
-      kind: node.DocumentDiagnosticReportKind.Full,
-      items: await validateTextDocument(document)
-    };
-  } else {
-    return {
-      kind: node.DocumentDiagnosticReportKind.Full,
-      items: []
-    }
-  }
-});
-
-/**
- * @param {text.TextDocument} change
- */
-documents.onDidChangeContent(change => {
-  validateTextDocument(change.document);
-})
-
-async function validateTextDocument(textDocument) {
-  console.log(textDocument.uri);
-  const diagnostic = {
-    serverity: node.DiagnosticSeverity.Error,
-    range: {
-      start: textDocument.positionAt(0),
-      end: textDocument.positionAt(1),
-    },
-    message: `something`,
-    source: 'ex'
+function asyncValidatorWrap(validator) {
+  async function asyncValidator(textDocument) {
+    return validator(textDocument.uri);
   };
-  if (hasDiagnosticRelatedInformationCapability) {
-    diagnostic.relatedInformation = [
-      {
-        location: {
-          uri: textDocument.uri,
-          range: Object.assign({}, diagnostic.range)
-        },
-        message: 'Spelling matters'
-      },
-      {
-        location: {
-          uri: textDocument.uri,
-          range: Object.assign({}, diagnostic.range)
-        },
-        message: 'Particularly for names'
-      }
-    ];
-  }
-  const diagnostics = [];
-  diagnostics.push(diagnostic);
-  return diagnostics;
+  return asyncValidator;
 }
 
-documents.listen(connection);
-connection.listen();
+function bootstrap$validator(validator) {
+  const asyncValidator = asyncValidatorWrap(validator); 
+  connection.languages.diagnostics.on(async (params) => {
+    const document = documents.get(params.textDocument.uri);
+    if (document !== undefined) {
+      return {
+        kind: node.DocumentDiagnosticReportKind.Full,
+        items: await asyncValidator(document)
+      };
+    } else {
+      return {
+        kind: node.DocumentDiagnosticReportKind.Full,
+        items: []
+      }
+    }
+  });
+  documents.onDidChangeContent(async (change) => {
+    return asyncValidator(change.document);
+  });
+}
+
+function bootstrap$connect() {
+  documents.listen(connection);
+  connection.listen();
+}
