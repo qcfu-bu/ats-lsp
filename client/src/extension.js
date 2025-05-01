@@ -1,24 +1,24 @@
-import * as path from 'path';
-import * as vscode from 'vscode';
-import { LanguageClient, TransportKind } from 'vscode-languageclient/node';
+const path = require('path');
+const vscode = require('vscode');
+const node = require('vscode-languageclient/node');
 
-let client;
+let client = null;
 
 /**
  * @param {vscode.ExtensionContext} context
  */
-export function activate(context) {
+function activate(context) {
   console.log("Client starting.")
 
   const serverModule = context.asAbsolutePath(
-    path.join('server', 'out', "ats_lsp_out.js")
+    path.join('server', 'out', "server.js")
   );
 
   const serverOptions = {
-    run: { module: serverModule, transport: TransportKind.ipc },
+    run: { module: serverModule, transport: node.TransportKind.ipc },
     debug: {
       module: serverModule,
-      transport: TransportKind.ipc
+      transport: node.TransportKind.ipc
     }
   };
 
@@ -29,9 +29,9 @@ export function activate(context) {
     }
   };
 
-  client = new LanguageClient(
-    'atsLanguageServer',
-    'ATS LanguageServer',
+  client = new node.LanguageClient(
+    'languageServer',
+    'ATS Language Server',
     serverOptions,
     clientOptions
   );
@@ -39,9 +39,14 @@ export function activate(context) {
   client.start();
 }
 
-export function deactivate() {
+function deactivate() {
   if (!client) {
     return undefined;
   }
   return client.stop();
 }
+
+module.exports = {
+  activate,
+  deactivate,
+};
