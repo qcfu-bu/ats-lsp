@@ -1,21 +1,17 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as path from 'path';
 import * as vscode from 'vscode';
 import { LanguageClient, TransportKind } from 'vscode-languageclient/node';
 
-
 let client;
-
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
 
 /**
  * @param {vscode.ExtensionContext} context
  */
 export function activate(context) {
+  console.log("Client starting.")
+
   const serverModule = context.asAbsolutePath(
-    path.join('server', 'out', "server.js")
+    path.join('server', 'out', "ats_lsp_out.js")
   );
 
   const serverOptions = {
@@ -43,7 +39,6 @@ export function activate(context) {
   client.start();
 }
 
-// This method is called when your extension is deactivated
 export function deactivate() {
   if (!client) {
     return undefined;
