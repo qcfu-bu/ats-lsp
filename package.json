@@ -18,13 +18,13 @@
 			"type": "object",
 			"title": "Server configuration",
 			"properties": {
-				"languageServer.maxNumberOfProblems": {
+				"ATSLanguageServer.maxNumberOfProblems": {
 					"scope": "resource",
 					"type": "number",
 					"default": 100,
 					"description": "Controls the maximum number of problems produced by the server."
 				},
-				"languageServer.trace.server": {
+				"ATSLanguageServer.trace.server": {
 					"scope": "window",
 					"type": "string",
 					"enum": [
@@ -32,7 +32,7 @@
 						"messages",
 						"verbose"
 					],
-					"default": "off",
+					"default": "verbose",
 					"description": "Traces the communication between VS Code and the language server."
 				}
 			}

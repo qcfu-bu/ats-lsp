@@ -12,7 +12,7 @@
 			"args": [
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			],
-			"autoAttachChildProcesses": true
+			"autoAttachChildProcesses": true,
 		}
 	]
 }

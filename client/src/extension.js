@@ -11,7 +11,7 @@ function activate(context) {
   console.log("Client starting.")
 
   const serverModule = context.asAbsolutePath(
-    path.join('server', 'out', "server.js")
+    path.join('server', 'out', "ats_lsp_out.js")
   );
 
   const serverOptions = {
@@ -30,7 +30,7 @@ function activate(context) {
   };
 
   client = new node.LanguageClient(
-    'languageServer',
+    'ATSLanguageServer',
     'ATS Language Server',
     serverOptions,
     clientOptions

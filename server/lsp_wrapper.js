@@ -4,6 +4,9 @@ const text = require('vscode-languageserver-textdocument');
 const connection = node.createConnection(node.ProposedFeatures.all);
 const documents = new node.TextDocuments(text.TextDocument);
 
+console.log = connection.console.log.bind(connection.console);
+console.error = connection.console.error.bind(connection.console);
+
 let hasConfigurationCapability = false;
 let hasWorkspaceFolderCapability = false;
 let hasDiagnosticRelatedInformationCapability = false;
@@ -46,7 +49,7 @@ connection.onInitialize((params) => {
 });
 
 connection.onInitialized(() => {
-  connection.console.log("ok");
+  console.log("ok");
   if (hasConfigurationCapability) {
     connection.client.register(node.DidChangeConfigurationNotification.type, undefined);
   }
@@ -80,6 +83,7 @@ documents.onDidChangeContent(change => {
 })
 
 async function validateTextDocument(textDocument) {
+  console.log(textDocument.uri);
   const diagnostic = {
     serverity: node.DiagnosticSeverity.Error,
     range: {
