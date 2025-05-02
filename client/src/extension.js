@@ -15,11 +15,11 @@ function activate(context) {
   );
 
   const serverOptions = {
-    run: { module: serverModule, transport: node.TransportKind.ipc },
-    debug: {
-      module: serverModule,
-      transport: node.TransportKind.ipc
-    }
+      module: serverModule, 
+      transport: node.TransportKind.ipc,
+      options: {
+        execArgv: ['--stack-size=8192'],
+      }
   };
 
   const clientOptions = {
