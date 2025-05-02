@@ -4,24 +4,24 @@ const text = require('vscode-languageserver-textdocument');
 // -------------------------------------------------------------------
 
 // diagnostic severity
-function diagnostic_severity$error() {
+function severity_error$make() {
   return node.DiagnosticSeverity.Error;
 }
 
-function diagnostic_severity$warn() {
+function severity_warn$make() {
   return node.DiagnosticSeverity.Warning;
 }
 
-function diagnostic_severity$hint() {
+function severity_hint$make() {
   return node.DiagnosticSeverity.Hint;
 }
 
-function diagnostic_severity$info() {
+function severity_info$make() {
   return node.DiagnosticSeverity.Information;
 }
 
 // position
-function position$mk(line, offs) {
+function position_make(line, offs) {
   return { 
     line: line, 
     character: offs 
@@ -29,7 +29,7 @@ function position$mk(line, offs) {
 }
 
 // diagnostic
-function diagnostic$mk(severity, start, end, message, source) {
+function diagnostic_make(severity, start, end, message, source) {
   return { 
     severity: severity,
     range: {
@@ -39,6 +39,15 @@ function diagnostic$mk(severity, start, end, message, source) {
     message: message,
     source: source
   };
+}
+
+// diagnostics
+function diagnostics_make() {
+  return [];
+}
+
+function diagnostics_push(diagnostics, d) {
+  diagnostics.push(d);
 }
 
 // -------------------------------------------------------------------
@@ -109,7 +118,7 @@ function asyncValidatorWrap(validator) {
   return asyncValidator;
 }
 
-function bootstrap$validator(validator) {
+function bootstrap_set_validator(validator) {
   const asyncValidator = asyncValidatorWrap(validator); 
   connection.languages.diagnostics.on(async (params) => {
     const document = documents.get(params.textDocument.uri);
@@ -130,7 +139,7 @@ function bootstrap$validator(validator) {
   });
 }
 
-function bootstrap$connect() {
+function bootstrap_connect() {
   documents.listen(connection);
   connection.listen();
 }
