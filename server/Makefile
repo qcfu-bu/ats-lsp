@@ -15,9 +15,8 @@ cleanall:: ; rm -f out/*_out?.js
 
 XATSHOME=./vendor
 XATS2JS=$(XATSHOME)/xassets/JS/xats2js
-XATS2JS_LIB=$(XATS2JS)/lib1xatsopt2js_ats2_opt1.js
+XATS2JS_LIB=$(XATS2JS)/lib1xatsopt2js_ats3_opt1.js
 XATS2JS_JSEMIT=$(XATS2JS)/xats2js_jsemit01_ats2_opt1.js
-XATS2JS_RUNTIME=$(XATS2JS)/runtime/xats2js_js1emit.js
 
 SRCSATS :=
 SRCDATS := \
@@ -36,6 +35,7 @@ all_sats:: $(OUTSATS)
 all:: all_dats
 all_dats:: $(OUTDATS)
 
+# Renaming HACK
 N001="X"
 N002=$(N001) $(N001)
 N004=$(N002) $(N002)
@@ -57,7 +57,6 @@ $(SED) -e 's/jsxtnm/jsx$(words $(NFILE))tnm/g' $< > $@
 all:: ats_lsp
 ats_lsp: $(OUT1DATS); \
 $(PRINTF) "// %s\n" "`date`" > out/$@_out.js && \
-$(CAT) $(XATS2JS_RUNTIME) >> out/$@_out.js && \
 $(CAT) $(XATS2JS_LIB) >> out/$@_out.js && \
 $(CAT) lsp_bootstrap.js >> out/$@_out.js && \
 $(CAT) $(OUT1DATS) >> out/$@_out.js
