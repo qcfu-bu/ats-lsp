@@ -1,7 +1,13 @@
 const node = require('vscode-languageserver/node');
 const text = require('vscode-languageserver-textdocument');
+const url = require('url');
 
 // -------------------------------------------------------------------
+
+// url to file path
+function url_to_path(uri) {
+  return url.fileURLToPath(uri);
+}
 
 // diagnostic severity
 function severity_error$make() {
