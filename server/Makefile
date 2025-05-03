@@ -14,10 +14,10 @@ cleanall:: ; rm -f out/*_out.js
 cleanall:: ; rm -f out/*_out?.js
 
 XATSHOME=./vendor
-
-XATS2JSD=$(XATSHOME)/xassets/JS/xats2js
-XATS2JS_JSEMIT01=\
-$(XATSHOME)/xassets/JS/xats2js/xats2js_jsemit01_ats3_opt1.js
+XATS2JS=$(XATSHOME)/xassets/JS/xats2js
+XATS2JS_LIB=$(XATS2JS)/lib1xatsopt2js_ats2_opt1.js
+XATS2JS_JSEMIT=$(XATS2JS)/xats2js_jsemit01_ats3_opt1.js
+XATS2JS_RUNTIME=$(XATS2JS)/runtime/xats2js_js1emit.js
 
 SRCSATS :=
 SRCDATS := \
@@ -49,7 +49,7 @@ N512=$(N256) $(N256)
 NFILE=$(N064) $(N032) $(N004) # 100=064+032+004
 
 out/%_dats_out0.js: src/DATS/%.dats; \
-$(NODE) --stack-size=8192 $(XATS2JS_JSEMIT01) $< > $@
+$(NODE) --stack-size=8192 $(XATS2JS_JSEMIT) $< > $@
 out/%_dats_out1.js: out/%_dats_out0.js; \
 $(eval NFILE=$(NFILE) X) \
 $(SED) -e 's/jsxtnm/jsx$(words $(NFILE))tnm/g' $< > $@
@@ -57,6 +57,7 @@ $(SED) -e 's/jsxtnm/jsx$(words $(NFILE))tnm/g' $< > $@
 all:: ats_lsp
 ats_lsp: $(OUT1DATS); \
 $(PRINTF) "// %s\n" "`date`" > out/$@_out.js && \
-$(CAT) $(XATS2JS_JSEMIT01) >> out/$@_out.js && \
+$(CAT) $(XATS2JS_RUNTIME) >> out/$@_out.js && \
+$(CAT) $(XATS2JS_LIB) >> out/$@_out.js && \
 $(CAT) lsp_bootstrap.js >> out/$@_out.js && \
 $(CAT) $(OUT1DATS) >> out/$@_out.js

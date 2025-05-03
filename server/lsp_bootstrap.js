@@ -80,9 +80,9 @@ connection.onInitialize((params) => {
   const result = {
     capabilities: {
       textDocumentSyntax: node.TextDocumentSyncKind.Incremental,
-			completionProvider: {
-				resolveProvider: true
-			},
+			// completionProvider: {
+			// 	resolveProvider: true
+			// },
       diagnosticProvider: {
 				interFileDependencies: false,
 				workspaceDiagnostics: false
