@@ -1,5 +1,5 @@
 [submodule "server/vendor"]
-	path = server/vendor
+	path = server/xatshome
 	url = https://github.com/githwxi/XATSHOME.git
 [submodule "server/xanadu"]
 	path = server/xanadu

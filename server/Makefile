@@ -13,7 +13,7 @@ cleanall:: ; rm -f out/*~
 cleanall:: ; rm -f out/*_out.js
 cleanall:: ; rm -f out/*_out?.js
 
-XATSHOME=./vendor
+XATSHOME=./xatshome
 XATS2JS=$(XATSHOME)/xassets/JS/xats2js
 XATS2JS_LIB=$(XATS2JS)/lib1xatsopt2js_ats3_opt1.js
 XATS2JS_JSEMIT=$(XATS2JS)/xats2js_jsemit01_ats2_opt1.js
