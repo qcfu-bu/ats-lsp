@@ -1,7 +1,5 @@
-#include "./../HATS/libxatsopt.hats"
-#include "srcgen2/HATS/xatsopt_sats.hats"
-#include "srcgen2/HATS/xatsopt_dpre.hats"
-
+#include "./../../xanadu/srcgen2/HATS/xatsopt_sats.hats"
+#include "./../../xanadu/srcgen2/HATS/xatsopt_dpre.hats"
 
 #abstype url <= p0tr
 #extern fun url_to_path(uri: url) : string = $extnam()
