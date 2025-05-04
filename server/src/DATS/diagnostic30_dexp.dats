@@ -46,10 +46,10 @@ in
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
       val d = diagnostic_make(
-        severity_error$make(), 
-        range_of_loctn(loc0), 
-        "diagnostic30_d3pat", lsrc
-      )
+          severity_error$make(), 
+          range_of_loctn(loc0), 
+          "diagnostic30_d3pat", lsrc
+        )
     in out.push(d)
     end)
   | _ => ()
@@ -61,7 +61,6 @@ end
   | D3LAB(lab,d3p1) => diagnostic30_d3pat(out,d3p1)
 
 local
-
 fun auxdexp(out: diagnostics, d3e: d3exp): void =
   case+ d3e.node() of
   | D3Eint _ => print(d3e)

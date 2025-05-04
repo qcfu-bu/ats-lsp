@@ -9,6 +9,9 @@
 #staload "./../SATS/server.sats"
 
 #staload "./../DATS/lsp_bootstrap.dats"
+#staload "./../DATS/diagnostic20.dats"
+#staload "./../DATS/diagnostic20_decl.dats"
+#staload "./../DATS/diagnostic20_dexp.dats"
 #staload "./../DATS/diagnostic30.dats"
 #staload "./../DATS/diagnostic30_decl.dats"
 #staload "./../DATS/diagnostic30_dexp.dats"

@@ -6,8 +6,12 @@
 #staload "./../SATS/diagnostic30.sats"
 
 #staload "./../DATS/lsp_bootstrap.dats"
+#staload "./../DATS/diagnostic20.dats"
+#staload "./../DATS/diagnostic20_dexp.dats"
+#staload "./../DATS/diagnostic20_decl.dats"
 
 local
+
 fun auxmain(out: diagnostics, dcl0: d3ecl): void =
   case+ dcl0.node() of
   | D3Cstatic(tknd, dcl1) => let 
@@ -85,10 +89,10 @@ in
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
       val d = diagnostic_make(
-        severity_warn$make(), 
-        range_of_loctn(loc0), 
-        "diagnostic30_d3ecl", lsrc
-      )
+          severity_warn$make(), 
+          range_of_loctn(loc0), 
+          "diagnostic30_d3ecl", lsrc
+        )
     in out.push(d)
     end)
   | _ => ()
