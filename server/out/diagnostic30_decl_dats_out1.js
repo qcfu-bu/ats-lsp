@@ -5443,10 +5443,10 @@
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("./../SATS/lsp_bootstrap.sats";30));$optn(FPATH(src/SATS/lsp_bootstrap.sats));...)))
 // LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(163(line=6,offs=1)--201(line=6,offs=39))
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("./../SATS/diagnostic30.sats";29));$optn(FPATH(src/SATS/diagnostic30.sats));...)))
-// I1Dlocal0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(203(line=8,offs=1)--2733(line=95,offs=4)))
-// I1Dfundclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(210(line=10,offs=1)--2182(line=70,offs=8)))
+// I1Dlocal0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(204(line=9,offs=1)--2734(line=96,offs=4)))
+// I1Dfundclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(211(line=11,offs=1)--2183(line=71,offs=8)))
 // I1FUNDCL
-function auxmain_213(arg1, arg2)
+function auxmain_214(arg1, arg2)
 { // fun
   let jsx101tnm11711 = arg1
   let jsx101tnm11712 = arg2
@@ -5460,7 +5460,7 @@ function auxmain_213(arg1, arg2)
       let jsx101tnm11714 = jsx101tnm11713
       let jsx101tnm11717 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(324(line=13,offs=7)--362(line=13,offs=45)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(325(line=14,offs=7)--363(line=14,offs=45)))
         // I1VALDCL
         let jsx101tnm11716
         let jsx101tnm11715 = XATSDAPP(diagnostic30_d3ecl_1116(jsx101tnm11711, XATSP1CN("D3Cstatic", jsx101tnm11714[1+1])))
@@ -5478,7 +5478,7 @@ function auxmain_213(arg1, arg2)
       let jsx101tnm11718 = jsx101tnm11713
       let jsx101tnm11721 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(412(line=16,offs=7)--450(line=16,offs=45)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(413(line=17,offs=7)--451(line=17,offs=45)))
         // I1VALDCL
         let jsx101tnm11720
         let jsx101tnm11719 = XATSDAPP(diagnostic30_d3ecl_1116(jsx101tnm11711, XATSP1CN("D3Cextern", jsx101tnm11718[1+1])))
@@ -5496,7 +5496,7 @@ function auxmain_213(arg1, arg2)
       let jsx101tnm11722 = jsx101tnm11713
       let jsx101tnm11725 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(494(line=19,offs=7)--535(line=19,offs=48)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(495(line=20,offs=7)--536(line=20,offs=48)))
         // I1VALDCL
         let jsx101tnm11724
         let jsx101tnm11723 = XATSDAPP(diagnostic30_d3eclist_1722(jsx101tnm11711, XATSP1CN("D3Cdclst0", jsx101tnm11722[0+1])))
@@ -5514,13 +5514,13 @@ function auxmain_213(arg1, arg2)
       let jsx101tnm11726 = jsx101tnm11713
       let jsx101tnm11731 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(584(line=22,offs=7)--625(line=22,offs=48)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(585(line=23,offs=7)--626(line=23,offs=48)))
         // I1VALDCL
         let jsx101tnm11728
         let jsx101tnm11727 = XATSDAPP(diagnostic30_d3eclist_1722(jsx101tnm11711, XATSP1CN("D3Clocal0", jsx101tnm11726[0+1])))
         jsx101tnm11728 = jsx101tnm11727
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(632(line=23,offs=7)--673(line=23,offs=48)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(633(line=24,offs=7)--674(line=24,offs=48)))
         // I1VALDCL
         let jsx101tnm11730
         let jsx101tnm11729 = XATSDAPP(diagnostic30_d3eclist_1722(jsx101tnm11711, XATSP1CN("D3Clocal0", jsx101tnm11726[1+1])))
@@ -5538,7 +5538,7 @@ function auxmain_213(arg1, arg2)
       let jsx101tnm11732 = jsx101tnm11713
       let jsx101tnm11735 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(741(line=26,offs=7)--785(line=26,offs=51)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(742(line=27,offs=7)--786(line=27,offs=51)))
         // I1VALDCL
         let jsx101tnm11734
         let jsx101tnm11733 = XATSDAPP(diagnostic30_d3eclistopt_2301(jsx101tnm11711, XATSP1CN("D3Cinclude", jsx101tnm11732[4+1])))
@@ -5568,7 +5568,7 @@ function auxmain_213(arg1, arg2)
       let jsx101tnm11738 = jsx101tnm11713
       let jsx101tnm11741 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(965(line=33,offs=7)--1009(line=33,offs=51)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(966(line=34,offs=7)--1010(line=34,offs=51)))
         // I1VALDCL
         let jsx101tnm11740
         let jsx101tnm11739 = XATSDAPP(diagnostic30_d3valdclist_2000(jsx101tnm11711, XATSP1CN("D3Cvaldclst", jsx101tnm11738[1+1])))
@@ -5586,7 +5586,7 @@ function auxmain_213(arg1, arg2)
       let jsx101tnm11742 = jsx101tnm11713
       let jsx101tnm11745 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(1059(line=36,offs=7)--1103(line=36,offs=51)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(1060(line=37,offs=7)--1104(line=37,offs=51)))
         // I1VALDCL
         let jsx101tnm11744
         let jsx101tnm11743 = XATSDAPP(diagnostic30_d3vardclist_2062(jsx101tnm11711, XATSP1CN("D3Cvardclst", jsx101tnm11742[1+1])))
@@ -5604,7 +5604,7 @@ function auxmain_213(arg1, arg2)
       let jsx101tnm11746 = jsx101tnm11713
       let jsx101tnm11749 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(1282(line=42,offs=7)--1326(line=42,offs=51)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(1283(line=43,offs=7)--1327(line=43,offs=51)))
         // I1VALDCL
         let jsx101tnm11748
         let jsx101tnm11747 = XATSDAPP(diagnostic30_d3fundclist_2123(jsx101tnm11711, XATSP1CN("D3Cfundclst", jsx101tnm11746[3+1])))
@@ -5622,13 +5622,13 @@ function auxmain_213(arg1, arg2)
       let jsx101tnm11750 = jsx101tnm11713
       let jsx101tnm11755 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(1622(line=54,offs=7)--1663(line=54,offs=48)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(1623(line=55,offs=7)--1664(line=55,offs=48)))
         // I1VALDCL
         let jsx101tnm11752
         let jsx101tnm11751 = XATSDAPP(diagnostic30_f3arglst_1555(jsx101tnm11711, XATSP1CN("D3Cimplmnt0", jsx101tnm11750[6+1])))
         jsx101tnm11752 = jsx101tnm11751
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(1727(line=57,offs=7)--1765(line=57,offs=45)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(1728(line=58,offs=7)--1766(line=58,offs=45)))
         // I1VALDCL
         let jsx101tnm11754
         let jsx101tnm11753 = XATSDAPP(diagnostic30_d3exp_769(jsx101tnm11711, XATSP1CN("D3Cimplmnt0", jsx101tnm11750[8+1])))
@@ -5682,16 +5682,16 @@ function auxmain_213(arg1, arg2)
       let jsx101tnm11764 = jsx101tnm11713
       let jsx101tnm11905 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2012(line=67,offs=7)--2034(line=67,offs=29)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2013(line=68,offs=7)--2035(line=68,offs=29)))
         // I1VALDCL
         let jsx101tnm11766
         let jsx101tnm11765 = XATSDAPP(d3ecl_get_lctn_17761(jsx101tnm11712))
         jsx101tnm11766 = jsx101tnm11765
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2041(line=68,offs=7)--2104(line=68,offs=70)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2042(line=69,offs=7)--2105(line=69,offs=70)))
         // I1VALDCL
         let jsx101tnm11835
-        // LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2050(line=68,offs=16)--2058(line=68,offs=24))
+        // LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2051(line=69,offs=16)--2059(line=69,offs=24))
         // I0Etapq(I0Ecst(gs_prerrln_n2(3929));$list(T2JAG($list(T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())))),T2JAG($list(T2Pcst(loctn_tbox)))))
         // T1IMPallx(gs_prerrln_n2(3929), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15267(line=1369,offs=1)--15358(line=1376,offs=2)))
         // T1IMPallx(gs_prerrln_n2(3929), I1Dtmpsub($list(a1[11998]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[11999]T2Pcst(loctn_tbox));I1Dimplmnt0(DIMPLone2(gs_prerrln_n2(3929);$list(a1[8676]T2Pvar(a1[11998]),a2[8677]T2Pvar(a2[11999]))))))
@@ -5952,10 +5952,10 @@ function auxmain_213(arg1, arg2)
         let jsx101tnm11834 = XATSDAPP(jsx101tnm11833(XATSSTRN("diagnostic30_d3ecl: auxmain: loc0 = "), jsx101tnm11766))
         jsx101tnm11835 = jsx101tnm11834
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2111(line=69,offs=7)--2174(line=69,offs=70)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2112(line=70,offs=7)--2175(line=70,offs=70)))
         // I1VALDCL
         let jsx101tnm11904
-        // LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2120(line=69,offs=16)--2128(line=69,offs=24))
+        // LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2121(line=70,offs=16)--2129(line=70,offs=24))
         // I0Etapq(I0Ecst(gs_prerrln_n2(3929));$list(T2JAG($list(T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())))),T2JAG($list(T2Pcst(d3ecl_tbox)))))
         // T1IMPallx(gs_prerrln_n2(3929), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15267(line=1369,offs=1)--15358(line=1376,offs=2)))
         // T1IMPallx(gs_prerrln_n2(3929), I1Dtmpsub($list(a1[11998]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[11999]T2Pcst(d3ecl_tbox));I1Dimplmnt0(DIMPLone2(gs_prerrln_n2(3929);$list(a1[8676]T2Pvar(a1[11998]),a2[8677]T2Pvar(a2[11999]))))))
@@ -6226,8 +6226,8 @@ function auxmain_213(arg1, arg2)
   } while (false) // end-of(do)
   // I1CMP:return:jsx101tnm11906
   return jsx101tnm11906
-} // endfun(auxmain_213)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2188(line=74,offs=1)--2728(line=93,offs=12)))
+} // endfun(auxmain_214)
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2189(line=75,offs=1)--2729(line=94,offs=12)))
 let diagnostic30_d3ecl_1116 = function (arg1, arg2) { // impl
   let jsx101tnm11907 = arg1
   let jsx101tnm11908 = arg2
@@ -6239,8 +6239,8 @@ let diagnostic30_d3ecl_1116 = function (arg1, arg2) { // impl
     // I1GPTpat(I1BNDcons(I1TNM(11910);I0Pdapp(I0Pcon(D3Cerrck(1029));$list(I0Pvar(lvl(5760)),I0Pvar(d3cl(5761))));$list(lvl(5760)I1Vp1cn(I0Pcon(D3Cerrck(1029));I1Vtnm(I1TNM(11910));0),d3cl(5761)I1Vp1cn(I0Pcon(D3Cerrck(1029));I1Vtnm(I1TNM(11910));1))))
     if (XATS000_ctgeq(jsx101tnm11909, XATSCTAG("D3Cerrck",21))) { // gpt
       let jsx101tnm11910 = jsx101tnm11909
-      let jsx101tnm11911 = XATSDAPP(auxmain_213(jsx101tnm11907, XATSP1CN("D3Cerrck", jsx101tnm11910[1+1])))
-      // LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2317(line=78,offs=13)--2318(line=78,offs=14))
+      let jsx101tnm11911 = XATSDAPP(auxmain_214(jsx101tnm11907, XATSP1CN("D3Cerrck", jsx101tnm11910[1+1])))
+      // LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2318(line=79,offs=13)--2319(line=79,offs=14))
       // I0Etapq(I0Ecst(gint_gt$sint$sint(2560));$list(T2JAG($list())))
       // T1IMPallx(gint_gt$sint$sint(2560), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/CATS/JS/basics1.dats)@(6200(line=437,offs=1)--6264(line=439,offs=46)))
       // T1IMPallx(gint_gt$sint$sint(2560), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(gint_gt$sint$sint(2560);$list()))))
@@ -6255,13 +6255,13 @@ let diagnostic30_d3ecl_1116 = function (arg1, arg2) { // impl
       } else {
         let jsx101tnm11929 // let
         { // let
-          // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2367(line=80,offs=7)--2389(line=80,offs=29)))
+          // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2368(line=81,offs=7)--2390(line=81,offs=29)))
           // I1VALDCL
           let jsx101tnm11916
           let jsx101tnm11915 = XATSDAPP(d3ecl_get_lctn_17761(jsx101tnm11908))
           jsx101tnm11916 = jsx101tnm11915
           XATS000_patck(true)
-          // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2397(line=81,offs=7)--2544(line=85,offs=42)))
+          // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2398(line=82,offs=7)--2545(line=86,offs=42)))
           // I1VALDCL
           let jsx101tnm11923
           let jsx101tnm11917 = XATSDAPP(loctn_get_lsrc_3058(jsx101tnm11916))
@@ -6296,7 +6296,7 @@ let diagnostic30_d3ecl_1116 = function (arg1, arg2) { // impl
           } while (false) // end-of(do)
           jsx101tnm11923 = jsx101tnm11922
           XATS000_patck(true)
-          // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2551(line=86,offs=7)--2688(line=90,offs=10)))
+          // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2552(line=87,offs=7)--2689(line=91,offs=10)))
           // I1VALDCL
           let jsx101tnm11927
           let jsx101tnm11924 = XATSDAPP(severity_warn$make_165())
@@ -6327,7 +6327,7 @@ let diagnostic30_d3ecl_1116 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11933
   return jsx101tnm11933
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2735(line=97,offs=1)--2833(line=98,offs=55)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2736(line=98,offs=1)--2834(line=99,offs=55)))
 let diagnostic30_d3eclist_1722 = function (arg1, arg2) { // impl
   let jsx101tnm11934 = arg1
   let jsx101tnm11935 = arg2
@@ -6336,7 +6336,7 @@ let diagnostic30_d3eclist_1722 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11936
   return jsx101tnm11936
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2835(line=100,offs=1)--3008(line=105,offs=8)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2836(line=101,offs=1)--3009(line=106,offs=8)))
 let diagnostic30_teqd3exp_1778 = function (arg1, arg2) { // impl
   let jsx101tnm11937 = arg1
   let jsx101tnm11938 = arg2
@@ -6358,7 +6358,7 @@ let diagnostic30_teqd3exp_1778 = function (arg1, arg2) { // impl
       let jsx101tnm11941 = jsx101tnm11938
       let jsx101tnm11944 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2962(line=104,offs=7)--3000(line=104,offs=45)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(2963(line=105,offs=7)--3001(line=105,offs=45)))
         // I1VALDCL
         let jsx101tnm11943
         let jsx101tnm11942 = XATSDAPP(diagnostic30_d3exp_769(jsx101tnm11937, XATSP1CN("TEQD3EXPsome", jsx101tnm11941[1+1])))
@@ -6375,20 +6375,20 @@ let diagnostic30_teqd3exp_1778 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11945
   return jsx101tnm11945
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3010(line=107,offs=1)--3300(line=116,offs=4)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3011(line=108,offs=1)--3301(line=117,offs=4)))
 let diagnostic30_d3valdcl_1834 = function (arg1, arg2) { // impl
   let jsx101tnm11946 = arg1
   let jsx101tnm11947 = arg2
   // I1CMP:start
   let jsx101tnm11957 // let
   { // let
-    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3168(line=112,offs=5)--3202(line=112,offs=39)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3169(line=113,offs=5)--3203(line=113,offs=39)))
     // I1VALDCL
     let jsx101tnm11949
     let jsx101tnm11948 = XATSDAPP(d3valdcl_get_dpat_18783(jsx101tnm11947))
     jsx101tnm11949 = jsx101tnm11948
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3207(line=113,offs=5)--3241(line=113,offs=39)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3208(line=114,offs=5)--3242(line=114,offs=39)))
     // I1VALDCL
     let jsx101tnm11951
     let jsx101tnm11950 = XATSDAPP(d3valdcl_get_tdxp_18823(jsx101tnm11947))
@@ -6396,13 +6396,13 @@ let diagnostic30_d3valdcl_1834 = function (arg1, arg2) { // impl
     XATS000_patck(true)
     let jsx101tnm11956 // let
     { // let
-      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3062(line=108,offs=5)--3100(line=108,offs=43)))
+      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3063(line=109,offs=5)--3101(line=109,offs=43)))
       // I1VALDCL
       let jsx101tnm11953
       let jsx101tnm11952 = XATSDAPP(diagnostic30_d3pat_720(jsx101tnm11946, jsx101tnm11949))
       jsx101tnm11953 = jsx101tnm11952
       XATS000_patck(true)
-      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3105(line=109,offs=5)--3146(line=109,offs=46)))
+      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3106(line=110,offs=5)--3147(line=110,offs=46)))
       // I1VALDCL
       let jsx101tnm11955
       let jsx101tnm11954 = XATSDAPP(diagnostic30_teqd3exp_1778(jsx101tnm11946, jsx101tnm11951))
@@ -6415,14 +6415,14 @@ let diagnostic30_d3valdcl_1834 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11957
   return jsx101tnm11957
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3302(line=118,offs=1)--3586(line=127,offs=4)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3303(line=119,offs=1)--3587(line=128,offs=4)))
 let diagnostic30_d3vardcl_1889 = function (arg1, arg2) { // impl
   let jsx101tnm11958 = arg1
   let jsx101tnm11959 = arg2
   // I1CMP:start
   let jsx101tnm11965 // let
   { // let
-    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3548(line=126,offs=5)--3582(line=126,offs=39)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3549(line=127,offs=5)--3583(line=127,offs=39)))
     // I1VALDCL
     let jsx101tnm11961
     let jsx101tnm11960 = XATSDAPP(d3vardcl_get_dini_19200(jsx101tnm11959))
@@ -6430,7 +6430,7 @@ let diagnostic30_d3vardcl_1889 = function (arg1, arg2) { // impl
     XATS000_patck(true)
     let jsx101tnm11964 // let
     { // let
-      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3354(line=119,offs=5)--3395(line=119,offs=46)))
+      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3355(line=120,offs=5)--3396(line=120,offs=46)))
       // I1VALDCL
       let jsx101tnm11963
       let jsx101tnm11962 = XATSDAPP(diagnostic30_teqd3exp_1778(jsx101tnm11958, jsx101tnm11961))
@@ -6443,20 +6443,20 @@ let diagnostic30_d3vardcl_1889 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11965
   return jsx101tnm11965
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3588(line=129,offs=1)--3946(line=139,offs=4)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3589(line=130,offs=1)--3947(line=140,offs=4)))
 let diagnostic30_d3fundcl_1944 = function (arg1, arg2) { // impl
   let jsx101tnm11966 = arg1
   let jsx101tnm11967 = arg2
   // I1CMP:start
   let jsx101tnm11977 // let
   { // let
-    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3789(line=135,offs=5)--3823(line=135,offs=39)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3790(line=136,offs=5)--3824(line=136,offs=39)))
     // I1VALDCL
     let jsx101tnm11969
     let jsx101tnm11968 = XATSDAPP(d3fundcl_get_farg_19512(jsx101tnm11967))
     jsx101tnm11969 = jsx101tnm11968
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3868(line=137,offs=5)--3902(line=137,offs=39)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3869(line=138,offs=5)--3903(line=138,offs=39)))
     // I1VALDCL
     let jsx101tnm11971
     let jsx101tnm11970 = XATSDAPP(d3fundcl_get_tdxp_19595(jsx101tnm11967))
@@ -6464,13 +6464,13 @@ let diagnostic30_d3fundcl_1944 = function (arg1, arg2) { // impl
     XATS000_patck(true)
     let jsx101tnm11976 // let
     { // let
-      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3640(line=130,offs=5)--3681(line=130,offs=46)))
+      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3641(line=131,offs=5)--3682(line=131,offs=46)))
       // I1VALDCL
       let jsx101tnm11973
       let jsx101tnm11972 = XATSDAPP(diagnostic30_f3arglst_1555(jsx101tnm11966, jsx101tnm11969))
       jsx101tnm11973 = jsx101tnm11972
       XATS000_patck(true)
-      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3686(line=131,offs=5)--3727(line=131,offs=46)))
+      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3687(line=132,offs=5)--3728(line=132,offs=46)))
       // I1VALDCL
       let jsx101tnm11975
       let jsx101tnm11974 = XATSDAPP(diagnostic30_teqd3exp_1778(jsx101tnm11966, jsx101tnm11971))
@@ -6483,7 +6483,7 @@ let diagnostic30_d3fundcl_1944 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11977
   return jsx101tnm11977
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3948(line=141,offs=1)--4052(line=142,offs=58)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(3949(line=142,offs=1)--4053(line=143,offs=58)))
 let diagnostic30_d3valdclist_2000 = function (arg1, arg2) { // impl
   let jsx101tnm11978 = arg1
   let jsx101tnm11979 = arg2
@@ -6492,7 +6492,7 @@ let diagnostic30_d3valdclist_2000 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11980
   return jsx101tnm11980
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(4054(line=144,offs=1)--4158(line=145,offs=58)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(4055(line=145,offs=1)--4159(line=146,offs=58)))
 let diagnostic30_d3vardclist_2062 = function (arg1, arg2) { // impl
   let jsx101tnm11981 = arg1
   let jsx101tnm11982 = arg2
@@ -6501,7 +6501,7 @@ let diagnostic30_d3vardclist_2062 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11983
   return jsx101tnm11983
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(4160(line=147,offs=1)--4264(line=148,offs=58)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(4161(line=148,offs=1)--4265(line=149,offs=58)))
 let diagnostic30_d3fundclist_2123 = function (arg1, arg2) { // impl
   let jsx101tnm11984 = arg1
   let jsx101tnm11985 = arg2
@@ -6510,5 +6510,5 @@ let diagnostic30_d3fundclist_2123 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11986
   return jsx101tnm11986
 } // endfun(impl)
-// LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(4264(line=148,offs=58)--4264(line=148,offs=58))
-// I1Dnone1(I0Dnone1(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(4264(line=148,offs=58)--4264(line=148,offs=58));D3Cnone0()))
+// LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(4265(line=149,offs=58)--4265(line=149,offs=58))
+// I1Dnone1(I0Dnone1(LCSRCsome1(src/DATS/diagnostic30_decl.dats)@(4265(line=149,offs=58)--4265(line=149,offs=58));D3Cnone0()))
