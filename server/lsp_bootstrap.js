@@ -83,7 +83,7 @@ connection.onInitialize((params) => {
 
   const result = {
     capabilities: {
-      textDocumentSyntax: node.TextDocumentSyncKind.Full,
+      textDocumentSyntax: node.TextDocumentSyncKind.Incremental,
 			// completionProvider: {
 			// 	resolveProvider: true
 			// },
