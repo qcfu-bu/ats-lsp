@@ -33,5 +33,5 @@
   d: diagnostic
 ) : void
 
-#extern fun bootstrap_set_validator((diagnostics, url) -> void) : void
-#extern fun bootstrap_connect() : void
+#extern fun set_validator((diagnostics, url) -> void) : void
+#extern fun connect() : void

@@ -128,7 +128,7 @@ function asyncValidatorWrap(validator) {
   return asyncValidator;
 }
 
-function bootstrap_set_validator(validator) {
+function set_validator(validator) {
   const asyncValidator = asyncValidatorWrap(validator); 
   connection.languages.diagnostics.on(async (params) => {
     const document = documents.get(params.textDocument.uri);
@@ -150,7 +150,7 @@ function bootstrap_set_validator(validator) {
   });
 }
 
-function bootstrap_connect() {
+function connect() {
   documents.listen(connection);
   connection.listen();
 }

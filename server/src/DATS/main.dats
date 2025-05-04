@@ -78,5 +78,5 @@ val () = xatsopt_flag$pvsadd0("--_XATSOPT_")
 val () = xatsopt_flag$pvsadd0("--_SRCGEN2_XATSOPT_")
 
 // boostrap the lsp server
-val () = bootstrap_set_validator(ats_validator)
-val () = bootstrap_connect()
+val () = set_validator(ats_validator)
+val () = connect()

@@ -36,5 +36,5 @@
 ) : void = $extnam() 
 #symload push with diagnostics_push
 
-#extern fun bootstrap_set_validator(f: (diagnostics, url) -> void) : void = $extnam()
-#extern fun bootstrap_connect() : void = $extnam()
+#extern fun set_validator(f: (diagnostics, url) -> void) : void = $extnam()
+#extern fun connect() : void = $extnam()

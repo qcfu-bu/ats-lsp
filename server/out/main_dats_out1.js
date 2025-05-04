@@ -5799,17 +5799,17 @@ let jsx101tnm11812
 let jsx101tnm11811 = XATSDAPP(xatsopt_flag$pvsadd0_2349(XATSSTRN("--_SRCGEN2_XATSOPT_")))
 jsx101tnm11812 = jsx101tnm11811
 XATS000_patck(true)
-// I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(2210(line=81,offs=1)--2257(line=81,offs=48)))
+// I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(2210(line=81,offs=1)--2247(line=81,offs=38)))
 // I1VALDCL
 let jsx101tnm11814
-let jsx101tnm11813 = XATSDAPP(bootstrap_set_validator(ats_validator_477))
+let jsx101tnm11813 = XATSDAPP(set_validator(ats_validator_477))
 jsx101tnm11814 = jsx101tnm11813
 XATS000_patck(true)
-// I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(2258(line=82,offs=1)--2286(line=82,offs=29)))
+// I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(2248(line=82,offs=1)--2266(line=82,offs=19)))
 // I1VALDCL
 let jsx101tnm11816
-let jsx101tnm11815 = XATSDAPP(bootstrap_connect())
+let jsx101tnm11815 = XATSDAPP(connect())
 jsx101tnm11816 = jsx101tnm11815
 XATS000_patck(true)
-// LCSRCsome1(src/DATS/main.dats)@(2286(line=82,offs=29)--2286(line=82,offs=29))
-// I1Dnone1(I0Dnone1(LCSRCsome1(src/DATS/main.dats)@(2286(line=82,offs=29)--2286(line=82,offs=29));D3Cnone0()))
+// LCSRCsome1(src/DATS/main.dats)@(2266(line=82,offs=19)--2266(line=82,offs=19))
+// I1Dnone1(I0Dnone1(LCSRCsome1(src/DATS/main.dats)@(2266(line=82,offs=19)--2266(line=82,offs=19));D3Cnone0()))
