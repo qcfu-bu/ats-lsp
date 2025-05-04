@@ -1,3 +1,7 @@
+#include "srcgen2/HATS/xatsopt_sats.hats"
+#include "srcgen2/HATS/xatsopt_dpre.hats"
+#include "./../HATS/libxatsopt.hats"
+
 #abstype url <= p0tr
 #extern fun url_to_path(url) : string
 
@@ -19,6 +23,8 @@
   pend: position
 ) : range
 
+fun range_of_loctn(loctn) : range
+
 #abstype diagnostic <= p0tr
 #extern fun diagnostic_make(
   severity: severity,
@@ -32,6 +38,7 @@
   ds: diagnostics, 
   d: diagnostic
 ) : void
+#symload push with diagnostics_push
 
 #extern fun set_validator((diagnostics, url) -> void) : void
 #extern fun connect() : void
