@@ -8,7 +8,6 @@
 #staload "./../DATS/lsp_bootstrap.dats"
 
 local
-
 fun auxmain(out: diagnostics, dcl0: d3ecl): void =
   case+ dcl0.node() of
   | D3Cstatic(tknd, dcl1) => let 
@@ -75,7 +74,7 @@ in
 
 #implfun diagnostic30_d3ecl(out, dcl0) =
   case+ dcl0.node() of
-  | D3Cerrck(lvl, d3cl)  => (
+  | D3Cerrck(lvl, d3cl) => (
     auxmain(out, d3cl);
     if (lvl > DIAGNOSTIC30_ERRVL) then () 
     else let
