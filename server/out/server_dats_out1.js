@@ -1,4 +1,4 @@
-// I1Dinclude(LCSRCsome1(src/DATS/main.dats)@(1(line=1,offs=1)--42(line=1,offs=42)))
+// I1Dinclude(LCSRCsome1(src/DATS/server.dats)@(1(line=1,offs=1)--42(line=1,offs=42)))
 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/HATS/xatsopt_sats.hats)@(122(line=10,offs=1)--166(line=11,offs=36))
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("srcgen1/prelude/SATS/gbas000.sats";35));$optn(FPATH(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/SATS/gbas000.sats));...)))
 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/HATS/xatsopt_sats.hats)@(167(line=12,offs=1)--211(line=13,offs=36))
@@ -59,7 +59,7 @@
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("srcgen1/xatslib/githwxi/SATS/githwxi.sats";43));$optn(FPATH(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/SATS/githwxi.sats));...)))
 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/HATS/xatsopt_sats.hats)@(2349(line=132,offs=1)--2349(line=132,offs=1))
 // I1Dnone1(I0Dnone1(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/HATS/xatsopt_sats.hats)@(2349(line=132,offs=1)--2349(line=132,offs=1));D3Cnone0()))
-// I1Dinclude(LCSRCsome1(src/DATS/main.dats)@(43(line=2,offs=1)--84(line=2,offs=42)))
+// I1Dinclude(LCSRCsome1(src/DATS/server.dats)@(43(line=2,offs=1)--84(line=2,offs=42)))
 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/HATS/xatsopt_dpre.hats)@(119(line=9,offs=1)--164(line=10,offs=27))
 // I1Di0dcl(I0Dd3ecl(D3Cd2ecl(D2Csymload(T_SRP_SYMLOAD();print;D2PTMsome(65;D2ITMcst($list(g_print(1975),g_print(38))))))))
 // I1Dinclude(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/HATS/xatsopt_dpre.hats)@(205(line=13,offs=1)--249(line=14,offs=36)))
@@ -5390,7 +5390,7 @@
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(1;T_SRP_STALOAD();G1Ea2pp(G1Eid0(=);G1Eid0(_);G1Estr(T_STRN1_clsd("./../DATS/xatsopt_tmplib.dats";31)));$optn(FPATH(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/DATS/xatsopt_tmplib.dats));...)))
 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/HATS/xatsopt_dpre.hats)@(4896(line=266,offs=1)--4896(line=266,offs=1))
 // I1Dnone1(I0Dnone1(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/HATS/xatsopt_dpre.hats)@(4896(line=266,offs=1)--4896(line=266,offs=1));D3Cnone0()))
-// I1Dinclude(LCSRCsome1(src/DATS/main.dats)@(85(line=3,offs=1)--121(line=3,offs=37)))
+// I1Dinclude(LCSRCsome1(src/DATS/server.dats)@(85(line=3,offs=1)--121(line=3,offs=37)))
 // LCSRCsome1(src/HATS/libxatsopt.hats)@(1(line=1,offs=1)--37(line=1,offs=37))
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("srcgen2/SATS/xbasics.sats";27));$optn(FPATH(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/SATS/xbasics.sats));...)))
 // LCSRCsome1(src/HATS/libxatsopt.hats)@(38(line=2,offs=1)--74(line=2,offs=37))
@@ -5439,37 +5439,37 @@
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("srcgen2/SATS/xglobal.sats";27));$optn(FPATH(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/SATS/xglobal.sats));...)))
 // LCSRCsome1(src/HATS/libxatsopt.hats)@(851(line=23,offs=37)--851(line=23,offs=37))
 // I1Dnone1(I0Dnone1(LCSRCsome1(src/HATS/libxatsopt.hats)@(851(line=23,offs=37)--851(line=23,offs=37));D3Cnone0()))
-// LCSRCsome1(src/DATS/main.dats)@(123(line=5,offs=1)--162(line=5,offs=40))
+// LCSRCsome1(src/DATS/server.dats)@(123(line=5,offs=1)--162(line=5,offs=40))
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("./../SATS/lsp_bootstrap.sats";30));$optn(FPATH(src/SATS/lsp_bootstrap.sats));...)))
-// LCSRCsome1(src/DATS/main.dats)@(163(line=6,offs=1)--195(line=6,offs=33))
+// LCSRCsome1(src/DATS/server.dats)@(163(line=6,offs=1)--195(line=6,offs=33))
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("./../SATS/server.sats";23));$optn(FPATH(src/SATS/server.sats));...)))
-// LCSRCsome1(src/DATS/main.dats)@(196(line=7,offs=1)--235(line=7,offs=40))
+// LCSRCsome1(src/DATS/server.dats)@(196(line=7,offs=1)--235(line=7,offs=40))
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(1;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("./../DATS/lsp_bootstrap.dats";30));$optn(FPATH(src/DATS/lsp_bootstrap.dats));...)))
-// I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(237(line=9,offs=1)--512(line=17,offs=6)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(237(line=9,offs=1)--512(line=17,offs=6)))
 let range_of_loctn_167 = function (arg1) { // impl
   let jsx101tnm11711 = arg1
   // I1CMP:start
   let jsx101tnm11727 // let
   { // let
-    // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(279(line=11,offs=5)--302(line=11,offs=28)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(279(line=11,offs=5)--302(line=11,offs=28)))
     // I1VALDCL
     let jsx101tnm11713
     let jsx101tnm11712 = XATSDAPP(loctn_get_lsrc_3058(jsx101tnm11711))
     jsx101tnm11713 = jsx101tnm11712
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(307(line=12,offs=5)--330(line=12,offs=28)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(307(line=12,offs=5)--330(line=12,offs=28)))
     // I1VALDCL
     let jsx101tnm11715
     let jsx101tnm11714 = XATSDAPP(loctn_get_pbeg_3091(jsx101tnm11711))
     jsx101tnm11715 = jsx101tnm11714
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(335(line=13,offs=5)--358(line=13,offs=28)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(335(line=13,offs=5)--358(line=13,offs=28)))
     // I1VALDCL
     let jsx101tnm11717
     let jsx101tnm11716 = XATSDAPP(loctn_get_pend_3124(jsx101tnm11711))
     jsx101tnm11717 = jsx101tnm11716
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(363(line=14,offs=5)--416(line=14,offs=58)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(363(line=14,offs=5)--416(line=14,offs=58)))
     // I1VALDCL
     let jsx101tnm11721
     let jsx101tnm11718 = XATSDAPP(postn_get_nrow_2675(jsx101tnm11715))
@@ -5477,7 +5477,7 @@ let range_of_loctn_167 = function (arg1) { // impl
     let jsx101tnm11720 = XATSDAPP(position_make(jsx101tnm11718, jsx101tnm11719))
     jsx101tnm11721 = jsx101tnm11720
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(422(line=15,offs=5)--475(line=15,offs=58)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(422(line=15,offs=5)--475(line=15,offs=58)))
     // I1VALDCL
     let jsx101tnm11725
     let jsx101tnm11722 = XATSDAPP(postn_get_nrow_2675(jsx101tnm11717))
@@ -5491,7 +5491,7 @@ let range_of_loctn_167 = function (arg1) { // impl
   // I1CMP:return:jsx101tnm11727
   return jsx101tnm11727
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(514(line=19,offs=1)--558(line=19,offs=45)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(523(line=20,offs=1)--567(line=20,offs=45)))
 let diagnostics_of_d3exp_201 = function (arg1, arg2) { // impl
   let jsx101tnm11728 = arg1
   let jsx101tnm11729 = arg2
@@ -5500,7 +5500,7 @@ let diagnostics_of_d3exp_201 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11730
   return jsx101tnm11730
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(559(line=20,offs=1)--606(line=20,offs=48)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(568(line=21,offs=1)--615(line=21,offs=48)))
 let diagnostics_of_f3arglst_252 = function (arg1, arg2) { // impl
   let jsx101tnm11731 = arg1
   let jsx101tnm11732 = arg2
@@ -5509,7 +5509,7 @@ let diagnostics_of_f3arglst_252 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11733
   return jsx101tnm11733
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(607(line=21,offs=1)--657(line=21,offs=51)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(616(line=22,offs=1)--666(line=22,offs=51)))
 let diagnostics_of_d3valdclist_309 = function (arg1, arg2) { // impl
   let jsx101tnm11734 = arg1
   let jsx101tnm11735 = arg2
@@ -5518,7 +5518,7 @@ let diagnostics_of_d3valdclist_309 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11736
   return jsx101tnm11736
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(658(line=22,offs=1)--708(line=22,offs=51)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(667(line=23,offs=1)--717(line=23,offs=51)))
 let diagnostics_of_d3vardclist_372 = function (arg1, arg2) { // impl
   let jsx101tnm11737 = arg1
   let jsx101tnm11738 = arg2
@@ -5527,7 +5527,7 @@ let diagnostics_of_d3vardclist_372 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11739
   return jsx101tnm11739
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(709(line=23,offs=1)--759(line=23,offs=51)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(718(line=24,offs=1)--768(line=24,offs=51)))
 let diagnostics_of_d3fundclist_435 = function (arg1, arg2) { // impl
   let jsx101tnm11740 = arg1
   let jsx101tnm11741 = arg2
@@ -5536,10 +5536,10 @@ let diagnostics_of_d3fundclist_435 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11742
   return jsx101tnm11742
 } // endfun(impl)
-// I1Dlocal0(LCSRCsome1(src/DATS/main.dats)@(761(line=25,offs=1)--3116(line=98,offs=4)))
-// I1Dfundclist(LCSRCsome1(src/DATS/main.dats)@(771(line=26,offs=5)--2594(line=76,offs=12)))
+// I1Dlocal0(LCSRCsome1(src/DATS/server.dats)@(770(line=26,offs=1)--3125(line=99,offs=4)))
+// I1Dfundclist(LCSRCsome1(src/DATS/server.dats)@(780(line=27,offs=5)--2603(line=77,offs=12)))
 // I1FUNDCL
-function auxmain_774(arg1, arg2)
+function auxmain_783(arg1, arg2)
 { // fun
   let jsx101tnm11743 = arg1
   let jsx101tnm11744 = arg2
@@ -5580,13 +5580,13 @@ function auxmain_774(arg1, arg2)
       let jsx101tnm11752 = jsx101tnm11745
       let jsx101tnm11757 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(1113(line=35,offs=11)--1155(line=35,offs=53)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(1122(line=36,offs=11)--1164(line=36,offs=53)))
         // I1VALDCL
         let jsx101tnm11754
         let jsx101tnm11753 = XATSDAPP(diagnostics_of_d3eclist_550(jsx101tnm11743, XATSP1CN("D3Clocal0", jsx101tnm11752[0+1])))
         jsx101tnm11754 = jsx101tnm11753
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(1166(line=36,offs=11)--1208(line=36,offs=53)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(1175(line=37,offs=11)--1217(line=37,offs=53)))
         // I1VALDCL
         let jsx101tnm11756
         let jsx101tnm11755 = XATSDAPP(diagnostics_of_d3eclist_550(jsx101tnm11743, XATSP1CN("D3Clocal0", jsx101tnm11752[1+1])))
@@ -5649,13 +5649,13 @@ function auxmain_774(arg1, arg2)
       let jsx101tnm11768 = jsx101tnm11745
       let jsx101tnm11773 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(1828(line=51,offs=11)--1870(line=51,offs=53)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(1837(line=52,offs=11)--1879(line=52,offs=53)))
         // I1VALDCL
         let jsx101tnm11770
         let jsx101tnm11769 = XATSDAPP(diagnostics_of_f3arglst_252(jsx101tnm11743, XATSP1CN("D3Cimplmnt0", jsx101tnm11768[6+1])))
         jsx101tnm11770 = jsx101tnm11769
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(1881(line=52,offs=11)--1920(line=52,offs=50)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(1890(line=53,offs=11)--1929(line=53,offs=50)))
         // I1VALDCL
         let jsx101tnm11772
         let jsx101tnm11771 = XATSDAPP(diagnostics_of_d3exp_201(jsx101tnm11743, XATSP1CN("D3Cimplmnt0", jsx101tnm11768[8+1])))
@@ -5709,13 +5709,13 @@ function auxmain_774(arg1, arg2)
       let jsx101tnm11782 = jsx101tnm11745
       let jsx101tnm11797 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(2220(line=64,offs=11)--2242(line=64,offs=33)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(2229(line=65,offs=11)--2251(line=65,offs=33)))
         // I1VALDCL
         let jsx101tnm11784
         let jsx101tnm11783 = XATSDAPP(d3ecl_get_lctn_17761(jsx101tnm11744))
         jsx101tnm11784 = jsx101tnm11783
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(2253(line=65,offs=11)--2416(line=69,offs=46)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(2262(line=66,offs=11)--2425(line=70,offs=46)))
         // I1VALDCL
         let jsx101tnm11791
         let jsx101tnm11785 = XATSDAPP(loctn_get_lsrc_3058(jsx101tnm11784))
@@ -5750,7 +5750,7 @@ function auxmain_774(arg1, arg2)
         } while (false) // end-of(do)
         jsx101tnm11791 = jsx101tnm11790
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(2427(line=70,offs=11)--2560(line=74,offs=12)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(2436(line=71,offs=11)--2569(line=75,offs=12)))
         // I1VALDCL
         let jsx101tnm11795
         let jsx101tnm11792 = XATSDAPP(severity_error$make())
@@ -5769,8 +5769,8 @@ function auxmain_774(arg1, arg2)
   } while (false) // end-of(do)
   // I1CMP:return:jsx101tnm11798
   return jsx101tnm11798
-} // endfun(auxmain_774)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(2598(line=78,offs=1)--3112(line=97,offs=12)))
+} // endfun(auxmain_783)
+// I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(2607(line=79,offs=1)--3121(line=98,offs=12)))
 let diagnostics_of_d3ecl_498 = function (arg1, arg2) { // impl
   let jsx101tnm11799 = arg1
   let jsx101tnm11800 = arg2
@@ -5784,13 +5784,13 @@ let diagnostics_of_d3ecl_498 = function (arg1, arg2) { // impl
       let jsx101tnm11802 = jsx101tnm11801
       let jsx101tnm11824 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(2696(line=81,offs=9)--2722(line=81,offs=35)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(2705(line=82,offs=9)--2731(line=82,offs=35)))
         // I1VALDCL
         let jsx101tnm11804
-        let jsx101tnm11803 = XATSDAPP(auxmain_774(jsx101tnm11799, XATSP1CN("D3Cerrck", jsx101tnm11802[1+1])))
+        let jsx101tnm11803 = XATSDAPP(auxmain_783(jsx101tnm11799, XATSP1CN("D3Cerrck", jsx101tnm11802[1+1])))
         jsx101tnm11804 = jsx101tnm11803
         XATS000_patck(true)
-        // LCSRCsome1(src/DATS/main.dats)@(2738(line=82,offs=13)--2739(line=82,offs=14))
+        // LCSRCsome1(src/DATS/server.dats)@(2747(line=83,offs=13)--2748(line=83,offs=14))
         // I0Etapq(I0Ecst(gint_gt$sint$sint(2560));$list(T2JAG($list())))
         // T1IMPallx(gint_gt$sint$sint(2560), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/CATS/JS/basics1.dats)@(6200(line=437,offs=1)--6264(line=439,offs=46)))
         // T1IMPallx(gint_gt$sint$sint(2560), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(gint_gt$sint$sint(2560);$list()))))
@@ -5805,13 +5805,13 @@ let diagnostics_of_d3ecl_498 = function (arg1, arg2) { // impl
         } else {
           let jsx101tnm11822 // let
           { // let
-            // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(2767(line=83,offs=7)--2788(line=83,offs=28)))
+            // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(2776(line=84,offs=7)--2797(line=84,offs=28)))
             // I1VALDCL
             let jsx101tnm11809
             let jsx101tnm11808 = XATSDAPP(d3ecl_get_lctn_17761(jsx101tnm11800))
             jsx101tnm11809 = jsx101tnm11808
             XATS000_patck(true)
-            // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(2795(line=84,offs=7)--2942(line=88,offs=42)))
+            // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(2804(line=85,offs=7)--2951(line=89,offs=42)))
             // I1VALDCL
             let jsx101tnm11816
             let jsx101tnm11810 = XATSDAPP(loctn_get_lsrc_3058(jsx101tnm11809))
@@ -5846,7 +5846,7 @@ let diagnostics_of_d3ecl_498 = function (arg1, arg2) { // impl
             } while (false) // end-of(do)
             jsx101tnm11816 = jsx101tnm11815
             XATS000_patck(true)
-            // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(2949(line=89,offs=7)--3066(line=93,offs=8)))
+            // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(2958(line=90,offs=7)--3075(line=94,offs=8)))
             // I1VALDCL
             let jsx101tnm11820
             let jsx101tnm11817 = XATSDAPP(severity_error$make())
@@ -5879,16 +5879,16 @@ let diagnostics_of_d3ecl_498 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11827
   return jsx101tnm11827
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(3118(line=100,offs=1)--3277(line=105,offs=4)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(3127(line=101,offs=1)--3286(line=106,offs=4)))
 let diagnostics_of_d3eclist_550 = function (arg1, arg2) { // impl
   let jsx101tnm11828 = arg1
   let jsx101tnm11829 = arg2
   // I1CMP:start
   let jsx101tnm11849 // let
   { // let
-    // I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(3205(line=103,offs=5)--3273(line=104,offs=60)))
+    // I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(3214(line=104,offs=5)--3282(line=105,offs=60)))
     // I1Dimplmnt0(DIMPLone2(foritm$work(2022);$list(x0[4845]T2Pcst(d3ecl)))):timp
-    // LCSRCsome1(src/DATS/main.dats)@(3166(line=101,offs=3)--3177(line=101,offs=14))
+    // LCSRCsome1(src/DATS/server.dats)@(3175(line=102,offs=3)--3186(line=102,offs=14))
     // I0Etapq(I0Ecst(list_foritm(2885));$list(T2JAG($list(T2Pcst(d3ecl_tbox)))))
     // T1IMPallx(list_foritm(2885), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/list000.dats)@(10107(line=724,offs=1)--10315(line=741,offs=2)))
     // T1IMPallx(list_foritm(2885), I1Dtmpsub($list(x0[9829]T2Pcst(d3ecl_tbox));I1Dimplmnt0(DIMPLone2(list_foritm(2885);$list(x0[6245]T2Pvar(x0[9829]))))))
@@ -5925,7 +5925,7 @@ let diagnostics_of_d3eclist_550 = function (arg1, arg2) { // impl
                 let jsx101tnm11841
                 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/list000.dats)@(10274(line=738,offs=3)--10285(line=738,offs=14))
                 // I0Etapq(I0Ecst(foritm$work(2022));$list(T2JAG($list(T2Pvar(x0[9829])))))
-                // T1IMPallx(foritm$work(2022), LCSRCsome1(src/DATS/main.dats)@(3205(line=103,offs=5)--3273(line=104,offs=60)))
+                // T1IMPallx(foritm$work(2022), LCSRCsome1(src/DATS/server.dats)@(3214(line=104,offs=5)--3282(line=105,offs=60)))
                 // T1IMPallx(foritm$work(2022), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(foritm$work(2022);$list(x0[4845]T2Pcst(d3ecl))))))
                 let jsx101tnm11839 = function (arg1) { // timp: foritm$work(2022)
                   let jsx101tnm11837 = arg1
@@ -5961,7 +5961,7 @@ let diagnostics_of_d3eclist_550 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11849
   return jsx101tnm11849
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(3279(line=107,offs=1)--3421(line=110,offs=57)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(3288(line=108,offs=1)--3430(line=111,offs=57)))
 let diagnostics_of_d3eclistopt_608 = function (arg1, arg2) { // impl
   let jsx101tnm11850 = arg1
   let jsx101tnm11851 = arg2
@@ -5991,20 +5991,20 @@ let diagnostics_of_d3eclistopt_608 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11856
   return jsx101tnm11856
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(3423(line=112,offs=1)--3656(line=119,offs=6)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(3432(line=113,offs=1)--3665(line=120,offs=6)))
 let diagnostics_of_d3parsed_672 = function (arg1, arg2) { // impl
   let jsx101tnm11857 = arg1
   let jsx101tnm11858 = arg2
   // I1CMP:start
   let jsx101tnm11869 // let
   { // let
-    // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(3475(line=113,offs=7)--3501(line=113,offs=33)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(3484(line=114,offs=7)--3510(line=114,offs=33)))
     // I1VALDCL
     let jsx101tnm11860
     let jsx101tnm11859 = XATSDAPP(d3parsed_get_nerror_20984(jsx101tnm11858))
     jsx101tnm11860 = jsx101tnm11859
     XATS000_patck(true)
-    // LCSRCsome1(src/DATS/main.dats)@(3520(line=114,offs=16)--3521(line=114,offs=17))
+    // LCSRCsome1(src/DATS/server.dats)@(3529(line=115,offs=16)--3530(line=115,offs=17))
     // I0Etapq(I0Ecst(gint_gt$sint$sint(2560));$list(T2JAG($list())))
     // T1IMPallx(gint_gt$sint$sint(2560), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/CATS/JS/basics1.dats)@(6200(line=437,offs=1)--6264(line=439,offs=46)))
     // T1IMPallx(gint_gt$sint$sint(2560), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(gint_gt$sint$sint(2560);$list()))))
@@ -6016,7 +6016,7 @@ let diagnostics_of_d3parsed_672 = function (arg1, arg2) { // impl
     {
       let jsx101tnm11866 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(3541(line=115,offs=11)--3579(line=115,offs=49)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(3550(line=116,offs=11)--3588(line=116,offs=49)))
         // I1VALDCL
         let jsx101tnm11864
         let jsx101tnm11863 = XATSDAPP(d3parsed_get_parsed_21214(jsx101tnm11858))
@@ -6035,29 +6035,29 @@ let diagnostics_of_d3parsed_672 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11869
   return jsx101tnm11869
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/main.dats)@(3658(line=121,offs=1)--3919(line=129,offs=6)))
-let ats_validator_730 = function (arg1, arg2) { // impl
+// I1Dimplmnt0(LCSRCsome1(src/DATS/server.dats)@(3667(line=122,offs=1)--3945(line=131,offs=6)))
+let validator_730 = function (arg1, arg2) { // impl
   let jsx101tnm11870 = arg1
   let jsx101tnm11871 = arg2
   // I1CMP:start
   let jsx101tnm11978 // let
   { // let
-    // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(3704(line=123,offs=5)--3731(line=123,offs=32)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(3709(line=124,offs=5)--3736(line=124,offs=32)))
     // I1VALDCL
     let jsx101tnm11873
     let jsx101tnm11872 = XATSDAPP(url_to_path(jsx101tnm11871))
     jsx101tnm11873 = jsx101tnm11872
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(3736(line=124,offs=5)--3772(line=124,offs=41)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(3741(line=125,offs=5)--3777(line=125,offs=41)))
     // I1VALDCL
     let jsx101tnm11875
     let jsx101tnm11874 = XATSDAPP(d3parsed_of_fildats_2961(jsx101tnm11873))
     jsx101tnm11875 = jsx101tnm11874
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(3777(line=125,offs=5)--3799(line=125,offs=27)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(3803(line=127,offs=5)--3825(line=127,offs=27)))
     // I1VALDCL
     let jsx101tnm11924
-    // LCSRCsome1(src/DATS/main.dats)@(3786(line=125,offs=14)--3793(line=125,offs=21))
+    // LCSRCsome1(src/DATS/server.dats)@(3812(line=127,offs=14)--3819(line=127,offs=21))
     // I0Etapq(I0Ecst(gs_prerrln_n1(3928));$list(T2JAG($list(T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0()))))))
     // T1IMPallx(gs_prerrln_n1(3928), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15147(line=1360,offs=1)--15234(line=1367,offs=2)))
     // T1IMPallx(gs_prerrln_n1(3928), I1Dtmpsub($list(a1[11997]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(gs_prerrln_n1(3928);$list(a1[8675]T2Pvar(a1[11997]))))))
@@ -6247,10 +6247,10 @@ let ats_validator_730 = function (arg1, arg2) { // impl
     let jsx101tnm11923 = XATSDAPP(jsx101tnm11922(jsx101tnm11873))
     jsx101tnm11924 = jsx101tnm11923
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(3804(line=126,offs=5)--3826(line=126,offs=27)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(3830(line=128,offs=5)--3852(line=128,offs=27)))
     // I1VALDCL
     let jsx101tnm11972
-    // LCSRCsome1(src/DATS/main.dats)@(3813(line=126,offs=14)--3820(line=126,offs=21))
+    // LCSRCsome1(src/DATS/server.dats)@(3839(line=128,offs=14)--3846(line=128,offs=21))
     // I0Etapq(I0Ecst(gs_prerrln_n1(3928));$list(T2JAG($list(T2Pcst(d3parsed_tbox)))))
     // T1IMPallx(gs_prerrln_n1(3928), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15147(line=1360,offs=1)--15234(line=1367,offs=2)))
     // T1IMPallx(gs_prerrln_n1(3928), I1Dtmpsub($list(a1[11997]T2Pcst(d3parsed_tbox));I1Dimplmnt0(DIMPLone2(gs_prerrln_n1(3928);$list(a1[8675]T2Pvar(a1[11997]))))))
@@ -6434,10 +6434,10 @@ let ats_validator_730 = function (arg1, arg2) { // impl
     let jsx101tnm11971 = XATSDAPP(jsx101tnm11970(jsx101tnm11875))
     jsx101tnm11972 = jsx101tnm11971
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(3831(line=127,offs=5)--3874(line=127,offs=48)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(3857(line=129,offs=5)--3900(line=129,offs=48)))
     // I1VALDCL
     let jsx101tnm11976
-    // LCSRCsome1(src/DATS/main.dats)@(3857(line=127,offs=31)--3865(line=127,offs=39))
+    // LCSRCsome1(src/DATS/server.dats)@(3883(line=129,offs=31)--3891(line=129,offs=39))
     // I0Etapq(I0Ecst(g_stderr(3801));$list(T2JAG($list())))
     // T1IMPallx(g_stderr(3801), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1867(line=74,offs=1)--1910(line=75,offs=35)))
     // T1IMPallx(g_stderr(3801), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stderr(3801);$list()))))
@@ -6453,41 +6453,41 @@ let ats_validator_730 = function (arg1, arg2) { // impl
   // I1CMP:return:jsx101tnm11978
   return jsx101tnm11978
 } // endfun(impl)
-// I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(3959(line=132,offs=1)--3988(line=132,offs=30)))
+// I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(3985(line=134,offs=1)--4014(line=134,offs=30)))
 // I1VALDCL
 let jsx101tnm11980
 let jsx101tnm11979 = XATSDAPP(the_fxtyenv_pvsload_3006())
 jsx101tnm11980 = jsx101tnm11979
 XATS000_patck(true)
-// I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(3989(line=133,offs=1)--4018(line=133,offs=30)))
+// I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(4015(line=135,offs=1)--4044(line=135,offs=30)))
 // I1VALDCL
 let jsx101tnm11982
 let jsx101tnm11981 = XATSDAPP(the_tr12env_pvsl00d_3206())
 jsx101tnm11982 = jsx101tnm11981
 XATS000_patck(true)
-// I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(4019(line=134,offs=1)--4063(line=134,offs=45)))
+// I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(4045(line=136,offs=1)--4089(line=136,offs=45)))
 // I1VALDCL
 let jsx101tnm11984
 let jsx101tnm11983 = XATSDAPP(xatsopt_flag$pvsadd0_2349(XATSSTRN("--_XATSOPT_")))
 jsx101tnm11984 = jsx101tnm11983
 XATS000_patck(true)
-// I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(4064(line=135,offs=1)--4116(line=135,offs=53)))
+// I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(4090(line=137,offs=1)--4142(line=137,offs=53)))
 // I1VALDCL
 let jsx101tnm11986
 let jsx101tnm11985 = XATSDAPP(xatsopt_flag$pvsadd0_2349(XATSSTRN("--_SRCGEN2_XATSOPT_")))
 jsx101tnm11986 = jsx101tnm11985
 XATS000_patck(true)
-// I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(4145(line=138,offs=1)--4182(line=138,offs=38)))
+// I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(4171(line=140,offs=1)--4204(line=140,offs=34)))
 // I1VALDCL
 let jsx101tnm11988
-let jsx101tnm11987 = XATSDAPP(set_validator(ats_validator_730))
+let jsx101tnm11987 = XATSDAPP(set_validator(validator_730))
 jsx101tnm11988 = jsx101tnm11987
 XATS000_patck(true)
-// I1Dvaldclist(LCSRCsome1(src/DATS/main.dats)@(4183(line=139,offs=1)--4201(line=139,offs=19)))
+// I1Dvaldclist(LCSRCsome1(src/DATS/server.dats)@(4205(line=141,offs=1)--4223(line=141,offs=19)))
 // I1VALDCL
 let jsx101tnm11990
 let jsx101tnm11989 = XATSDAPP(connect())
 jsx101tnm11990 = jsx101tnm11989
 XATS000_patck(true)
-// LCSRCsome1(src/DATS/main.dats)@(4201(line=139,offs=19)--4201(line=139,offs=19))
-// I1Dnone1(I0Dnone1(LCSRCsome1(src/DATS/main.dats)@(4201(line=139,offs=19)--4201(line=139,offs=19));D3Cnone0()))
+// LCSRCsome1(src/DATS/server.dats)@(4223(line=141,offs=19)--4223(line=141,offs=19))
+// I1Dnone1(I0Dnone1(LCSRCsome1(src/DATS/server.dats)@(4223(line=141,offs=19)--4223(line=141,offs=19));D3Cnone0()))

@@ -119,7 +119,7 @@ end
     else ()
   end
 
-#implfun ats_validator(ds, uri) = 
+#implfun validator(ds, uri) = 
   let 
     val path = url_to_path(uri)
     val dpar = d3parsed_of_fildats(path)
@@ -137,5 +137,5 @@ val () = xatsopt_flag$pvsadd0("--_XATSOPT_")
 val () = xatsopt_flag$pvsadd0("--_SRCGEN2_XATSOPT_")
 
 // boostrap the lsp server
-val () = set_validator(ats_validator)
+val () = set_validator(validator)
 val () = connect()

@@ -19,7 +19,7 @@ XATS2JS_JSEMIT=$(XATS2JS)/xats2js_jsemit00_ats2_opt1.js
 
 SRCSATS :=
 SRCDATS := \
-main.dats
+server.dats
 
 OUTSATS := \
 $(patsubst %.sats, out/%_sats_out.js, $(SRCSATS))

@@ -14,4 +14,4 @@ fun diagnostics_of_d3ecl(diagnostics, d3ecl) : void
 fun diagnostics_of_d3eclist(diagnostics, d3eclist) : void
 fun diagnostics_of_d3eclistopt(diagnostics, d3eclistopt) : void
 fun diagnostics_of_d3parsed(diagnostics, d3parsed) : void
-fun ats_validator(diagnostics, url) : void
+fun validator(diagnostics, url) : void
