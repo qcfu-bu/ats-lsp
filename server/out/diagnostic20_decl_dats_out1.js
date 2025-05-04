@@ -5443,368 +5443,575 @@
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("./../SATS/lsp_bootstrap.sats";30));$optn(FPATH(src/SATS/lsp_bootstrap.sats));...)))
 // LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(163(line=6,offs=1)--201(line=6,offs=39))
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("./../SATS/diagnostic20.sats";29));$optn(FPATH(src/SATS/diagnostic20.sats));...)))
-// I1Dfundclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(203(line=8,offs=1)--275(line=9,offs=5)))
+// LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(268(line=9,offs=1)--301(line=9,offs=34))
+// I1Di0dcl(I0Dd3ecl(D3Cd2ecl(D2Csymload(T_SRP_SYMLOAD();lctn;D2PTMsome(0;D2ITMcst($list(s2cst_get_lctn(5366))))))))
+// I1Dfundclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(303(line=11,offs=1)--879(line=30,offs=8)))
 // I1FUNDCL
-function diagnostic20_d2conlst_206(arg1, arg2)
+function diagnostic20_d2conlst_306(arg1, arg2)
 { // fun
-  let jsx106tnm11711 = arg1
-  let jsx106tnm11712 = arg2
+  let jsx104tnm11711 = arg1
+  let jsx104tnm11712 = arg2
   // I1CMP:start
-  let jsx106tnm11713 = XATSTUP0([])
-  // I1CMP:return:jsx106tnm11713
-  return jsx106tnm11713
-} // endfun(diagnostic20_d2conlst_206)
-// I1Dfundclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(843(line=30,offs=1)--915(line=31,offs=5)))
-// I1FUNDCL
-function diagnostic20_s2cstlst_846(arg1, arg2)
-{ // fun
-  let jsx106tnm11714 = arg1
-  let jsx106tnm11715 = arg2
-  // I1CMP:start
-  let jsx106tnm11716 = XATSTUP0([])
-  // I1CMP:return:jsx106tnm11716
-  return jsx106tnm11716
-} // endfun(diagnostic20_s2cstlst_846)
-// I1Dlocal0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1667(line=57,offs=1)--4380(line=146,offs=4)))
-// I1Dfundclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1674(line=59,offs=1)--3809(line=121,offs=8)))
-// I1FUNDCL
-function auxmain_1677(arg1, arg2)
-{ // fun
-  let jsx106tnm11717 = arg1
-  let jsx106tnm11718 = arg2
-  // I1CMP:start
-  let jsx106tnm11719 = XATSDAPP(d2ecl_get_node_27640(jsx106tnm11718))
-  let jsx106tnm11930 // cas
+  let jsx104tnm11735 // cas
   do {
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11720);I0Pdapp(I0Pcon(D2Cthen0(893));$list(I0Pvar(dcls(5725))));$list(dcls(5725)I1Vp1cn(I0Pcon(D2Cthen0(893));I1Vtnm(I1TNM(11720));0))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cthen0",28))) { // gpt
-      let jsx106tnm11720 = jsx106tnm11719
-      let jsx106tnm11723 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11713);I0Pdapp(I0Pcon(list_nil(8));$list());$list()))
+    if (XATS000_ctgeq(jsx104tnm11712, XATSCTAG("list_nil",0))) { // gpt
+      let jsx104tnm11713 = jsx104tnm11712
+      let jsx104tnm11714 = XATSTUP0([])
+      jsx104tnm11735 = jsx104tnm11714
+      break // cls
+    } // gpt
+    // } // cls
+    // { // cls
+    // I1GPTpat(I1BNDcons(I1TNM(11715);I0Pdapp(I0Pcon(list_cons(9));$list(I0Pvar(d2c1(5719)),I0Pvar(d2cs(5720))));$list(d2c1(5719)I1Vp1cn(I0Pcon(list_cons(9));I1Vtnm(I1TNM(11715));0),d2cs(5720)I1Vp1cn(I0Pcon(list_cons(9));I1Vtnm(I1TNM(11715));1))))
+    if (XATS000_ctgeq(jsx104tnm11712, XATSCTAG("list_cons",1))) { // gpt
+      let jsx104tnm11715 = jsx104tnm11712
+      let jsx104tnm11734 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1780(line=62,offs=7)--1821(line=62,offs=48)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(452(line=16,offs=7)--474(line=16,offs=29)))
         // I1VALDCL
-        let jsx106tnm11722
-        let jsx106tnm11721 = XATSDAPP(diagnostic20_d2eclist_1474(jsx106tnm11717, XATSP1CN("D2Cthen0", jsx106tnm11720[0+1])))
-        jsx106tnm11722 = jsx106tnm11721
+        let jsx104tnm11717
+        let jsx104tnm11716 = XATSDAPP(d2con_get_lctn_8279(XATSP1CN("list_cons", jsx104tnm11715[0+1])))
+        jsx104tnm11717 = jsx104tnm11716
         XATS000_patck(true)
-        jsx106tnm11723 = []
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(481(line=17,offs=7)--503(line=17,offs=29)))
+        // I1VALDCL
+        let jsx104tnm11719
+        let jsx104tnm11718 = XATSDAPP(d2con_get_styp_8468(XATSP1CN("list_cons", jsx104tnm11715[0+1])))
+        jsx104tnm11719 = jsx104tnm11718
+        XATS000_patck(true)
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(510(line=18,offs=7)--656(line=22,offs=42)))
+        // I1VALDCL
+        let jsx104tnm11726
+        let jsx104tnm11720 = XATSDAPP(loctn_get_lsrc_3058(jsx104tnm11717))
+        let jsx104tnm11725 // cas
+        do {
+          // { // cls
+          // I1GPTpat(I1BNDcons(I1TNM(11721);I0Pdapp(I0Pcon(LCSRCnone0(71));$list());$list()))
+          if (XATS000_ctgeq(jsx104tnm11720, XATSCTAG("LCSRCnone0",0))) { // gpt
+            let jsx104tnm11721 = jsx104tnm11720
+            jsx104tnm11725 = XATSSTRN("none")
+            break // cls
+          } // gpt
+          // } // cls
+          // { // cls
+          // I1GPTpat(I1BNDcons(I1TNM(11722);I0Pdapp(I0Pcon(LCSRCsome1(72));$list(I0Pvar(str(5724))));$list(str(5724)I1Vp1cn(I0Pcon(LCSRCsome1(72));I1Vtnm(I1TNM(11722));0))))
+          if (XATS000_ctgeq(jsx104tnm11720, XATSCTAG("LCSRCsome1",1))) { // gpt
+            let jsx104tnm11722 = jsx104tnm11720
+            jsx104tnm11725 = XATSP1CN("LCSRCsome1", jsx104tnm11722[0+1])
+            break // cls
+          } // gpt
+          // } // cls
+          // { // cls
+          // I1GPTpat(I1BNDcons(I1TNM(11723);I0Pdapp(I0Pcon(LCSRCfpath(73));$list(I0Pvar(path(5725))));$list(path(5725)I1Vp1cn(I0Pcon(LCSRCfpath(73));I1Vtnm(I1TNM(11723));0))))
+          if (XATS000_ctgeq(jsx104tnm11720, XATSCTAG("LCSRCfpath",2))) { // gpt
+            let jsx104tnm11723 = jsx104tnm11720
+            let jsx104tnm11724 = XATSDAPP(fpath_get_fnm1_2863(XATSP1CN("LCSRCfpath", jsx104tnm11723[0+1])))
+            jsx104tnm11725 = jsx104tnm11724
+            break // cls
+          } // gpt
+          // } // cls
+          XATS000_cfail()
+        } while (false) // end-of(do)
+        jsx104tnm11726 = jsx104tnm11725
+        XATS000_patck(true)
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(663(line=23,offs=7)--804(line=27,offs=10)))
+        // I1VALDCL
+        let jsx104tnm11730
+        let jsx104tnm11727 = XATSDAPP(severity_error$make_128())
+        let jsx104tnm11728 = XATSDAPP(range_of_loctn_449(jsx104tnm11717))
+        let jsx104tnm11729 = XATSDAPP(diagnostic_make_512(jsx104tnm11727, jsx104tnm11728, XATSSTRN("diagnostic20_d2conlst"), jsx104tnm11726))
+        jsx104tnm11730 = jsx104tnm11729
+        XATS000_patck(true)
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(811(line=28,offs=7)--831(line=28,offs=27)))
+        // I1VALDCL
+        let jsx104tnm11732
+        let jsx104tnm11731 = XATSDAPP(diagnostics_push_656(jsx104tnm11711, jsx104tnm11730))
+        jsx104tnm11732 = jsx104tnm11731
+        XATS000_patck(true)
+        let jsx104tnm11733 = XATSDAPP(diagnostic20_d2conlst_306(jsx104tnm11711, XATSP1CN("list_cons", jsx104tnm11715[1+1])))
+        jsx104tnm11734 = jsx104tnm11733
       } // endlet
-      jsx106tnm11930 = jsx106tnm11723
+      jsx104tnm11735 = jsx104tnm11734
+      break // cls
+    } // gpt
+    // } // cls
+    XATS000_cfail()
+  } while (false) // end-of(do)
+  // I1CMP:return:jsx104tnm11735
+  return jsx104tnm11735
+} // endfun(diagnostic20_d2conlst_306)
+// I1Dfundclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(881(line=32,offs=1)--1626(line=56,offs=8)))
+// I1FUNDCL
+function diagnostic20_s2cstlst_884(arg1, arg2)
+{ // fun
+  let jsx104tnm11736 = arg1
+  let jsx104tnm11737 = arg2
+  // I1CMP:start
+  let jsx104tnm11768 // cas
+  do {
+    // { // cls
+    // I1GPTpat(I1BNDcons(I1TNM(11738);I0Pdapp(I0Pcon(list_nil(8));$list());$list()))
+    if (XATS000_ctgeq(jsx104tnm11737, XATSCTAG("list_nil",0))) { // gpt
+      let jsx104tnm11738 = jsx104tnm11737
+      let jsx104tnm11739 = XATSTUP0([])
+      jsx104tnm11768 = jsx104tnm11739
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11724);I0Pdapp(I0Pcon(D2Celse1(894));$list(I0Pvar(dcls(5726))));$list(dcls(5726)I1Vp1cn(I0Pcon(D2Celse1(894));I1Vtnm(I1TNM(11724));0))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Celse1",29))) { // gpt
-      let jsx106tnm11724 = jsx106tnm11719
-      let jsx106tnm11727 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11740);I0Pdapp(I0Pcon(list_cons(9));$list(I0Pvar(s2c1(5730)),I0Pvar(s2cs(5731))));$list(s2c1(5730)I1Vp1cn(I0Pcon(list_cons(9));I1Vtnm(I1TNM(11740));0),s2cs(5731)I1Vp1cn(I0Pcon(list_cons(9));I1Vtnm(I1TNM(11740));1))))
+    if (XATS000_ctgeq(jsx104tnm11737, XATSCTAG("list_cons",1))) { // gpt
+      let jsx104tnm11740 = jsx104tnm11737
+      let jsx104tnm11767 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1862(line=65,offs=7)--1903(line=65,offs=48)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1025(line=36,offs=7)--1047(line=36,offs=29)))
         // I1VALDCL
-        let jsx106tnm11726
-        let jsx106tnm11725 = XATSDAPP(diagnostic20_d2eclist_1474(jsx106tnm11717, XATSP1CN("D2Celse1", jsx106tnm11724[0+1])))
-        jsx106tnm11726 = jsx106tnm11725
+        let jsx104tnm11742
+        let jsx104tnm11741 = XATSDAPP(s2cst_get_lctn_6984(XATSP1CN("list_cons", jsx104tnm11740[0+1])))
+        jsx104tnm11742 = jsx104tnm11741
         XATS000_patck(true)
-        jsx106tnm11727 = []
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1054(line=37,offs=7)--1076(line=37,offs=29)))
+        // I1VALDCL
+        let jsx104tnm11744
+        let jsx104tnm11743 = XATSDAPP(s2cst_get_sort_7056(XATSP1CN("list_cons", jsx104tnm11740[0+1])))
+        jsx104tnm11744 = jsx104tnm11743
+        XATS000_patck(true)
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1083(line=38,offs=7)--1105(line=38,offs=29)))
+        // I1VALDCL
+        let jsx104tnm11746
+        let jsx104tnm11745 = XATSDAPP(s2cst_get_d2cs_29492(XATSP1CN("list_cons", jsx104tnm11740[0+1])))
+        jsx104tnm11746 = jsx104tnm11745
+        XATS000_patck(true)
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1112(line=39,offs=7)--1258(line=43,offs=42)))
+        // I1VALDCL
+        let jsx104tnm11753
+        let jsx104tnm11747 = XATSDAPP(loctn_get_lsrc_3058(jsx104tnm11742))
+        let jsx104tnm11752 // cas
+        do {
+          // { // cls
+          // I1GPTpat(I1BNDcons(I1TNM(11748);I0Pdapp(I0Pcon(LCSRCnone0(71));$list());$list()))
+          if (XATS000_ctgeq(jsx104tnm11747, XATSCTAG("LCSRCnone0",0))) { // gpt
+            let jsx104tnm11748 = jsx104tnm11747
+            jsx104tnm11752 = XATSSTRN("none")
+            break // cls
+          } // gpt
+          // } // cls
+          // { // cls
+          // I1GPTpat(I1BNDcons(I1TNM(11749);I0Pdapp(I0Pcon(LCSRCsome1(72));$list(I0Pvar(str(5736))));$list(str(5736)I1Vp1cn(I0Pcon(LCSRCsome1(72));I1Vtnm(I1TNM(11749));0))))
+          if (XATS000_ctgeq(jsx104tnm11747, XATSCTAG("LCSRCsome1",1))) { // gpt
+            let jsx104tnm11749 = jsx104tnm11747
+            jsx104tnm11752 = XATSP1CN("LCSRCsome1", jsx104tnm11749[0+1])
+            break // cls
+          } // gpt
+          // } // cls
+          // { // cls
+          // I1GPTpat(I1BNDcons(I1TNM(11750);I0Pdapp(I0Pcon(LCSRCfpath(73));$list(I0Pvar(path(5737))));$list(path(5737)I1Vp1cn(I0Pcon(LCSRCfpath(73));I1Vtnm(I1TNM(11750));0))))
+          if (XATS000_ctgeq(jsx104tnm11747, XATSCTAG("LCSRCfpath",2))) { // gpt
+            let jsx104tnm11750 = jsx104tnm11747
+            let jsx104tnm11751 = XATSDAPP(fpath_get_fnm1_2863(XATSP1CN("LCSRCfpath", jsx104tnm11750[0+1])))
+            jsx104tnm11752 = jsx104tnm11751
+            break // cls
+          } // gpt
+          // } // cls
+          XATS000_cfail()
+        } while (false) // end-of(do)
+        jsx104tnm11753 = jsx104tnm11752
+        XATS000_patck(true)
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1265(line=44,offs=7)--1406(line=48,offs=10)))
+        // I1VALDCL
+        let jsx104tnm11757
+        let jsx104tnm11754 = XATSDAPP(severity_error$make_128())
+        let jsx104tnm11755 = XATSDAPP(range_of_loctn_449(jsx104tnm11742))
+        let jsx104tnm11756 = XATSDAPP(diagnostic_make_512(jsx104tnm11754, jsx104tnm11755, XATSSTRN("diagnostic20_d2conlst"), jsx104tnm11753))
+        jsx104tnm11757 = jsx104tnm11756
+        XATS000_patck(true)
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1413(line=49,offs=7)--1433(line=49,offs=27)))
+        // I1VALDCL
+        let jsx104tnm11759
+        let jsx104tnm11758 = XATSDAPP(diagnostics_push_656(jsx104tnm11736, jsx104tnm11757))
+        jsx104tnm11759 = jsx104tnm11758
+        XATS000_patck(true)
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1440(line=50,offs=7)--1578(line=54,offs=43)))
+        // I1VALDCL
+        let jsx104tnm11765
+        let jsx104tnm11764 // cas
+        do {
+          // { // cls
+          // I1GPTpat(I1BNDcons(I1TNM(11760);I0Pfree(I0Pdapp(I0Pcon(optn_vt_nil(6));$list()));$list()))
+          if (XATS000_ctgeq(jsx104tnm11746, XATSCTAG("optn_vt_nil",0))) { // gpt
+            let jsx104tnm11760 = jsx104tnm11746
+            let jsx104tnm11761 = XATSTUP0([])
+            jsx104tnm11764 = jsx104tnm11761
+            break // cls
+          } // gpt
+          // } // cls
+          // { // cls
+          // I1GPTpat(I1BNDcons(I1TNM(11762);I0Pfree(I0Pdapp(I0Pcon(optn_vt_cons(7));$list(I0Pvar(d2cs(5739)))));$list(d2cs(5739)I1Vp1cn(I0Pcon(optn_vt_cons(7));I1Vtnm(I1TNM(11762));0))))
+          if (XATS000_ctgeq(jsx104tnm11746, XATSCTAG("optn_vt_cons",1))) { // gpt
+            let jsx104tnm11762 = jsx104tnm11746
+            let jsx104tnm11763 = XATSDAPP(diagnostic20_d2conlst_306(jsx104tnm11736, XATSP1CN("optn_vt_cons", jsx104tnm11762[0+1])))
+            jsx104tnm11764 = jsx104tnm11763
+            break // cls
+          } // gpt
+          // } // cls
+          XATS000_cfail()
+        } while (false) // end-of(do)
+        jsx104tnm11765 = jsx104tnm11764
+        XATS000_patck(true)
+        let jsx104tnm11766 = XATSDAPP(diagnostic20_s2cstlst_884(jsx104tnm11736, XATSP1CN("list_cons", jsx104tnm11740[1+1])))
+        jsx104tnm11767 = jsx104tnm11766
       } // endlet
-      jsx106tnm11930 = jsx106tnm11727
+      jsx104tnm11768 = jsx104tnm11767
       break // cls
     } // gpt
     // } // cls
+    XATS000_cfail()
+  } while (false) // end-of(do)
+  // I1CMP:return:jsx104tnm11768
+  return jsx104tnm11768
+} // endfun(diagnostic20_s2cstlst_884)
+// I1Dlocal0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1628(line=58,offs=1)--4148(line=140,offs=4)))
+// I1Dfundclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1635(line=60,offs=1)--3785(line=122,offs=8)))
+// I1FUNDCL
+function diagnostic20_d2ecl_aux_1638(arg1, arg2)
+{ // fun
+  let jsx104tnm11769 = arg1
+  let jsx104tnm11770 = arg2
+  // I1CMP:start
+  let jsx104tnm11771 = XATSDAPP(d2ecl_get_node_27640(jsx104tnm11770))
+  let jsx104tnm11982 // cas
+  do {
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11728);I0Pdapp(I0Pcon(D2Cstatic(866));$list(I0Pvar(tknd(5727)),I0Pvar(dcl1(5728))));$list(tknd(5727)I1Vp1cn(I0Pcon(D2Cstatic(866));I1Vtnm(I1TNM(11728));0),dcl1(5728)I1Vp1cn(I0Pcon(D2Cstatic(866));I1Vtnm(I1TNM(11728));1))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cstatic",1))) { // gpt
-      let jsx106tnm11728 = jsx106tnm11719
-      let jsx106tnm11731 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11772);I0Pdapp(I0Pcon(D2Cthen0(893));$list(I0Pvar(dcls(5743))));$list(dcls(5743)I1Vp1cn(I0Pcon(D2Cthen0(893));I1Vtnm(I1TNM(11772));0))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cthen0",28))) { // gpt
+      let jsx104tnm11772 = jsx104tnm11771
+      let jsx104tnm11775 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1951(line=68,offs=7)--1989(line=68,offs=45)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1756(line=63,offs=7)--1797(line=63,offs=48)))
         // I1VALDCL
-        let jsx106tnm11730
-        let jsx106tnm11729 = XATSDAPP(diagnostic20_d2ecl_924(jsx106tnm11717, XATSP1CN("D2Cstatic", jsx106tnm11728[1+1])))
-        jsx106tnm11730 = jsx106tnm11729
+        let jsx104tnm11774
+        let jsx104tnm11773 = XATSDAPP(diagnostic20_d2eclist_1474(jsx104tnm11769, XATSP1CN("D2Cthen0", jsx104tnm11772[0+1])))
+        jsx104tnm11774 = jsx104tnm11773
         XATS000_patck(true)
-        jsx106tnm11731 = []
+        jsx104tnm11775 = []
       } // endlet
-      jsx106tnm11930 = jsx106tnm11731
+      jsx104tnm11982 = jsx104tnm11775
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11732);I0Pdapp(I0Pcon(D2Cextern(867));$list(I0Pvar(tknd(5729)),I0Pvar(dcl1(5730))));$list(tknd(5729)I1Vp1cn(I0Pcon(D2Cextern(867));I1Vtnm(I1TNM(11732));0),dcl1(5730)I1Vp1cn(I0Pcon(D2Cextern(867));I1Vtnm(I1TNM(11732));1))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cextern",2))) { // gpt
-      let jsx106tnm11732 = jsx106tnm11719
-      let jsx106tnm11735 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11776);I0Pdapp(I0Pcon(D2Celse1(894));$list(I0Pvar(dcls(5744))));$list(dcls(5744)I1Vp1cn(I0Pcon(D2Celse1(894));I1Vtnm(I1TNM(11776));0))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Celse1",29))) { // gpt
+      let jsx104tnm11776 = jsx104tnm11771
+      let jsx104tnm11779 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2037(line=71,offs=7)--2075(line=71,offs=45)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1838(line=66,offs=7)--1879(line=66,offs=48)))
         // I1VALDCL
-        let jsx106tnm11734
-        let jsx106tnm11733 = XATSDAPP(diagnostic20_d2ecl_924(jsx106tnm11717, XATSP1CN("D2Cextern", jsx106tnm11732[1+1])))
-        jsx106tnm11734 = jsx106tnm11733
+        let jsx104tnm11778
+        let jsx104tnm11777 = XATSDAPP(diagnostic20_d2eclist_1474(jsx104tnm11769, XATSP1CN("D2Celse1", jsx104tnm11776[0+1])))
+        jsx104tnm11778 = jsx104tnm11777
         XATS000_patck(true)
-        jsx106tnm11735 = []
+        jsx104tnm11779 = []
       } // endlet
-      jsx106tnm11930 = jsx106tnm11735
+      jsx104tnm11982 = jsx104tnm11779
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11736);I0Pdapp(I0Pcon(D2Clocal0(868));$list(I0Pvar(dcs1(5731)),I0Pvar(dcs2(5732))));$list(dcs1(5731)I1Vp1cn(I0Pcon(D2Clocal0(868));I1Vtnm(I1TNM(11736));0),dcs2(5732)I1Vp1cn(I0Pcon(D2Clocal0(868));I1Vtnm(I1TNM(11736));1))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Clocal0",3))) { // gpt
-      let jsx106tnm11736 = jsx106tnm11719
-      let jsx106tnm11741 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11780);I0Pdapp(I0Pcon(D2Cstatic(866));$list(I0Pvar(tknd(5745)),I0Pvar(dcl1(5746))));$list(tknd(5745)I1Vp1cn(I0Pcon(D2Cstatic(866));I1Vtnm(I1TNM(11780));0),dcl1(5746)I1Vp1cn(I0Pcon(D2Cstatic(866));I1Vtnm(I1TNM(11780));1))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cstatic",1))) { // gpt
+      let jsx104tnm11780 = jsx104tnm11771
+      let jsx104tnm11783 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2123(line=74,offs=7)--2164(line=74,offs=48)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(1927(line=69,offs=7)--1965(line=69,offs=45)))
         // I1VALDCL
-        let jsx106tnm11738
-        let jsx106tnm11737 = XATSDAPP(diagnostic20_d2eclist_1474(jsx106tnm11717, XATSP1CN("D2Clocal0", jsx106tnm11736[0+1])))
-        jsx106tnm11738 = jsx106tnm11737
+        let jsx104tnm11782
+        let jsx104tnm11781 = XATSDAPP(diagnostic20_d2ecl_924(jsx104tnm11769, XATSP1CN("D2Cstatic", jsx104tnm11780[1+1])))
+        jsx104tnm11782 = jsx104tnm11781
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2171(line=75,offs=7)--2212(line=75,offs=48)))
-        // I1VALDCL
-        let jsx106tnm11740
-        let jsx106tnm11739 = XATSDAPP(diagnostic20_d2eclist_1474(jsx106tnm11717, XATSP1CN("D2Clocal0", jsx106tnm11736[1+1])))
-        jsx106tnm11740 = jsx106tnm11739
-        XATS000_patck(true)
-        jsx106tnm11741 = []
+        jsx104tnm11783 = []
       } // endlet
-      jsx106tnm11930 = jsx106tnm11741
+      jsx104tnm11982 = jsx104tnm11783
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11742);I0Pdap1(I0Pcon(D2Cabssort(869)));$list()))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cabssort",4))) { // gpt
-      let jsx106tnm11742 = jsx106tnm11719
-      let jsx106tnm11743 = XATSTUP0([])
-      jsx106tnm11930 = jsx106tnm11743
-      break // cls
-    } // gpt
-    // } // cls
-    // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11744);I0Pdapp(I0Pcon(D2Cstacst0(870));$list(I0Pvar(s2c1(5733)),I0Pvar(s2t2(5734))));$list(s2c1(5733)I1Vp1cn(I0Pcon(D2Cstacst0(870));I1Vtnm(I1TNM(11744));0),s2t2(5734)I1Vp1cn(I0Pcon(D2Cstacst0(870));I1Vtnm(I1TNM(11744));1))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cstacst0",5))) { // gpt
-      let jsx106tnm11744 = jsx106tnm11719
-      let jsx106tnm11745 = XATSTUP0([])
-      jsx106tnm11930 = jsx106tnm11745
-      break // cls
-    } // gpt
-    // } // cls
-    // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11746);I0Pdapp(I0Pcon(D2Csortdef(871));$list(I0Pvar(sym1(5735)),I0Pvar(s2tx(5736))));$list(sym1(5735)I1Vp1cn(I0Pcon(D2Csortdef(871));I1Vtnm(I1TNM(11746));0),s2tx(5736)I1Vp1cn(I0Pcon(D2Csortdef(871));I1Vtnm(I1TNM(11746));1))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Csortdef",6))) { // gpt
-      let jsx106tnm11746 = jsx106tnm11719
-      let jsx106tnm11747 = XATSTUP0([])
-      jsx106tnm11930 = jsx106tnm11747
-      break // cls
-    } // gpt
-    // } // cls
-    // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11748);I0Pdapp(I0Pcon(D2Csexpdef(872));$list(I0Pvar(s2c1(5737)),I0Pvar(s2e2(5738))));$list(s2c1(5737)I1Vp1cn(I0Pcon(D2Csexpdef(872));I1Vtnm(I1TNM(11748));0),s2e2(5738)I1Vp1cn(I0Pcon(D2Csexpdef(872));I1Vtnm(I1TNM(11748));1))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Csexpdef",7))) { // gpt
-      let jsx106tnm11748 = jsx106tnm11719
-      let jsx106tnm11749 = XATSTUP0([])
-      jsx106tnm11930 = jsx106tnm11749
-      break // cls
-    } // gpt
-    // } // cls
-    // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11750);I0Pdapp(I0Pcon(D2Cinclude(877));$list(I0Pvar(knd0(5739)),I0Pvar(tknd(5740)),I0Pvar(gsrc(5741)),I0Pvar(fopt(5742)),I0Pvar(dopt(5743))));$list(knd0(5739)I1Vp1cn(I0Pcon(D2Cinclude(877));I1Vtnm(I1TNM(11750));0),tknd(5740)I1Vp1cn(I0Pcon(D2Cinclude(877));I1Vtnm(I1TNM(11750));1),gsrc(5741)I1Vp1cn(I0Pcon(D2Cinclude(877));I1Vtnm(I1TNM(11750));2),fopt(5742)I1Vp1cn(I0Pcon(D2Cinclude(877));I1Vtnm(I1TNM(11750));3),dopt(5743)I1Vp1cn(I0Pcon(D2Cinclude(877));I1Vtnm(I1TNM(11750));4))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cinclude",12))) { // gpt
-      let jsx106tnm11750 = jsx106tnm11719
-      let jsx106tnm11753 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11784);I0Pdapp(I0Pcon(D2Cextern(867));$list(I0Pvar(tknd(5747)),I0Pvar(dcl1(5748))));$list(tknd(5747)I1Vp1cn(I0Pcon(D2Cextern(867));I1Vtnm(I1TNM(11784));0),dcl1(5748)I1Vp1cn(I0Pcon(D2Cextern(867));I1Vtnm(I1TNM(11784));1))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cextern",2))) { // gpt
+      let jsx104tnm11784 = jsx104tnm11771
+      let jsx104tnm11787 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2401(line=82,offs=7)--2445(line=82,offs=51)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2013(line=72,offs=7)--2051(line=72,offs=45)))
         // I1VALDCL
-        let jsx106tnm11752
-        let jsx106tnm11751 = XATSDAPP(diagnostic20_d2eclistopt_2056(jsx106tnm11717, XATSP1CN("D2Cinclude", jsx106tnm11750[4+1])))
-        jsx106tnm11752 = jsx106tnm11751
+        let jsx104tnm11786
+        let jsx104tnm11785 = XATSDAPP(diagnostic20_d2ecl_924(jsx104tnm11769, XATSP1CN("D2Cextern", jsx104tnm11784[1+1])))
+        jsx104tnm11786 = jsx104tnm11785
         XATS000_patck(true)
-        jsx106tnm11753 = []
+        jsx104tnm11787 = []
       } // endlet
-      jsx106tnm11930 = jsx106tnm11753
+      jsx104tnm11982 = jsx104tnm11787
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11754);I0Pdapp(I0Pcon(D2Cvaldclst(882));$list(I0Pvar(tknd(5744)),I0Pvar(d2vs(5745))));$list(tknd(5744)I1Vp1cn(I0Pcon(D2Cvaldclst(882));I1Vtnm(I1TNM(11754));0),d2vs(5745)I1Vp1cn(I0Pcon(D2Cvaldclst(882));I1Vtnm(I1TNM(11754));1))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cvaldclst",17))) { // gpt
-      let jsx106tnm11754 = jsx106tnm11719
-      let jsx106tnm11757 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11788);I0Pdapp(I0Pcon(D2Clocal0(868));$list(I0Pvar(dcs1(5749)),I0Pvar(dcs2(5750))));$list(dcs1(5749)I1Vp1cn(I0Pcon(D2Clocal0(868));I1Vtnm(I1TNM(11788));0),dcs2(5750)I1Vp1cn(I0Pcon(D2Clocal0(868));I1Vtnm(I1TNM(11788));1))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Clocal0",3))) { // gpt
+      let jsx104tnm11788 = jsx104tnm11771
+      let jsx104tnm11793 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2495(line=85,offs=7)--2539(line=85,offs=51)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2099(line=75,offs=7)--2140(line=75,offs=48)))
         // I1VALDCL
-        let jsx106tnm11756
-        let jsx106tnm11755 = XATSDAPP(diagnostic20_d2valdclist_1752(jsx106tnm11717, XATSP1CN("D2Cvaldclst", jsx106tnm11754[1+1])))
-        jsx106tnm11756 = jsx106tnm11755
+        let jsx104tnm11790
+        let jsx104tnm11789 = XATSDAPP(diagnostic20_d2eclist_1474(jsx104tnm11769, XATSP1CN("D2Clocal0", jsx104tnm11788[0+1])))
+        jsx104tnm11790 = jsx104tnm11789
         XATS000_patck(true)
-        jsx106tnm11757 = []
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2147(line=76,offs=7)--2188(line=76,offs=48)))
+        // I1VALDCL
+        let jsx104tnm11792
+        let jsx104tnm11791 = XATSDAPP(diagnostic20_d2eclist_1474(jsx104tnm11769, XATSP1CN("D2Clocal0", jsx104tnm11788[1+1])))
+        jsx104tnm11792 = jsx104tnm11791
+        XATS000_patck(true)
+        jsx104tnm11793 = []
       } // endlet
-      jsx106tnm11930 = jsx106tnm11757
+      jsx104tnm11982 = jsx104tnm11793
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11758);I0Pdapp(I0Pcon(D2Cvardclst(883));$list(I0Pvar(tknd(5746)),I0Pvar(d2vs(5747))));$list(tknd(5746)I1Vp1cn(I0Pcon(D2Cvardclst(883));I1Vtnm(I1TNM(11758));0),d2vs(5747)I1Vp1cn(I0Pcon(D2Cvardclst(883));I1Vtnm(I1TNM(11758));1))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cvardclst",18))) { // gpt
-      let jsx106tnm11758 = jsx106tnm11719
-      let jsx106tnm11761 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11794);I0Pdap1(I0Pcon(D2Cabssort(869)));$list()))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cabssort",4))) { // gpt
+      let jsx104tnm11794 = jsx104tnm11771
+      let jsx104tnm11795 = XATSTUP0([])
+      jsx104tnm11982 = jsx104tnm11795
+      break // cls
+    } // gpt
+    // } // cls
+    // { // cls
+    // I1GPTpat(I1BNDcons(I1TNM(11796);I0Pdapp(I0Pcon(D2Cstacst0(870));$list(I0Pvar(s2c1(5751)),I0Pvar(s2t2(5752))));$list(s2c1(5751)I1Vp1cn(I0Pcon(D2Cstacst0(870));I1Vtnm(I1TNM(11796));0),s2t2(5752)I1Vp1cn(I0Pcon(D2Cstacst0(870));I1Vtnm(I1TNM(11796));1))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cstacst0",5))) { // gpt
+      let jsx104tnm11796 = jsx104tnm11771
+      let jsx104tnm11797 = XATSTUP0([])
+      jsx104tnm11982 = jsx104tnm11797
+      break // cls
+    } // gpt
+    // } // cls
+    // { // cls
+    // I1GPTpat(I1BNDcons(I1TNM(11798);I0Pdapp(I0Pcon(D2Csortdef(871));$list(I0Pvar(sym1(5753)),I0Pvar(s2tx(5754))));$list(sym1(5753)I1Vp1cn(I0Pcon(D2Csortdef(871));I1Vtnm(I1TNM(11798));0),s2tx(5754)I1Vp1cn(I0Pcon(D2Csortdef(871));I1Vtnm(I1TNM(11798));1))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Csortdef",6))) { // gpt
+      let jsx104tnm11798 = jsx104tnm11771
+      let jsx104tnm11799 = XATSTUP0([])
+      jsx104tnm11982 = jsx104tnm11799
+      break // cls
+    } // gpt
+    // } // cls
+    // { // cls
+    // I1GPTpat(I1BNDcons(I1TNM(11800);I0Pdapp(I0Pcon(D2Csexpdef(872));$list(I0Pvar(s2c1(5755)),I0Pvar(s2e2(5756))));$list(s2c1(5755)I1Vp1cn(I0Pcon(D2Csexpdef(872));I1Vtnm(I1TNM(11800));0),s2e2(5756)I1Vp1cn(I0Pcon(D2Csexpdef(872));I1Vtnm(I1TNM(11800));1))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Csexpdef",7))) { // gpt
+      let jsx104tnm11800 = jsx104tnm11771
+      let jsx104tnm11801 = XATSTUP0([])
+      jsx104tnm11982 = jsx104tnm11801
+      break // cls
+    } // gpt
+    // } // cls
+    // { // cls
+    // I1GPTpat(I1BNDcons(I1TNM(11802);I0Pdapp(I0Pcon(D2Cinclude(877));$list(I0Pvar(knd0(5757)),I0Pvar(tknd(5758)),I0Pvar(gsrc(5759)),I0Pvar(fopt(5760)),I0Pvar(dopt(5761))));$list(knd0(5757)I1Vp1cn(I0Pcon(D2Cinclude(877));I1Vtnm(I1TNM(11802));0),tknd(5758)I1Vp1cn(I0Pcon(D2Cinclude(877));I1Vtnm(I1TNM(11802));1),gsrc(5759)I1Vp1cn(I0Pcon(D2Cinclude(877));I1Vtnm(I1TNM(11802));2),fopt(5760)I1Vp1cn(I0Pcon(D2Cinclude(877));I1Vtnm(I1TNM(11802));3),dopt(5761)I1Vp1cn(I0Pcon(D2Cinclude(877));I1Vtnm(I1TNM(11802));4))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cinclude",12))) { // gpt
+      let jsx104tnm11802 = jsx104tnm11771
+      let jsx104tnm11805 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2589(line=88,offs=7)--2633(line=88,offs=51)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2377(line=83,offs=7)--2421(line=83,offs=51)))
         // I1VALDCL
-        let jsx106tnm11760
-        let jsx106tnm11759 = XATSDAPP(diagnostic20_d2vardclist_1814(jsx106tnm11717, XATSP1CN("D2Cvardclst", jsx106tnm11758[1+1])))
-        jsx106tnm11760 = jsx106tnm11759
+        let jsx104tnm11804
+        let jsx104tnm11803 = XATSDAPP(diagnostic20_d2eclistopt_2056(jsx104tnm11769, XATSP1CN("D2Cinclude", jsx104tnm11802[4+1])))
+        jsx104tnm11804 = jsx104tnm11803
         XATS000_patck(true)
-        jsx106tnm11761 = []
+        jsx104tnm11805 = []
       } // endlet
-      jsx106tnm11930 = jsx106tnm11761
+      jsx104tnm11982 = jsx104tnm11805
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11762);I0Pdapp(I0Pcon(D2Cfundclst(884));$list(I0Pvar(tknd(5748)),I0Pvar(tqas(5749)),I0Pvar(d2cs(5750)),I0Pvar(d2fs(5751))));$list(tknd(5748)I1Vp1cn(I0Pcon(D2Cfundclst(884));I1Vtnm(I1TNM(11762));0),tqas(5749)I1Vp1cn(I0Pcon(D2Cfundclst(884));I1Vtnm(I1TNM(11762));1),d2cs(5750)I1Vp1cn(I0Pcon(D2Cfundclst(884));I1Vtnm(I1TNM(11762));2),d2fs(5751)I1Vp1cn(I0Pcon(D2Cfundclst(884));I1Vtnm(I1TNM(11762));3))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cfundclst",19))) { // gpt
-      let jsx106tnm11762 = jsx106tnm11719
-      let jsx106tnm11765 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11806);I0Pdapp(I0Pcon(D2Cvaldclst(882));$list(I0Pvar(tknd(5762)),I0Pvar(d2vs(5763))));$list(tknd(5762)I1Vp1cn(I0Pcon(D2Cvaldclst(882));I1Vtnm(I1TNM(11806));0),d2vs(5763)I1Vp1cn(I0Pcon(D2Cvaldclst(882));I1Vtnm(I1TNM(11806));1))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cvaldclst",17))) { // gpt
+      let jsx104tnm11806 = jsx104tnm11771
+      let jsx104tnm11809 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2793(line=93,offs=7)--2837(line=93,offs=51)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2471(line=86,offs=7)--2515(line=86,offs=51)))
         // I1VALDCL
-        let jsx106tnm11764
-        let jsx106tnm11763 = XATSDAPP(diagnostic20_d2fundclist_1876(jsx106tnm11717, XATSP1CN("D2Cfundclst", jsx106tnm11762[3+1])))
-        jsx106tnm11764 = jsx106tnm11763
+        let jsx104tnm11808
+        let jsx104tnm11807 = XATSDAPP(diagnostic20_d2valdclist_1752(jsx104tnm11769, XATSP1CN("D2Cvaldclst", jsx104tnm11806[1+1])))
+        jsx104tnm11808 = jsx104tnm11807
         XATS000_patck(true)
-        jsx106tnm11765 = []
+        jsx104tnm11809 = []
       } // endlet
-      jsx106tnm11930 = jsx106tnm11765
+      jsx104tnm11982 = jsx104tnm11809
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11766);I0Pdapp(I0Pcon(D2Cimplmnt0(885));$list(I0Pvar(tknd(5752)),I0Pvar(sqas(5753)),I0Pvar(tqas(5754)),I0Pvar(dimp(5755)),I0Pvar(tias(5756)),I0Pvar(f2as(5757)),I0Pvar(sres(5758)),I0Pvar(dexp(5759))));$list(tknd(5752)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11766));0),sqas(5753)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11766));1),tqas(5754)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11766));2),dimp(5755)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11766));3),tias(5756)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11766));4),f2as(5757)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11766));5),sres(5758)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11766));6),dexp(5759)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11766));7))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cimplmnt0",20))) { // gpt
-      let jsx106tnm11766 = jsx106tnm11719
-      let jsx106tnm11771 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11810);I0Pdapp(I0Pcon(D2Cvardclst(883));$list(I0Pvar(tknd(5764)),I0Pvar(d2vs(5765))));$list(tknd(5764)I1Vp1cn(I0Pcon(D2Cvardclst(883));I1Vtnm(I1TNM(11810));0),d2vs(5765)I1Vp1cn(I0Pcon(D2Cvardclst(883));I1Vtnm(I1TNM(11810));1))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cvardclst",18))) { // gpt
+      let jsx104tnm11810 = jsx104tnm11771
+      let jsx104tnm11813 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3076(line=99,offs=7)--3117(line=99,offs=48)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2565(line=89,offs=7)--2609(line=89,offs=51)))
         // I1VALDCL
-        let jsx106tnm11768
-        let jsx106tnm11767 = XATSDAPP(diagnostic20_f2arglst_1307(jsx106tnm11717, XATSP1CN("D2Cimplmnt0", jsx106tnm11766[5+1])))
-        jsx106tnm11768 = jsx106tnm11767
+        let jsx104tnm11812
+        let jsx104tnm11811 = XATSDAPP(diagnostic20_d2vardclist_1814(jsx104tnm11769, XATSP1CN("D2Cvardclst", jsx104tnm11810[1+1])))
+        jsx104tnm11812 = jsx104tnm11811
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3172(line=101,offs=7)--3210(line=101,offs=45)))
-        // I1VALDCL
-        let jsx106tnm11770
-        let jsx106tnm11769 = XATSDAPP(diagnostic20_d2exp_577(jsx106tnm11717, XATSP1CN("D2Cimplmnt0", jsx106tnm11766[7+1])))
-        jsx106tnm11770 = jsx106tnm11769
-        XATS000_patck(true)
-        jsx106tnm11771 = []
+        jsx104tnm11813 = []
       } // endlet
-      jsx106tnm11930 = jsx106tnm11771
+      jsx104tnm11982 = jsx104tnm11813
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11772);I0Pdapp(I0Pcon(D2Cexcptcon(886));$list(I0Pvar(d1cl(5760)),I0Pvar(d2cs(5761))));$list(d1cl(5760)I1Vp1cn(I0Pcon(D2Cexcptcon(886));I1Vtnm(I1TNM(11772));0),d2cs(5761)I1Vp1cn(I0Pcon(D2Cexcptcon(886));I1Vtnm(I1TNM(11772));1))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cexcptcon",21))) { // gpt
-      let jsx106tnm11772 = jsx106tnm11719
-      let jsx106tnm11775 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11814);I0Pdapp(I0Pcon(D2Cfundclst(884));$list(I0Pvar(tknd(5766)),I0Pvar(tqas(5767)),I0Pvar(d2cs(5768)),I0Pvar(d2fs(5769))));$list(tknd(5766)I1Vp1cn(I0Pcon(D2Cfundclst(884));I1Vtnm(I1TNM(11814));0),tqas(5767)I1Vp1cn(I0Pcon(D2Cfundclst(884));I1Vtnm(I1TNM(11814));1),d2cs(5768)I1Vp1cn(I0Pcon(D2Cfundclst(884));I1Vtnm(I1TNM(11814));2),d2fs(5769)I1Vp1cn(I0Pcon(D2Cfundclst(884));I1Vtnm(I1TNM(11814));3))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cfundclst",19))) { // gpt
+      let jsx104tnm11814 = jsx104tnm11771
+      let jsx104tnm11817 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3260(line=104,offs=7)--3301(line=104,offs=48)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(2769(line=94,offs=7)--2813(line=94,offs=51)))
         // I1VALDCL
-        let jsx106tnm11774
-        let jsx106tnm11773 = XATSDAPP(diagnostic20_d2conlst_206(jsx106tnm11717, XATSP1CN("D2Cexcptcon", jsx106tnm11772[1+1])))
-        jsx106tnm11774 = jsx106tnm11773
+        let jsx104tnm11816
+        let jsx104tnm11815 = XATSDAPP(diagnostic20_d2fundclist_1876(jsx104tnm11769, XATSP1CN("D2Cfundclst", jsx104tnm11814[3+1])))
+        jsx104tnm11816 = jsx104tnm11815
         XATS000_patck(true)
-        jsx106tnm11775 = []
+        jsx104tnm11817 = []
       } // endlet
-      jsx106tnm11930 = jsx106tnm11775
+      jsx104tnm11982 = jsx104tnm11817
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11776);I0Pdapp(I0Pcon(D2Cdatatype(887));$list(I0Pvar(d1cl(5762)),I0Pvar(s2cs(5763))));$list(d1cl(5762)I1Vp1cn(I0Pcon(D2Cdatatype(887));I1Vtnm(I1TNM(11776));0),s2cs(5763)I1Vp1cn(I0Pcon(D2Cdatatype(887));I1Vtnm(I1TNM(11776));1))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cdatatype",22))) { // gpt
-      let jsx106tnm11776 = jsx106tnm11719
-      let jsx106tnm11779 // let
+    // I1GPTpat(I1BNDcons(I1TNM(11818);I0Pdapp(I0Pcon(D2Cimplmnt0(885));$list(I0Pvar(tknd(5770)),I0Pvar(sqas(5771)),I0Pvar(tqas(5772)),I0Pvar(dimp(5773)),I0Pvar(tias(5774)),I0Pvar(f2as(5775)),I0Pvar(sres(5776)),I0Pvar(dexp(5777))));$list(tknd(5770)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11818));0),sqas(5771)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11818));1),tqas(5772)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11818));2),dimp(5773)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11818));3),tias(5774)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11818));4),f2as(5775)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11818));5),sres(5776)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11818));6),dexp(5777)I1Vp1cn(I0Pcon(D2Cimplmnt0(885));I1Vtnm(I1TNM(11818));7))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cimplmnt0",20))) { // gpt
+      let jsx104tnm11818 = jsx104tnm11771
+      let jsx104tnm11823 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3351(line=107,offs=7)--3392(line=107,offs=48)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3052(line=100,offs=7)--3093(line=100,offs=48)))
         // I1VALDCL
-        let jsx106tnm11778
-        let jsx106tnm11777 = XATSDAPP(diagnostic20_s2cstlst_846(jsx106tnm11717, XATSP1CN("D2Cdatatype", jsx106tnm11776[1+1])))
-        jsx106tnm11778 = jsx106tnm11777
+        let jsx104tnm11820
+        let jsx104tnm11819 = XATSDAPP(diagnostic20_f2arglst_1307(jsx104tnm11769, XATSP1CN("D2Cimplmnt0", jsx104tnm11818[5+1])))
+        jsx104tnm11820 = jsx104tnm11819
         XATS000_patck(true)
-        jsx106tnm11779 = []
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3148(line=102,offs=7)--3186(line=102,offs=45)))
+        // I1VALDCL
+        let jsx104tnm11822
+        let jsx104tnm11821 = XATSDAPP(diagnostic20_d2exp_577(jsx104tnm11769, XATSP1CN("D2Cimplmnt0", jsx104tnm11818[7+1])))
+        jsx104tnm11822 = jsx104tnm11821
+        XATS000_patck(true)
+        jsx104tnm11823 = []
       } // endlet
-      jsx106tnm11930 = jsx106tnm11779
+      jsx104tnm11982 = jsx104tnm11823
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11780);I0Pdap1(I0Pcon(D2Cnone0(889)));$list()))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cnone0",24))) { // gpt
-      let jsx106tnm11780 = jsx106tnm11719
-      let jsx106tnm11781 = XATSTUP0([])
-      jsx106tnm11930 = jsx106tnm11781
+    // I1GPTpat(I1BNDcons(I1TNM(11824);I0Pdapp(I0Pcon(D2Cexcptcon(886));$list(I0Pvar(d1cl(5778)),I0Pvar(d2cs(5779))));$list(d1cl(5778)I1Vp1cn(I0Pcon(D2Cexcptcon(886));I1Vtnm(I1TNM(11824));0),d2cs(5779)I1Vp1cn(I0Pcon(D2Cexcptcon(886));I1Vtnm(I1TNM(11824));1))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cexcptcon",21))) { // gpt
+      let jsx104tnm11824 = jsx104tnm11771
+      let jsx104tnm11827 // let
+      { // let
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3236(line=105,offs=7)--3277(line=105,offs=48)))
+        // I1VALDCL
+        let jsx104tnm11826
+        let jsx104tnm11825 = XATSDAPP(diagnostic20_d2conlst_306(jsx104tnm11769, XATSP1CN("D2Cexcptcon", jsx104tnm11824[1+1])))
+        jsx104tnm11826 = jsx104tnm11825
+        XATS000_patck(true)
+        jsx104tnm11827 = []
+      } // endlet
+      jsx104tnm11982 = jsx104tnm11827
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11782);I0Pdapp(I0Pcon(D2Cnone1(890));$list(I0Pvar(d1cl(5764))));$list(d1cl(5764)I1Vp1cn(I0Pcon(D2Cnone1(890));I1Vtnm(I1TNM(11782));0))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cnone1",25))) { // gpt
-      let jsx106tnm11782 = jsx106tnm11719
-      let jsx106tnm11783 = XATSTUP0([])
-      jsx106tnm11930 = jsx106tnm11783
+    // I1GPTpat(I1BNDcons(I1TNM(11828);I0Pdapp(I0Pcon(D2Cdatatype(887));$list(I0Pvar(d1cl(5780)),I0Pvar(s2cs(5781))));$list(d1cl(5780)I1Vp1cn(I0Pcon(D2Cdatatype(887));I1Vtnm(I1TNM(11828));0),s2cs(5781)I1Vp1cn(I0Pcon(D2Cdatatype(887));I1Vtnm(I1TNM(11828));1))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cdatatype",22))) { // gpt
+      let jsx104tnm11828 = jsx104tnm11771
+      let jsx104tnm11831 // let
+      { // let
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3327(line=108,offs=7)--3368(line=108,offs=48)))
+        // I1VALDCL
+        let jsx104tnm11830
+        let jsx104tnm11829 = XATSDAPP(diagnostic20_s2cstlst_884(jsx104tnm11769, XATSP1CN("D2Cdatatype", jsx104tnm11828[1+1])))
+        jsx104tnm11830 = jsx104tnm11829
+        XATS000_patck(true)
+        jsx104tnm11831 = []
+      } // endlet
+      jsx104tnm11982 = jsx104tnm11831
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11784);I0Pdapp(I0Pcon(D2Cnone2(891));$list(I0Pvar(d2cl(5765))));$list(d2cl(5765)I1Vp1cn(I0Pcon(D2Cnone2(891));I1Vtnm(I1TNM(11784));0))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cnone2",26))) { // gpt
-      let jsx106tnm11784 = jsx106tnm11719
-      let jsx106tnm11785 = XATSDAPP(diagnostic20_d2ecl_924(jsx106tnm11717, XATSP1CN("D2Cnone2", jsx106tnm11784[0+1])))
-      jsx106tnm11930 = jsx106tnm11785
+    // I1GPTpat(I1BNDcons(I1TNM(11832);I0Pdap1(I0Pcon(D2Cnone0(889)));$list()))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cnone0",24))) { // gpt
+      let jsx104tnm11832 = jsx104tnm11771
+      let jsx104tnm11833 = XATSTUP0([])
+      jsx104tnm11982 = jsx104tnm11833
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11786);I0Pdapp(I0Pcon(D2Cerrck(892));$list(I0Pvar(lvl1(5766)),I0Pvar(dcl1(5767))));$list(lvl1(5766)I1Vp1cn(I0Pcon(D2Cerrck(892));I1Vtnm(I1TNM(11786));0),dcl1(5767)I1Vp1cn(I0Pcon(D2Cerrck(892));I1Vtnm(I1TNM(11786));1))))
-    if (XATS000_ctgeq(jsx106tnm11719, XATSCTAG("D2Cerrck",27))) { // gpt
-      let jsx106tnm11786 = jsx106tnm11719
-      let jsx106tnm11787 = XATSDAPP(diagnostic20_d2ecl_924(jsx106tnm11717, jsx106tnm11718))
-      jsx106tnm11930 = jsx106tnm11787
+    // I1GPTpat(I1BNDcons(I1TNM(11834);I0Pdapp(I0Pcon(D2Cnone1(890));$list(I0Pvar(d1cl(5782))));$list(d1cl(5782)I1Vp1cn(I0Pcon(D2Cnone1(890));I1Vtnm(I1TNM(11834));0))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cnone1",25))) { // gpt
+      let jsx104tnm11834 = jsx104tnm11771
+      let jsx104tnm11835 = XATSTUP0([])
+      jsx104tnm11982 = jsx104tnm11835
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11788);I0Pany();$list()))
+    // I1GPTpat(I1BNDcons(I1TNM(11836);I0Pdapp(I0Pcon(D2Cnone2(891));$list(I0Pvar(d2cl(5783))));$list(d2cl(5783)I1Vp1cn(I0Pcon(D2Cnone2(891));I1Vtnm(I1TNM(11836));0))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cnone2",26))) { // gpt
+      let jsx104tnm11836 = jsx104tnm11771
+      let jsx104tnm11837 = XATSDAPP(diagnostic20_d2ecl_924(jsx104tnm11769, XATSP1CN("D2Cnone2", jsx104tnm11836[0+1])))
+      jsx104tnm11982 = jsx104tnm11837
+      break // cls
+    } // gpt
+    // } // cls
+    // { // cls
+    // I1GPTpat(I1BNDcons(I1TNM(11838);I0Pdapp(I0Pcon(D2Cerrck(892));$list(I0Pvar(lvl1(5784)),I0Pvar(dcl1(5785))));$list(lvl1(5784)I1Vp1cn(I0Pcon(D2Cerrck(892));I1Vtnm(I1TNM(11838));0),dcl1(5785)I1Vp1cn(I0Pcon(D2Cerrck(892));I1Vtnm(I1TNM(11838));1))))
+    if (XATS000_ctgeq(jsx104tnm11771, XATSCTAG("D2Cerrck",27))) { // gpt
+      let jsx104tnm11838 = jsx104tnm11771
+      let jsx104tnm11839 = XATSDAPP(diagnostic20_d2ecl_924(jsx104tnm11769, jsx104tnm11770))
+      jsx104tnm11982 = jsx104tnm11839
+      break // cls
+    } // gpt
+    // } // cls
+    // { // cls
+    // I1GPTpat(I1BNDcons(I1TNM(11840);I0Pany();$list()))
     if (true) { // gpt
-      let jsx106tnm11788 = jsx106tnm11719
-      let jsx106tnm11929 // let
+      let jsx104tnm11840 = jsx104tnm11771
+      let jsx104tnm11981 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3639(line=118,offs=7)--3661(line=118,offs=29)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3615(line=119,offs=7)--3637(line=119,offs=29)))
         // I1VALDCL
-        let jsx106tnm11790
-        let jsx106tnm11789 = XATSDAPP(d2ecl_get_lctn_27603(jsx106tnm11718))
-        jsx106tnm11790 = jsx106tnm11789
+        let jsx104tnm11842
+        let jsx104tnm11841 = XATSDAPP(d2ecl_get_lctn_27603(jsx104tnm11770))
+        jsx104tnm11842 = jsx104tnm11841
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3668(line=119,offs=7)--3731(line=119,offs=70)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3644(line=120,offs=7)--3707(line=120,offs=70)))
         // I1VALDCL
-        let jsx106tnm11859
-        // LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3677(line=119,offs=16)--3685(line=119,offs=24))
+        let jsx104tnm11911
+        // LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3653(line=120,offs=16)--3661(line=120,offs=24))
         // I0Etapq(I0Ecst(gs_prerrln_n2(3929));$list(T2JAG($list(T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())))),T2JAG($list(T2Pcst(loctn_tbox)))))
         // T1IMPallx(gs_prerrln_n2(3929), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15267(line=1369,offs=1)--15358(line=1376,offs=2)))
         // T1IMPallx(gs_prerrln_n2(3929), I1Dtmpsub($list(a1[11998]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[11999]T2Pcst(loctn_tbox));I1Dimplmnt0(DIMPLone2(gs_prerrln_n2(3929);$list(a1[8676]T2Pvar(a1[11998]),a2[8677]T2Pvar(a2[11999]))))))
-        let jsx106tnm11857 = function (arg1, arg2) { // timp: gs_prerrln_n2(3929)
-          let jsx106tnm11791 = arg1
-          let jsx106tnm11792 = arg2
+        let jsx104tnm11909 = function (arg1, arg2) { // timp: gs_prerrln_n2(3929)
+          let jsx104tnm11843 = arg1
+          let jsx104tnm11844 = arg2
           // I1CMP:start
           // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15314(line=1374,offs=1)--15325(line=1374,offs=12))
           // I0Etapq(I0Ecst(gs_prerr_n2(3863));$list(T2JAG($list(T2Pvar(a1[11998]))),T2JAG($list(T2Pvar(a2[11999])))))
           // T1IMPallx(gs_prerr_n2(3863), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(4942(line=483,offs=1)--5047(line=492,offs=2)))
           // T1IMPallx(gs_prerr_n2(3863), I1Dtmpsub($list(a1[11639]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[11640]T2Pcst(loctn_tbox));I1Dimplmnt0(DIMPLone2(gs_prerr_n2(3863);$list(a1[8346]T2Pvar(a1[11639]),a2[8347]T2Pvar(a2[11640]))))))
-          let jsx106tnm11836
-          let jsx106tnm11835 // let
+          let jsx104tnm11888
+          let jsx104tnm11887 // let
           { // let
             // I1Dimplmnt0(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(5003(line=489,offs=1)--5045(line=491,offs=26)))
             // I1Dimplmnt0(DIMPLone2(g_fproc(3060);$list(a[6550]T2Pvar(a0[11641])))):timp
@@ -5812,36 +6019,36 @@ function auxmain_1677(arg1, arg2)
             // I0Etapq(I0Ecst(gs_fproc_n2(3062));$list(T2JAG($list(T2Pvar(a1[11639]))),T2JAG($list(T2Pvar(a2[11640])))))
             // T1IMPallx(gs_fproc_n2(3062), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7421(line=579,offs=1)--7532(line=588,offs=2)))
             // T1IMPallx(gs_fproc_n2(3062), I1Dtmpsub($list(a1[10103]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[10104]T2Pcst(loctn_tbox));I1Dimplmnt0(DIMPLone2(gs_fproc_n2(3062);$list(a1[6552]T2Pvar(a1[10103]),a2[6553]T2Pvar(a2[10104]))))))
-            let jsx106tnm11834 = function (arg1, arg2) { // timp: gs_fproc_n2(3062)
-              let jsx106tnm11793 = arg1
-              let jsx106tnm11794 = arg2
+            let jsx104tnm11886 = function (arg1, arg2) { // timp: gs_fproc_n2(3062)
+              let jsx104tnm11845 = arg1
+              let jsx104tnm11846 = arg2
               // I1CMP:start
-              let jsx106tnm11833 // let
+              let jsx104tnm11885 // let
               { // let
                 // I1Dvaldclist(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7479(line=586,offs=3)--7503(line=586,offs=27)))
                 // I1VALDCL
-                let jsx106tnm11813
+                let jsx104tnm11865
                 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7488(line=586,offs=12)--7495(line=586,offs=19))
                 // I0Etapq(I0Ecst(g_fproc(3060));$list(T2JAG($list(T2Pvar(a1[10103])))))
                 // T1IMPallx(g_fproc(3060), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(5003(line=489,offs=1)--5045(line=491,offs=26)))
                 // T1IMPallx(g_fproc(3060), I1Dtmpsub($list(a0[11641]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a1[11639]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[11640]T2Pcst(loctn_tbox));I1Dimplmnt0(DIMPLone2(g_fproc(3060);$list(a[6550]T2Pvar(a0[11641]))))))
-                let jsx106tnm11811
+                let jsx104tnm11863
                 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(5034(line=491,offs=15)--5041(line=491,offs=22))
                 // I0Etapq(I0Ecst(g_prerr(3811));$list(T2JAG($list(T2Pvar(a0[11641])))))
                 // T1IMPallx(g_prerr(3811), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3136(line=179,offs=1)--3203(line=182,offs=33)))
                 // T1IMPallx(g_prerr(3811), I1Dtmpsub($list(x0[12194]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(g_prerr(3811);$list(x0[8170]T2Pvar(x0[12194]))))))
-                let jsx106tnm11810 = function (arg1) { // timp: g_prerr(3811)
-                  let jsx106tnm11795 = arg1
+                let jsx104tnm11862 = function (arg1) { // timp: g_prerr(3811)
+                  let jsx104tnm11847 = arg1
                   // I1CMP:start
                   // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3171(line=182,offs=1)--3181(line=182,offs=11))
                   // I0Etapq(I0Ecst(fprint_ref(3816));$list(T2JAG($list(T2Pvar(x0[12194])))))
                   // T1IMPallx(fprint_ref(3816), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3560(line=208,offs=1)--3669(line=216,offs=2)))
                   // T1IMPallx(fprint_ref(3816), I1Dtmpsub($list(x0[12199]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(fprint_ref(3816);$list(x0[8175]T2Pvar(x0[12199]))))))
-                  let jsx106tnm11806 = function (arg1, arg2) { // timp: fprint_ref(3816)
-                    let jsx106tnm11796 = arg1
-                    let jsx106tnm11797 = arg2
+                  let jsx104tnm11858 = function (arg1, arg2) { // timp: fprint_ref(3816)
+                    let jsx104tnm11848 = arg1
+                    let jsx104tnm11849 = arg2
                     // I1CMP:start
-                    let jsx106tnm11805 // let
+                    let jsx104tnm11857 // let
                     { // let
                       // I1Dimplmnt0(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                       // I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list())):timp
@@ -5849,74 +6056,74 @@ function auxmain_1677(arg1, arg2)
                       // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Pvar(x0[12199])))))
                       // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4812(line=291,offs=1)--4875(line=293,offs=35)))
                       // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(strn))))))
-                      let jsx106tnm11803 = function (arg1) { // timp: g_print(1975)
-                        let jsx106tnm11798 = arg1
+                      let jsx104tnm11855 = function (arg1) { // timp: g_print(1975)
+                        let jsx104tnm11850 = arg1
                         // I1CMP:start
                         // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4841(line=293,offs=1)--4852(line=293,offs=12))
                         // I0Etapq(I0Ecst(strn_fprint(3823));$list(T2JAG($list())))
                         // T1IMPallx(strn_fprint(3823), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(2276(line=98,offs=1)--2325(line=99,offs=41)))
                         // T1IMPallx(strn_fprint(3823), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(strn_fprint(3823);$list()))))
-                        let jsx106tnm11799
-                        jsx106tnm11799 = XATS2JS_NODE_strn_fprint
+                        let jsx104tnm11851
+                        jsx104tnm11851 = XATS2JS_NODE_strn_fprint
                         // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4859(line=293,offs=19)--4870(line=293,offs=30))
                         // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
                         // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                         // T1IMPallx(g_print$out(3802), I1Dtmpsub($list(x0[12199]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
-                        let jsx106tnm11800 = function () { // timp: g_print$out(3802)
+                        let jsx104tnm11852 = function () { // timp: g_print$out(3802)
                           // I1CMP:start
-                          // I1CMP:return:jsx106tnm11796
-                          return jsx106tnm11796
+                          // I1CMP:return:jsx104tnm11848
+                          return jsx104tnm11848
                         } // endtimp(g_print$out(3802))
-                        let jsx106tnm11801 = XATSDAPP(jsx106tnm11800())
-                        let jsx106tnm11802 = XATSDAPP(jsx106tnm11799(jsx106tnm11798, jsx106tnm11801))
-                        // I1CMP:return:jsx106tnm11802
-                        return jsx106tnm11802
+                        let jsx104tnm11853 = XATSDAPP(jsx104tnm11852())
+                        let jsx104tnm11854 = XATSDAPP(jsx104tnm11851(jsx104tnm11850, jsx104tnm11853))
+                        // I1CMP:return:jsx104tnm11854
+                        return jsx104tnm11854
                       } // endtimp(g_print(1975))
-                      let jsx106tnm11804 = XATSDAPP(jsx106tnm11803(jsx106tnm11797))
-                      jsx106tnm11805 = jsx106tnm11804
+                      let jsx104tnm11856 = XATSDAPP(jsx104tnm11855(jsx104tnm11849))
+                      jsx104tnm11857 = jsx104tnm11856
                     } // endlet
-                    // I1CMP:return:jsx106tnm11805
-                    return jsx106tnm11805
+                    // I1CMP:return:jsx104tnm11857
+                    return jsx104tnm11857
                   } // endtimp(fprint_ref(3816))
                   // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3186(line=182,offs=16)--3194(line=182,offs=24))
                   // I0Etapq(I0Ecst(g_stderr(3801));$list(T2JAG($list())))
                   // T1IMPallx(g_stderr(3801), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1867(line=74,offs=1)--1910(line=75,offs=35)))
                   // T1IMPallx(g_stderr(3801), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stderr(3801);$list()))))
-                  let jsx106tnm11807
-                  jsx106tnm11807 = XATS2JS_NODE_g_stderr
-                  let jsx106tnm11808 = XATSDAPP(jsx106tnm11807())
-                  let jsx106tnm11809 = XATSDAPP(jsx106tnm11806(jsx106tnm11808, jsx106tnm11795))
-                  // I1CMP:return:jsx106tnm11809
-                  return jsx106tnm11809
+                  let jsx104tnm11859
+                  jsx104tnm11859 = XATS2JS_NODE_g_stderr
+                  let jsx104tnm11860 = XATSDAPP(jsx104tnm11859())
+                  let jsx104tnm11861 = XATSDAPP(jsx104tnm11858(jsx104tnm11860, jsx104tnm11847))
+                  // I1CMP:return:jsx104tnm11861
+                  return jsx104tnm11861
                 } // endtimp(g_prerr(3811))
-                jsx106tnm11811 = jsx106tnm11810
-                let jsx106tnm11812 = XATSDAPP(jsx106tnm11811(jsx106tnm11793))
-                jsx106tnm11813 = jsx106tnm11812
+                jsx104tnm11863 = jsx104tnm11862
+                let jsx104tnm11864 = XATSDAPP(jsx104tnm11863(jsx104tnm11845))
+                jsx104tnm11865 = jsx104tnm11864
                 XATS000_patck(true)
                 // I1Dvaldclist(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7506(line=587,offs=3)--7530(line=587,offs=27)))
                 // I1VALDCL
-                let jsx106tnm11831
+                let jsx104tnm11883
                 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7515(line=587,offs=12)--7522(line=587,offs=19))
                 // I0Etapq(I0Ecst(g_fproc(3060));$list(T2JAG($list(T2Pvar(a2[10104])))))
                 // T1IMPallx(g_fproc(3060), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(5003(line=489,offs=1)--5045(line=491,offs=26)))
                 // T1IMPallx(g_fproc(3060), I1Dtmpsub($list(a0[11641]T2Pcst(loctn_tbox),a1[11639]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[11640]T2Pcst(loctn_tbox));I1Dimplmnt0(DIMPLone2(g_fproc(3060);$list(a[6550]T2Pvar(a0[11641]))))))
-                let jsx106tnm11829
+                let jsx104tnm11881
                 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(5034(line=491,offs=15)--5041(line=491,offs=22))
                 // I0Etapq(I0Ecst(g_prerr(3811));$list(T2JAG($list(T2Pvar(a0[11641])))))
                 // T1IMPallx(g_prerr(3811), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3136(line=179,offs=1)--3203(line=182,offs=33)))
                 // T1IMPallx(g_prerr(3811), I1Dtmpsub($list(x0[12194]T2Pcst(loctn_tbox));I1Dimplmnt0(DIMPLone2(g_prerr(3811);$list(x0[8170]T2Pvar(x0[12194]))))))
-                let jsx106tnm11828 = function (arg1) { // timp: g_prerr(3811)
-                  let jsx106tnm11814 = arg1
+                let jsx104tnm11880 = function (arg1) { // timp: g_prerr(3811)
+                  let jsx104tnm11866 = arg1
                   // I1CMP:start
                   // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3171(line=182,offs=1)--3181(line=182,offs=11))
                   // I0Etapq(I0Ecst(fprint_ref(3816));$list(T2JAG($list(T2Pvar(x0[12194])))))
                   // T1IMPallx(fprint_ref(3816), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3560(line=208,offs=1)--3669(line=216,offs=2)))
                   // T1IMPallx(fprint_ref(3816), I1Dtmpsub($list(x0[12199]T2Pcst(loctn_tbox));I1Dimplmnt0(DIMPLone2(fprint_ref(3816);$list(x0[8175]T2Pvar(x0[12199]))))))
-                  let jsx106tnm11824 = function (arg1, arg2) { // timp: fprint_ref(3816)
-                    let jsx106tnm11815 = arg1
-                    let jsx106tnm11816 = arg2
+                  let jsx104tnm11876 = function (arg1, arg2) { // timp: fprint_ref(3816)
+                    let jsx104tnm11867 = arg1
+                    let jsx104tnm11868 = arg2
                     // I1CMP:start
-                    let jsx106tnm11823 // let
+                    let jsx104tnm11875 // let
                     { // let
                       // I1Dimplmnt0(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                       // I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list())):timp
@@ -5924,76 +6131,76 @@ function auxmain_1677(arg1, arg2)
                       // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Pvar(x0[12199])))))
                       // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/DATS/xatsopt_tmplib.dats)@(4380(line=192,offs=1)--4445(line=194,offs=35)))
                       // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(loctn))))))
-                      let jsx106tnm11821 = function (arg1) { // timp: g_print(1975)
-                        let jsx106tnm11817 = arg1
+                      let jsx104tnm11873 = function (arg1) { // timp: g_print(1975)
+                        let jsx104tnm11869 = arg1
                         // I1CMP:start
                         // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/DATS/xatsopt_tmplib.dats)@(4429(line=194,offs=19)--4440(line=194,offs=30))
                         // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
                         // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                         // T1IMPallx(g_print$out(3802), I1Dtmpsub($list(x0[12199]T2Pcst(loctn_tbox));I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
-                        let jsx106tnm11818 = function () { // timp: g_print$out(3802)
+                        let jsx104tnm11870 = function () { // timp: g_print$out(3802)
                           // I1CMP:start
-                          // I1CMP:return:jsx106tnm11815
-                          return jsx106tnm11815
+                          // I1CMP:return:jsx104tnm11867
+                          return jsx104tnm11867
                         } // endtimp(g_print$out(3802))
-                        let jsx106tnm11819 = XATSDAPP(jsx106tnm11818())
-                        let jsx106tnm11820 = XATSDAPP(loctn_fprint_3330(jsx106tnm11817, jsx106tnm11819))
-                        // I1CMP:return:jsx106tnm11820
-                        return jsx106tnm11820
+                        let jsx104tnm11871 = XATSDAPP(jsx104tnm11870())
+                        let jsx104tnm11872 = XATSDAPP(loctn_fprint_3330(jsx104tnm11869, jsx104tnm11871))
+                        // I1CMP:return:jsx104tnm11872
+                        return jsx104tnm11872
                       } // endtimp(g_print(1975))
-                      let jsx106tnm11822 = XATSDAPP(jsx106tnm11821(jsx106tnm11816))
-                      jsx106tnm11823 = jsx106tnm11822
+                      let jsx104tnm11874 = XATSDAPP(jsx104tnm11873(jsx104tnm11868))
+                      jsx104tnm11875 = jsx104tnm11874
                     } // endlet
-                    // I1CMP:return:jsx106tnm11823
-                    return jsx106tnm11823
+                    // I1CMP:return:jsx104tnm11875
+                    return jsx104tnm11875
                   } // endtimp(fprint_ref(3816))
                   // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3186(line=182,offs=16)--3194(line=182,offs=24))
                   // I0Etapq(I0Ecst(g_stderr(3801));$list(T2JAG($list())))
                   // T1IMPallx(g_stderr(3801), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1867(line=74,offs=1)--1910(line=75,offs=35)))
                   // T1IMPallx(g_stderr(3801), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stderr(3801);$list()))))
-                  let jsx106tnm11825
-                  jsx106tnm11825 = XATS2JS_NODE_g_stderr
-                  let jsx106tnm11826 = XATSDAPP(jsx106tnm11825())
-                  let jsx106tnm11827 = XATSDAPP(jsx106tnm11824(jsx106tnm11826, jsx106tnm11814))
-                  // I1CMP:return:jsx106tnm11827
-                  return jsx106tnm11827
+                  let jsx104tnm11877
+                  jsx104tnm11877 = XATS2JS_NODE_g_stderr
+                  let jsx104tnm11878 = XATSDAPP(jsx104tnm11877())
+                  let jsx104tnm11879 = XATSDAPP(jsx104tnm11876(jsx104tnm11878, jsx104tnm11866))
+                  // I1CMP:return:jsx104tnm11879
+                  return jsx104tnm11879
                 } // endtimp(g_prerr(3811))
-                jsx106tnm11829 = jsx106tnm11828
-                let jsx106tnm11830 = XATSDAPP(jsx106tnm11829(jsx106tnm11794))
-                jsx106tnm11831 = jsx106tnm11830
+                jsx104tnm11881 = jsx104tnm11880
+                let jsx104tnm11882 = XATSDAPP(jsx104tnm11881(jsx104tnm11846))
+                jsx104tnm11883 = jsx104tnm11882
                 XATS000_patck(true)
-                let jsx106tnm11832 = XATSTUP0([])
-                jsx106tnm11833 = jsx106tnm11832
+                let jsx104tnm11884 = XATSTUP0([])
+                jsx104tnm11885 = jsx104tnm11884
               } // endlet
-              // I1CMP:return:jsx106tnm11833
-              return jsx106tnm11833
+              // I1CMP:return:jsx104tnm11885
+              return jsx104tnm11885
             } // endtimp(gs_fproc_n2(3062))
-            jsx106tnm11835 = jsx106tnm11834
+            jsx104tnm11887 = jsx104tnm11886
           } // endlet
-          jsx106tnm11836 = jsx106tnm11835
-          let jsx106tnm11837 = XATSDAPP(jsx106tnm11836(jsx106tnm11791, jsx106tnm11792))
+          jsx104tnm11888 = jsx104tnm11887
+          let jsx104tnm11889 = XATSDAPP(jsx104tnm11888(jsx104tnm11843, jsx104tnm11844))
           // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15339(line=1375,offs=14)--15352(line=1375,offs=27))
           // I0Etapq(I0Ecst(g_prerr_newln(3926));$list(T2JAG($list())))
           // T1IMPallx(g_prerr_newln(3926), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(14974(line=1347,offs=1)--15033(line=1350,offs=27)))
           // T1IMPallx(g_prerr_newln(3926), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_prerr_newln(3926);$list()))))
-          let jsx106tnm11855 = function () { // timp: g_prerr_newln(3926)
+          let jsx104tnm11907 = function () { // timp: g_prerr_newln(3926)
             // I1CMP:start
             // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15020(line=1350,offs=14)--15027(line=1350,offs=21))
             // I0Etapq(I0Ecst(g_prerr(3811));$list(T2JAG($list(T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0()))))))
             // T1IMPallx(g_prerr(3811), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3136(line=179,offs=1)--3203(line=182,offs=33)))
             // T1IMPallx(g_prerr(3811), I1Dtmpsub($list(x0[12194]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(g_prerr(3811);$list(x0[8170]T2Pvar(x0[12194]))))))
-            let jsx106tnm11853 = function (arg1) { // timp: g_prerr(3811)
-              let jsx106tnm11838 = arg1
+            let jsx104tnm11905 = function (arg1) { // timp: g_prerr(3811)
+              let jsx104tnm11890 = arg1
               // I1CMP:start
               // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3171(line=182,offs=1)--3181(line=182,offs=11))
               // I0Etapq(I0Ecst(fprint_ref(3816));$list(T2JAG($list(T2Pvar(x0[12194])))))
               // T1IMPallx(fprint_ref(3816), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3560(line=208,offs=1)--3669(line=216,offs=2)))
               // T1IMPallx(fprint_ref(3816), I1Dtmpsub($list(x0[12199]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(fprint_ref(3816);$list(x0[8175]T2Pvar(x0[12199]))))))
-              let jsx106tnm11849 = function (arg1, arg2) { // timp: fprint_ref(3816)
-                let jsx106tnm11839 = arg1
-                let jsx106tnm11840 = arg2
+              let jsx104tnm11901 = function (arg1, arg2) { // timp: fprint_ref(3816)
+                let jsx104tnm11891 = arg1
+                let jsx104tnm11892 = arg2
                 // I1CMP:start
-                let jsx106tnm11848 // let
+                let jsx104tnm11900 // let
                 { // let
                   // I1Dimplmnt0(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                   // I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list())):timp
@@ -6001,74 +6208,74 @@ function auxmain_1677(arg1, arg2)
                   // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Pvar(x0[12199])))))
                   // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4812(line=291,offs=1)--4875(line=293,offs=35)))
                   // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(strn))))))
-                  let jsx106tnm11846 = function (arg1) { // timp: g_print(1975)
-                    let jsx106tnm11841 = arg1
+                  let jsx104tnm11898 = function (arg1) { // timp: g_print(1975)
+                    let jsx104tnm11893 = arg1
                     // I1CMP:start
                     // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4841(line=293,offs=1)--4852(line=293,offs=12))
                     // I0Etapq(I0Ecst(strn_fprint(3823));$list(T2JAG($list())))
                     // T1IMPallx(strn_fprint(3823), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(2276(line=98,offs=1)--2325(line=99,offs=41)))
                     // T1IMPallx(strn_fprint(3823), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(strn_fprint(3823);$list()))))
-                    let jsx106tnm11842
-                    jsx106tnm11842 = XATS2JS_NODE_strn_fprint
+                    let jsx104tnm11894
+                    jsx104tnm11894 = XATS2JS_NODE_strn_fprint
                     // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4859(line=293,offs=19)--4870(line=293,offs=30))
                     // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
                     // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                     // T1IMPallx(g_print$out(3802), I1Dtmpsub($list(x0[12199]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
-                    let jsx106tnm11843 = function () { // timp: g_print$out(3802)
+                    let jsx104tnm11895 = function () { // timp: g_print$out(3802)
                       // I1CMP:start
-                      // I1CMP:return:jsx106tnm11839
-                      return jsx106tnm11839
+                      // I1CMP:return:jsx104tnm11891
+                      return jsx104tnm11891
                     } // endtimp(g_print$out(3802))
-                    let jsx106tnm11844 = XATSDAPP(jsx106tnm11843())
-                    let jsx106tnm11845 = XATSDAPP(jsx106tnm11842(jsx106tnm11841, jsx106tnm11844))
-                    // I1CMP:return:jsx106tnm11845
-                    return jsx106tnm11845
+                    let jsx104tnm11896 = XATSDAPP(jsx104tnm11895())
+                    let jsx104tnm11897 = XATSDAPP(jsx104tnm11894(jsx104tnm11893, jsx104tnm11896))
+                    // I1CMP:return:jsx104tnm11897
+                    return jsx104tnm11897
                   } // endtimp(g_print(1975))
-                  let jsx106tnm11847 = XATSDAPP(jsx106tnm11846(jsx106tnm11840))
-                  jsx106tnm11848 = jsx106tnm11847
+                  let jsx104tnm11899 = XATSDAPP(jsx104tnm11898(jsx104tnm11892))
+                  jsx104tnm11900 = jsx104tnm11899
                 } // endlet
-                // I1CMP:return:jsx106tnm11848
-                return jsx106tnm11848
+                // I1CMP:return:jsx104tnm11900
+                return jsx104tnm11900
               } // endtimp(fprint_ref(3816))
               // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3186(line=182,offs=16)--3194(line=182,offs=24))
               // I0Etapq(I0Ecst(g_stderr(3801));$list(T2JAG($list())))
               // T1IMPallx(g_stderr(3801), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1867(line=74,offs=1)--1910(line=75,offs=35)))
               // T1IMPallx(g_stderr(3801), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stderr(3801);$list()))))
-              let jsx106tnm11850
-              jsx106tnm11850 = XATS2JS_NODE_g_stderr
-              let jsx106tnm11851 = XATSDAPP(jsx106tnm11850())
-              let jsx106tnm11852 = XATSDAPP(jsx106tnm11849(jsx106tnm11851, jsx106tnm11838))
-              // I1CMP:return:jsx106tnm11852
-              return jsx106tnm11852
+              let jsx104tnm11902
+              jsx104tnm11902 = XATS2JS_NODE_g_stderr
+              let jsx104tnm11903 = XATSDAPP(jsx104tnm11902())
+              let jsx104tnm11904 = XATSDAPP(jsx104tnm11901(jsx104tnm11903, jsx104tnm11890))
+              // I1CMP:return:jsx104tnm11904
+              return jsx104tnm11904
             } // endtimp(g_prerr(3811))
-            let jsx106tnm11854 = XATSDAPP(jsx106tnm11853(XATSSTRN("\n")))
-            // I1CMP:return:jsx106tnm11854
-            return jsx106tnm11854
+            let jsx104tnm11906 = XATSDAPP(jsx104tnm11905(XATSSTRN("\n")))
+            // I1CMP:return:jsx104tnm11906
+            return jsx104tnm11906
           } // endtimp(g_prerr_newln(3926))
-          let jsx106tnm11856 = XATSDAPP(jsx106tnm11855())
-          // I1CMP:return:jsx106tnm11856
-          return jsx106tnm11856
+          let jsx104tnm11908 = XATSDAPP(jsx104tnm11907())
+          // I1CMP:return:jsx104tnm11908
+          return jsx104tnm11908
         } // endtimp(gs_prerrln_n2(3929))
-        let jsx106tnm11858 = XATSDAPP(jsx106tnm11857(XATSSTRN("diagnostic20_d2ecl: auxmain: loc0 = "), jsx106tnm11790))
-        jsx106tnm11859 = jsx106tnm11858
+        let jsx104tnm11910 = XATSDAPP(jsx104tnm11909(XATSSTRN("diagnostic20_d2ecl: auxmain: loc0 = "), jsx104tnm11842))
+        jsx104tnm11911 = jsx104tnm11910
         XATS000_patck(true)
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3738(line=120,offs=7)--3801(line=120,offs=70)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3714(line=121,offs=7)--3777(line=121,offs=70)))
         // I1VALDCL
-        let jsx106tnm11928
-        // LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3747(line=120,offs=16)--3755(line=120,offs=24))
+        let jsx104tnm11980
+        // LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3723(line=121,offs=16)--3731(line=121,offs=24))
         // I0Etapq(I0Ecst(gs_prerrln_n2(3929));$list(T2JAG($list(T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())))),T2JAG($list(T2Pcst(d2ecl_tbox)))))
         // T1IMPallx(gs_prerrln_n2(3929), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15267(line=1369,offs=1)--15358(line=1376,offs=2)))
         // T1IMPallx(gs_prerrln_n2(3929), I1Dtmpsub($list(a1[11998]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[11999]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(gs_prerrln_n2(3929);$list(a1[8676]T2Pvar(a1[11998]),a2[8677]T2Pvar(a2[11999]))))))
-        let jsx106tnm11926 = function (arg1, arg2) { // timp: gs_prerrln_n2(3929)
-          let jsx106tnm11860 = arg1
-          let jsx106tnm11861 = arg2
+        let jsx104tnm11978 = function (arg1, arg2) { // timp: gs_prerrln_n2(3929)
+          let jsx104tnm11912 = arg1
+          let jsx104tnm11913 = arg2
           // I1CMP:start
           // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15314(line=1374,offs=1)--15325(line=1374,offs=12))
           // I0Etapq(I0Ecst(gs_prerr_n2(3863));$list(T2JAG($list(T2Pvar(a1[11998]))),T2JAG($list(T2Pvar(a2[11999])))))
           // T1IMPallx(gs_prerr_n2(3863), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(4942(line=483,offs=1)--5047(line=492,offs=2)))
           // T1IMPallx(gs_prerr_n2(3863), I1Dtmpsub($list(a1[11639]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[11640]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(gs_prerr_n2(3863);$list(a1[8346]T2Pvar(a1[11639]),a2[8347]T2Pvar(a2[11640]))))))
-          let jsx106tnm11905
-          let jsx106tnm11904 // let
+          let jsx104tnm11957
+          let jsx104tnm11956 // let
           { // let
             // I1Dimplmnt0(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(5003(line=489,offs=1)--5045(line=491,offs=26)))
             // I1Dimplmnt0(DIMPLone2(g_fproc(3060);$list(a[6550]T2Pvar(a0[11641])))):timp
@@ -6076,36 +6283,36 @@ function auxmain_1677(arg1, arg2)
             // I0Etapq(I0Ecst(gs_fproc_n2(3062));$list(T2JAG($list(T2Pvar(a1[11639]))),T2JAG($list(T2Pvar(a2[11640])))))
             // T1IMPallx(gs_fproc_n2(3062), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7421(line=579,offs=1)--7532(line=588,offs=2)))
             // T1IMPallx(gs_fproc_n2(3062), I1Dtmpsub($list(a1[10103]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[10104]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(gs_fproc_n2(3062);$list(a1[6552]T2Pvar(a1[10103]),a2[6553]T2Pvar(a2[10104]))))))
-            let jsx106tnm11903 = function (arg1, arg2) { // timp: gs_fproc_n2(3062)
-              let jsx106tnm11862 = arg1
-              let jsx106tnm11863 = arg2
+            let jsx104tnm11955 = function (arg1, arg2) { // timp: gs_fproc_n2(3062)
+              let jsx104tnm11914 = arg1
+              let jsx104tnm11915 = arg2
               // I1CMP:start
-              let jsx106tnm11902 // let
+              let jsx104tnm11954 // let
               { // let
                 // I1Dvaldclist(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7479(line=586,offs=3)--7503(line=586,offs=27)))
                 // I1VALDCL
-                let jsx106tnm11882
+                let jsx104tnm11934
                 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7488(line=586,offs=12)--7495(line=586,offs=19))
                 // I0Etapq(I0Ecst(g_fproc(3060));$list(T2JAG($list(T2Pvar(a1[10103])))))
                 // T1IMPallx(g_fproc(3060), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(5003(line=489,offs=1)--5045(line=491,offs=26)))
                 // T1IMPallx(g_fproc(3060), I1Dtmpsub($list(a0[11641]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a1[11639]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[11640]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(g_fproc(3060);$list(a[6550]T2Pvar(a0[11641]))))))
-                let jsx106tnm11880
+                let jsx104tnm11932
                 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(5034(line=491,offs=15)--5041(line=491,offs=22))
                 // I0Etapq(I0Ecst(g_prerr(3811));$list(T2JAG($list(T2Pvar(a0[11641])))))
                 // T1IMPallx(g_prerr(3811), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3136(line=179,offs=1)--3203(line=182,offs=33)))
                 // T1IMPallx(g_prerr(3811), I1Dtmpsub($list(x0[12194]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(g_prerr(3811);$list(x0[8170]T2Pvar(x0[12194]))))))
-                let jsx106tnm11879 = function (arg1) { // timp: g_prerr(3811)
-                  let jsx106tnm11864 = arg1
+                let jsx104tnm11931 = function (arg1) { // timp: g_prerr(3811)
+                  let jsx104tnm11916 = arg1
                   // I1CMP:start
                   // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3171(line=182,offs=1)--3181(line=182,offs=11))
                   // I0Etapq(I0Ecst(fprint_ref(3816));$list(T2JAG($list(T2Pvar(x0[12194])))))
                   // T1IMPallx(fprint_ref(3816), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3560(line=208,offs=1)--3669(line=216,offs=2)))
                   // T1IMPallx(fprint_ref(3816), I1Dtmpsub($list(x0[12199]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(fprint_ref(3816);$list(x0[8175]T2Pvar(x0[12199]))))))
-                  let jsx106tnm11875 = function (arg1, arg2) { // timp: fprint_ref(3816)
-                    let jsx106tnm11865 = arg1
-                    let jsx106tnm11866 = arg2
+                  let jsx104tnm11927 = function (arg1, arg2) { // timp: fprint_ref(3816)
+                    let jsx104tnm11917 = arg1
+                    let jsx104tnm11918 = arg2
                     // I1CMP:start
-                    let jsx106tnm11874 // let
+                    let jsx104tnm11926 // let
                     { // let
                       // I1Dimplmnt0(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                       // I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list())):timp
@@ -6113,74 +6320,74 @@ function auxmain_1677(arg1, arg2)
                       // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Pvar(x0[12199])))))
                       // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4812(line=291,offs=1)--4875(line=293,offs=35)))
                       // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(strn))))))
-                      let jsx106tnm11872 = function (arg1) { // timp: g_print(1975)
-                        let jsx106tnm11867 = arg1
+                      let jsx104tnm11924 = function (arg1) { // timp: g_print(1975)
+                        let jsx104tnm11919 = arg1
                         // I1CMP:start
                         // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4841(line=293,offs=1)--4852(line=293,offs=12))
                         // I0Etapq(I0Ecst(strn_fprint(3823));$list(T2JAG($list())))
                         // T1IMPallx(strn_fprint(3823), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(2276(line=98,offs=1)--2325(line=99,offs=41)))
                         // T1IMPallx(strn_fprint(3823), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(strn_fprint(3823);$list()))))
-                        let jsx106tnm11868
-                        jsx106tnm11868 = XATS2JS_NODE_strn_fprint
+                        let jsx104tnm11920
+                        jsx104tnm11920 = XATS2JS_NODE_strn_fprint
                         // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4859(line=293,offs=19)--4870(line=293,offs=30))
                         // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
                         // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                         // T1IMPallx(g_print$out(3802), I1Dtmpsub($list(x0[12199]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
-                        let jsx106tnm11869 = function () { // timp: g_print$out(3802)
+                        let jsx104tnm11921 = function () { // timp: g_print$out(3802)
                           // I1CMP:start
-                          // I1CMP:return:jsx106tnm11865
-                          return jsx106tnm11865
+                          // I1CMP:return:jsx104tnm11917
+                          return jsx104tnm11917
                         } // endtimp(g_print$out(3802))
-                        let jsx106tnm11870 = XATSDAPP(jsx106tnm11869())
-                        let jsx106tnm11871 = XATSDAPP(jsx106tnm11868(jsx106tnm11867, jsx106tnm11870))
-                        // I1CMP:return:jsx106tnm11871
-                        return jsx106tnm11871
+                        let jsx104tnm11922 = XATSDAPP(jsx104tnm11921())
+                        let jsx104tnm11923 = XATSDAPP(jsx104tnm11920(jsx104tnm11919, jsx104tnm11922))
+                        // I1CMP:return:jsx104tnm11923
+                        return jsx104tnm11923
                       } // endtimp(g_print(1975))
-                      let jsx106tnm11873 = XATSDAPP(jsx106tnm11872(jsx106tnm11866))
-                      jsx106tnm11874 = jsx106tnm11873
+                      let jsx104tnm11925 = XATSDAPP(jsx104tnm11924(jsx104tnm11918))
+                      jsx104tnm11926 = jsx104tnm11925
                     } // endlet
-                    // I1CMP:return:jsx106tnm11874
-                    return jsx106tnm11874
+                    // I1CMP:return:jsx104tnm11926
+                    return jsx104tnm11926
                   } // endtimp(fprint_ref(3816))
                   // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3186(line=182,offs=16)--3194(line=182,offs=24))
                   // I0Etapq(I0Ecst(g_stderr(3801));$list(T2JAG($list())))
                   // T1IMPallx(g_stderr(3801), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1867(line=74,offs=1)--1910(line=75,offs=35)))
                   // T1IMPallx(g_stderr(3801), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stderr(3801);$list()))))
-                  let jsx106tnm11876
-                  jsx106tnm11876 = XATS2JS_NODE_g_stderr
-                  let jsx106tnm11877 = XATSDAPP(jsx106tnm11876())
-                  let jsx106tnm11878 = XATSDAPP(jsx106tnm11875(jsx106tnm11877, jsx106tnm11864))
-                  // I1CMP:return:jsx106tnm11878
-                  return jsx106tnm11878
+                  let jsx104tnm11928
+                  jsx104tnm11928 = XATS2JS_NODE_g_stderr
+                  let jsx104tnm11929 = XATSDAPP(jsx104tnm11928())
+                  let jsx104tnm11930 = XATSDAPP(jsx104tnm11927(jsx104tnm11929, jsx104tnm11916))
+                  // I1CMP:return:jsx104tnm11930
+                  return jsx104tnm11930
                 } // endtimp(g_prerr(3811))
-                jsx106tnm11880 = jsx106tnm11879
-                let jsx106tnm11881 = XATSDAPP(jsx106tnm11880(jsx106tnm11862))
-                jsx106tnm11882 = jsx106tnm11881
+                jsx104tnm11932 = jsx104tnm11931
+                let jsx104tnm11933 = XATSDAPP(jsx104tnm11932(jsx104tnm11914))
+                jsx104tnm11934 = jsx104tnm11933
                 XATS000_patck(true)
                 // I1Dvaldclist(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7506(line=587,offs=3)--7530(line=587,offs=27)))
                 // I1VALDCL
-                let jsx106tnm11900
+                let jsx104tnm11952
                 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7515(line=587,offs=12)--7522(line=587,offs=19))
                 // I0Etapq(I0Ecst(g_fproc(3060));$list(T2JAG($list(T2Pvar(a2[10104])))))
                 // T1IMPallx(g_fproc(3060), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(5003(line=489,offs=1)--5045(line=491,offs=26)))
                 // T1IMPallx(g_fproc(3060), I1Dtmpsub($list(a0[11641]T2Pcst(d2ecl_tbox),a1[11639]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[11640]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(g_fproc(3060);$list(a[6550]T2Pvar(a0[11641]))))))
-                let jsx106tnm11898
+                let jsx104tnm11950
                 // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(5034(line=491,offs=15)--5041(line=491,offs=22))
                 // I0Etapq(I0Ecst(g_prerr(3811));$list(T2JAG($list(T2Pvar(a0[11641])))))
                 // T1IMPallx(g_prerr(3811), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3136(line=179,offs=1)--3203(line=182,offs=33)))
                 // T1IMPallx(g_prerr(3811), I1Dtmpsub($list(x0[12194]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(g_prerr(3811);$list(x0[8170]T2Pvar(x0[12194]))))))
-                let jsx106tnm11897 = function (arg1) { // timp: g_prerr(3811)
-                  let jsx106tnm11883 = arg1
+                let jsx104tnm11949 = function (arg1) { // timp: g_prerr(3811)
+                  let jsx104tnm11935 = arg1
                   // I1CMP:start
                   // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3171(line=182,offs=1)--3181(line=182,offs=11))
                   // I0Etapq(I0Ecst(fprint_ref(3816));$list(T2JAG($list(T2Pvar(x0[12194])))))
                   // T1IMPallx(fprint_ref(3816), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3560(line=208,offs=1)--3669(line=216,offs=2)))
                   // T1IMPallx(fprint_ref(3816), I1Dtmpsub($list(x0[12199]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(fprint_ref(3816);$list(x0[8175]T2Pvar(x0[12199]))))))
-                  let jsx106tnm11893 = function (arg1, arg2) { // timp: fprint_ref(3816)
-                    let jsx106tnm11884 = arg1
-                    let jsx106tnm11885 = arg2
+                  let jsx104tnm11945 = function (arg1, arg2) { // timp: fprint_ref(3816)
+                    let jsx104tnm11936 = arg1
+                    let jsx104tnm11937 = arg2
                     // I1CMP:start
-                    let jsx106tnm11892 // let
+                    let jsx104tnm11944 // let
                     { // let
                       // I1Dimplmnt0(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                       // I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list())):timp
@@ -6188,76 +6395,76 @@ function auxmain_1677(arg1, arg2)
                       // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Pvar(x0[12199])))))
                       // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/DATS/xatsopt_tmplib.dats)@(22067(line=1263,offs=1)--22132(line=1265,offs=35)))
                       // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(d2ecl))))))
-                      let jsx106tnm11890 = function (arg1) { // timp: g_print(1975)
-                        let jsx106tnm11886 = arg1
+                      let jsx104tnm11942 = function (arg1) { // timp: g_print(1975)
+                        let jsx104tnm11938 = arg1
                         // I1CMP:start
                         // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/DATS/xatsopt_tmplib.dats)@(22116(line=1265,offs=19)--22127(line=1265,offs=30))
                         // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
                         // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                         // T1IMPallx(g_print$out(3802), I1Dtmpsub($list(x0[12199]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
-                        let jsx106tnm11887 = function () { // timp: g_print$out(3802)
+                        let jsx104tnm11939 = function () { // timp: g_print$out(3802)
                           // I1CMP:start
-                          // I1CMP:return:jsx106tnm11884
-                          return jsx106tnm11884
+                          // I1CMP:return:jsx104tnm11936
+                          return jsx104tnm11936
                         } // endtimp(g_print$out(3802))
-                        let jsx106tnm11888 = XATSDAPP(jsx106tnm11887())
-                        let jsx106tnm11889 = XATSDAPP(d2ecl_fprint_27395(jsx106tnm11886, jsx106tnm11888))
-                        // I1CMP:return:jsx106tnm11889
-                        return jsx106tnm11889
+                        let jsx104tnm11940 = XATSDAPP(jsx104tnm11939())
+                        let jsx104tnm11941 = XATSDAPP(d2ecl_fprint_27395(jsx104tnm11938, jsx104tnm11940))
+                        // I1CMP:return:jsx104tnm11941
+                        return jsx104tnm11941
                       } // endtimp(g_print(1975))
-                      let jsx106tnm11891 = XATSDAPP(jsx106tnm11890(jsx106tnm11885))
-                      jsx106tnm11892 = jsx106tnm11891
+                      let jsx104tnm11943 = XATSDAPP(jsx104tnm11942(jsx104tnm11937))
+                      jsx104tnm11944 = jsx104tnm11943
                     } // endlet
-                    // I1CMP:return:jsx106tnm11892
-                    return jsx106tnm11892
+                    // I1CMP:return:jsx104tnm11944
+                    return jsx104tnm11944
                   } // endtimp(fprint_ref(3816))
                   // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3186(line=182,offs=16)--3194(line=182,offs=24))
                   // I0Etapq(I0Ecst(g_stderr(3801));$list(T2JAG($list())))
                   // T1IMPallx(g_stderr(3801), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1867(line=74,offs=1)--1910(line=75,offs=35)))
                   // T1IMPallx(g_stderr(3801), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stderr(3801);$list()))))
-                  let jsx106tnm11894
-                  jsx106tnm11894 = XATS2JS_NODE_g_stderr
-                  let jsx106tnm11895 = XATSDAPP(jsx106tnm11894())
-                  let jsx106tnm11896 = XATSDAPP(jsx106tnm11893(jsx106tnm11895, jsx106tnm11883))
-                  // I1CMP:return:jsx106tnm11896
-                  return jsx106tnm11896
+                  let jsx104tnm11946
+                  jsx104tnm11946 = XATS2JS_NODE_g_stderr
+                  let jsx104tnm11947 = XATSDAPP(jsx104tnm11946())
+                  let jsx104tnm11948 = XATSDAPP(jsx104tnm11945(jsx104tnm11947, jsx104tnm11935))
+                  // I1CMP:return:jsx104tnm11948
+                  return jsx104tnm11948
                 } // endtimp(g_prerr(3811))
-                jsx106tnm11898 = jsx106tnm11897
-                let jsx106tnm11899 = XATSDAPP(jsx106tnm11898(jsx106tnm11863))
-                jsx106tnm11900 = jsx106tnm11899
+                jsx104tnm11950 = jsx104tnm11949
+                let jsx104tnm11951 = XATSDAPP(jsx104tnm11950(jsx104tnm11915))
+                jsx104tnm11952 = jsx104tnm11951
                 XATS000_patck(true)
-                let jsx106tnm11901 = XATSTUP0([])
-                jsx106tnm11902 = jsx106tnm11901
+                let jsx104tnm11953 = XATSTUP0([])
+                jsx104tnm11954 = jsx104tnm11953
               } // endlet
-              // I1CMP:return:jsx106tnm11902
-              return jsx106tnm11902
+              // I1CMP:return:jsx104tnm11954
+              return jsx104tnm11954
             } // endtimp(gs_fproc_n2(3062))
-            jsx106tnm11904 = jsx106tnm11903
+            jsx104tnm11956 = jsx104tnm11955
           } // endlet
-          jsx106tnm11905 = jsx106tnm11904
-          let jsx106tnm11906 = XATSDAPP(jsx106tnm11905(jsx106tnm11860, jsx106tnm11861))
+          jsx104tnm11957 = jsx104tnm11956
+          let jsx104tnm11958 = XATSDAPP(jsx104tnm11957(jsx104tnm11912, jsx104tnm11913))
           // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15339(line=1375,offs=14)--15352(line=1375,offs=27))
           // I0Etapq(I0Ecst(g_prerr_newln(3926));$list(T2JAG($list())))
           // T1IMPallx(g_prerr_newln(3926), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(14974(line=1347,offs=1)--15033(line=1350,offs=27)))
           // T1IMPallx(g_prerr_newln(3926), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_prerr_newln(3926);$list()))))
-          let jsx106tnm11924 = function () { // timp: g_prerr_newln(3926)
+          let jsx104tnm11976 = function () { // timp: g_prerr_newln(3926)
             // I1CMP:start
             // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/synoug0.dats)@(15020(line=1350,offs=14)--15027(line=1350,offs=21))
             // I0Etapq(I0Ecst(g_prerr(3811));$list(T2JAG($list(T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0()))))))
             // T1IMPallx(g_prerr(3811), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3136(line=179,offs=1)--3203(line=182,offs=33)))
             // T1IMPallx(g_prerr(3811), I1Dtmpsub($list(x0[12194]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(g_prerr(3811);$list(x0[8170]T2Pvar(x0[12194]))))))
-            let jsx106tnm11922 = function (arg1) { // timp: g_prerr(3811)
-              let jsx106tnm11907 = arg1
+            let jsx104tnm11974 = function (arg1) { // timp: g_prerr(3811)
+              let jsx104tnm11959 = arg1
               // I1CMP:start
               // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3171(line=182,offs=1)--3181(line=182,offs=11))
               // I0Etapq(I0Ecst(fprint_ref(3816));$list(T2JAG($list(T2Pvar(x0[12194])))))
               // T1IMPallx(fprint_ref(3816), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3560(line=208,offs=1)--3669(line=216,offs=2)))
               // T1IMPallx(fprint_ref(3816), I1Dtmpsub($list(x0[12199]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(fprint_ref(3816);$list(x0[8175]T2Pvar(x0[12199]))))))
-              let jsx106tnm11918 = function (arg1, arg2) { // timp: fprint_ref(3816)
-                let jsx106tnm11908 = arg1
-                let jsx106tnm11909 = arg2
+              let jsx104tnm11970 = function (arg1, arg2) { // timp: fprint_ref(3816)
+                let jsx104tnm11960 = arg1
+                let jsx104tnm11961 = arg2
                 // I1CMP:start
-                let jsx106tnm11917 // let
+                let jsx104tnm11969 // let
                 { // let
                   // I1Dimplmnt0(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                   // I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list())):timp
@@ -6265,349 +6472,613 @@ function auxmain_1677(arg1, arg2)
                   // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Pvar(x0[12199])))))
                   // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4812(line=291,offs=1)--4875(line=293,offs=35)))
                   // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(strn))))))
-                  let jsx106tnm11915 = function (arg1) { // timp: g_print(1975)
-                    let jsx106tnm11910 = arg1
+                  let jsx104tnm11967 = function (arg1) { // timp: g_print(1975)
+                    let jsx104tnm11962 = arg1
                     // I1CMP:start
                     // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4841(line=293,offs=1)--4852(line=293,offs=12))
                     // I0Etapq(I0Ecst(strn_fprint(3823));$list(T2JAG($list())))
                     // T1IMPallx(strn_fprint(3823), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(2276(line=98,offs=1)--2325(line=99,offs=41)))
                     // T1IMPallx(strn_fprint(3823), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(strn_fprint(3823);$list()))))
-                    let jsx106tnm11911
-                    jsx106tnm11911 = XATS2JS_NODE_strn_fprint
+                    let jsx104tnm11963
+                    jsx104tnm11963 = XATS2JS_NODE_strn_fprint
                     // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4859(line=293,offs=19)--4870(line=293,offs=30))
                     // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
                     // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3637(line=215,offs=3)--3667(line=215,offs=33)))
                     // T1IMPallx(g_print$out(3802), I1Dtmpsub($list(x0[12199]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())));I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
-                    let jsx106tnm11912 = function () { // timp: g_print$out(3802)
+                    let jsx104tnm11964 = function () { // timp: g_print$out(3802)
                       // I1CMP:start
-                      // I1CMP:return:jsx106tnm11908
-                      return jsx106tnm11908
+                      // I1CMP:return:jsx104tnm11960
+                      return jsx104tnm11960
                     } // endtimp(g_print$out(3802))
-                    let jsx106tnm11913 = XATSDAPP(jsx106tnm11912())
-                    let jsx106tnm11914 = XATSDAPP(jsx106tnm11911(jsx106tnm11910, jsx106tnm11913))
-                    // I1CMP:return:jsx106tnm11914
-                    return jsx106tnm11914
+                    let jsx104tnm11965 = XATSDAPP(jsx104tnm11964())
+                    let jsx104tnm11966 = XATSDAPP(jsx104tnm11963(jsx104tnm11962, jsx104tnm11965))
+                    // I1CMP:return:jsx104tnm11966
+                    return jsx104tnm11966
                   } // endtimp(g_print(1975))
-                  let jsx106tnm11916 = XATSDAPP(jsx106tnm11915(jsx106tnm11909))
-                  jsx106tnm11917 = jsx106tnm11916
+                  let jsx104tnm11968 = XATSDAPP(jsx104tnm11967(jsx104tnm11961))
+                  jsx104tnm11969 = jsx104tnm11968
                 } // endlet
-                // I1CMP:return:jsx106tnm11917
-                return jsx106tnm11917
+                // I1CMP:return:jsx104tnm11969
+                return jsx104tnm11969
               } // endtimp(fprint_ref(3816))
               // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(3186(line=182,offs=16)--3194(line=182,offs=24))
               // I0Etapq(I0Ecst(g_stderr(3801));$list(T2JAG($list())))
               // T1IMPallx(g_stderr(3801), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1867(line=74,offs=1)--1910(line=75,offs=35)))
               // T1IMPallx(g_stderr(3801), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stderr(3801);$list()))))
-              let jsx106tnm11919
-              jsx106tnm11919 = XATS2JS_NODE_g_stderr
-              let jsx106tnm11920 = XATSDAPP(jsx106tnm11919())
-              let jsx106tnm11921 = XATSDAPP(jsx106tnm11918(jsx106tnm11920, jsx106tnm11907))
-              // I1CMP:return:jsx106tnm11921
-              return jsx106tnm11921
+              let jsx104tnm11971
+              jsx104tnm11971 = XATS2JS_NODE_g_stderr
+              let jsx104tnm11972 = XATSDAPP(jsx104tnm11971())
+              let jsx104tnm11973 = XATSDAPP(jsx104tnm11970(jsx104tnm11972, jsx104tnm11959))
+              // I1CMP:return:jsx104tnm11973
+              return jsx104tnm11973
             } // endtimp(g_prerr(3811))
-            let jsx106tnm11923 = XATSDAPP(jsx106tnm11922(XATSSTRN("\n")))
-            // I1CMP:return:jsx106tnm11923
-            return jsx106tnm11923
+            let jsx104tnm11975 = XATSDAPP(jsx104tnm11974(XATSSTRN("\n")))
+            // I1CMP:return:jsx104tnm11975
+            return jsx104tnm11975
           } // endtimp(g_prerr_newln(3926))
-          let jsx106tnm11925 = XATSDAPP(jsx106tnm11924())
-          // I1CMP:return:jsx106tnm11925
-          return jsx106tnm11925
+          let jsx104tnm11977 = XATSDAPP(jsx104tnm11976())
+          // I1CMP:return:jsx104tnm11977
+          return jsx104tnm11977
         } // endtimp(gs_prerrln_n2(3929))
-        let jsx106tnm11927 = XATSDAPP(jsx106tnm11926(XATSSTRN("diagnostic20_d2ecl: auxmain: dcl0 = "), jsx106tnm11718))
-        jsx106tnm11928 = jsx106tnm11927
+        let jsx104tnm11979 = XATSDAPP(jsx104tnm11978(XATSSTRN("diagnostic20_d2ecl: auxmain: dcl0 = "), jsx104tnm11770))
+        jsx104tnm11980 = jsx104tnm11979
         XATS000_patck(true)
-        jsx106tnm11929 = []
+        jsx104tnm11981 = []
       } // endlet
-      jsx106tnm11930 = jsx106tnm11929
+      jsx104tnm11982 = jsx104tnm11981
       break // cls
     } // gpt
     // } // cls
     XATS000_cfail()
   } while (false) // end-of(do)
-  // I1CMP:return:jsx106tnm11930
-  return jsx106tnm11930
-} // endfun(auxmain_1677)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3815(line=125,offs=1)--4375(line=144,offs=12)))
+  // I1CMP:return:jsx104tnm11982
+  return jsx104tnm11982
+} // endfun(diagnostic20_d2ecl_aux_1638)
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3791(line=126,offs=1)--4143(line=138,offs=12)))
 let diagnostic20_d2ecl_924 = function (arg1, arg2) { // impl
-  let jsx106tnm11931 = arg1
-  let jsx106tnm11932 = arg2
+  let jsx104tnm11983 = arg1
+  let jsx104tnm11984 = arg2
   // I1CMP:start
-  let jsx106tnm11933 = XATSDAPP(d2ecl_get_node_27640(jsx106tnm11932))
-  let jsx106tnm11956 // cas
+  let jsx104tnm11985 = XATSDAPP(d2ecl_get_node_27640(jsx104tnm11984))
+  let jsx104tnm12077 // cas
   do {
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11934);I0Pdapp(I0Pcon(D2Cerrck(892));$list(I0Pvar(lvl(5771)),I0Pvar(d2cl(5772))));$list(lvl(5771)I1Vp1cn(I0Pcon(D2Cerrck(892));I1Vtnm(I1TNM(11934));0),d2cl(5772)I1Vp1cn(I0Pcon(D2Cerrck(892));I1Vtnm(I1TNM(11934));1))))
-    if (XATS000_ctgeq(jsx106tnm11933, XATSCTAG("D2Cerrck",27))) { // gpt
-      let jsx106tnm11934 = jsx106tnm11933
-      // LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3961(line=129,offs=13)--3962(line=129,offs=14))
+    // I1GPTpat(I1BNDcons(I1TNM(11986);I0Pdapp(I0Pcon(D2Cerrck(892));$list(I0Pvar(lvl(5789)),I0Pvar(d2cl(5790))));$list(lvl(5789)I1Vp1cn(I0Pcon(D2Cerrck(892));I1Vtnm(I1TNM(11986));0),d2cl(5790)I1Vp1cn(I0Pcon(D2Cerrck(892));I1Vtnm(I1TNM(11986));1))))
+    if (XATS000_ctgeq(jsx104tnm11985, XATSCTAG("D2Cerrck",27))) { // gpt
+      let jsx104tnm11986 = jsx104tnm11985
+      let jsx104tnm11987 = XATSDAPP(diagnostic20_d2ecl_aux_1638(jsx104tnm11983, XATSP1CN("D2Cerrck", jsx104tnm11986[1+1])))
+      // LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(3949(line=130,offs=13)--3950(line=130,offs=14))
       // I0Etapq(I0Ecst(gint_gt$sint$sint(2560));$list(T2JAG($list())))
       // T1IMPallx(gint_gt$sint$sint(2560), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/CATS/JS/basics1.dats)@(6200(line=437,offs=1)--6264(line=439,offs=46)))
       // T1IMPallx(gint_gt$sint$sint(2560), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(gint_gt$sint$sint(2560);$list()))))
-      let jsx106tnm11935
-      jsx106tnm11935 = XATS2JS_gint_gt$sint$sint
-      let jsx106tnm11936 = XATSDAPP(jsx106tnm11935(XATSP1CN("D2Cerrck", jsx106tnm11934[0+1]), XATSINT0(2)))
-      let jsx106tnm11953 // ift
-      if (jsx106tnm11936) // ift
+      let jsx104tnm11988
+      jsx104tnm11988 = XATS2JS_gint_gt$sint$sint
+      let jsx104tnm11989 = XATSDAPP(jsx104tnm11988(XATSP1CN("D2Cerrck", jsx104tnm11986[0+1]), XATSINT0(2)))
+      let jsx104tnm12074 // ift
+      if (jsx104tnm11989) // ift
       {
-        let jsx106tnm11937 = XATSTUP0([])
-        jsx106tnm11953 = jsx106tnm11937
+        let jsx104tnm11990 = XATSTUP0([])
+        jsx104tnm12074 = jsx104tnm11990
       } else {
-        let jsx106tnm11952 // let
+        let jsx104tnm12073 // let
         { // let
-          // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4011(line=131,offs=7)--4033(line=131,offs=29)))
+          // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4016(line=133,offs=9)--4038(line=133,offs=31)))
           // I1VALDCL
-          let jsx106tnm11939
-          let jsx106tnm11938 = XATSDAPP(d2ecl_get_lctn_27603(jsx106tnm11932))
-          jsx106tnm11939 = jsx106tnm11938
+          let jsx104tnm11992
+          let jsx104tnm11991 = XATSDAPP(d2ecl_get_lctn_27603(jsx104tnm11984))
+          jsx104tnm11992 = jsx104tnm11991
           XATS000_patck(true)
-          // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4040(line=132,offs=7)--4187(line=136,offs=42)))
-          // I1VALDCL
-          let jsx106tnm11946
-          let jsx106tnm11940 = XATSDAPP(loctn_get_lsrc_3058(jsx106tnm11939))
-          let jsx106tnm11945 // cas
-          do {
-            // { // cls
-            // I1GPTpat(I1BNDcons(I1TNM(11941);I0Pdapp(I0Pcon(LCSRCnone0(71));$list());$list()))
-            if (XATS000_ctgeq(jsx106tnm11940, XATSCTAG("LCSRCnone0",0))) { // gpt
-              let jsx106tnm11941 = jsx106tnm11940
-              jsx106tnm11945 = XATSSTRN("none")
-              break // cls
-            } // gpt
-            // } // cls
-            // { // cls
-            // I1GPTpat(I1BNDcons(I1TNM(11942);I0Pdapp(I0Pcon(LCSRCsome1(72));$list(I0Pvar(str(5775))));$list(str(5775)I1Vp1cn(I0Pcon(LCSRCsome1(72));I1Vtnm(I1TNM(11942));0))))
-            if (XATS000_ctgeq(jsx106tnm11940, XATSCTAG("LCSRCsome1",1))) { // gpt
-              let jsx106tnm11942 = jsx106tnm11940
-              jsx106tnm11945 = XATSP1CN("LCSRCsome1", jsx106tnm11942[0+1])
-              break // cls
-            } // gpt
-            // } // cls
-            // { // cls
-            // I1GPTpat(I1BNDcons(I1TNM(11943);I0Pdapp(I0Pcon(LCSRCfpath(73));$list(I0Pvar(path(5776))));$list(path(5776)I1Vp1cn(I0Pcon(LCSRCfpath(73));I1Vtnm(I1TNM(11943));0))))
-            if (XATS000_ctgeq(jsx106tnm11940, XATSCTAG("LCSRCfpath",2))) { // gpt
-              let jsx106tnm11943 = jsx106tnm11940
-              let jsx106tnm11944 = XATSDAPP(fpath_get_fnm1_2863(XATSP1CN("LCSRCfpath", jsx106tnm11943[0+1])))
-              jsx106tnm11945 = jsx106tnm11944
-              break // cls
-            } // gpt
-            // } // cls
-            XATS000_cfail()
-          } while (false) // end-of(do)
-          jsx106tnm11946 = jsx106tnm11945
-          XATS000_patck(true)
-          // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4194(line=137,offs=7)--4331(line=141,offs=10)))
-          // I1VALDCL
-          let jsx106tnm11950
-          let jsx106tnm11947 = XATSDAPP(severity_warn$make_165())
-          let jsx106tnm11948 = XATSDAPP(range_of_loctn_449(jsx106tnm11939))
-          let jsx106tnm11949 = XATSDAPP(diagnostic_make_512(jsx106tnm11947, jsx106tnm11948, XATSSTRN("diagnostic20_d2ecl"), jsx106tnm11946))
-          jsx106tnm11950 = jsx106tnm11949
-          XATS000_patck(true)
-          let jsx106tnm11951 = XATSDAPP(diagnostics_push_656(jsx106tnm11931, jsx106tnm11950))
-          jsx106tnm11952 = jsx106tnm11951
+          // LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4057(line=135,offs=9)--4065(line=135,offs=17))
+          // I0Etapq(I0Ecst(gs_println_n0(3101));$list(T2JAG($list())))
+          // T1IMPallx(gs_println_n0(3101), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(14939(line=1186,offs=1)--14999(line=1189,offs=28)))
+          // T1IMPallx(gs_println_n0(3101), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(gs_println_n0(3101);$list()))))
+          let jsx104tnm12002 = function () { // timp: gs_println_n0(3101)
+            // I1CMP:start
+            // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(14984(line=1189,offs=13)--14991(line=1189,offs=20))
+            // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0()))))))
+            // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4812(line=291,offs=1)--4875(line=293,offs=35)))
+            // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(strn))))))
+            let jsx104tnm12000 = function (arg1) { // timp: g_print(1975)
+              let jsx104tnm11993 = arg1
+              // I1CMP:start
+              // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4841(line=293,offs=1)--4852(line=293,offs=12))
+              // I0Etapq(I0Ecst(strn_fprint(3823));$list(T2JAG($list())))
+              // T1IMPallx(strn_fprint(3823), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(2276(line=98,offs=1)--2325(line=99,offs=41)))
+              // T1IMPallx(strn_fprint(3823), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(strn_fprint(3823);$list()))))
+              let jsx104tnm11994
+              jsx104tnm11994 = XATS2JS_NODE_strn_fprint
+              // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4859(line=293,offs=19)--4870(line=293,offs=30))
+              // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
+              // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1513(line=49,offs=1)--1570(line=52,offs=23)))
+              // T1IMPallx(g_print$out(3802), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
+              let jsx104tnm11997 = function () { // timp: g_print$out(3802)
+                // I1CMP:start
+                // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1549(line=52,offs=2)--1557(line=52,offs=10))
+                // I0Etapq(I0Ecst(g_stdout(3800));$list(T2JAG($list())))
+                // T1IMPallx(g_stdout(3800), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1823(line=72,offs=1)--1866(line=73,offs=35)))
+                // T1IMPallx(g_stdout(3800), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stdout(3800);$list()))))
+                let jsx104tnm11995
+                jsx104tnm11995 = XATS2JS_NODE_g_stdout
+                let jsx104tnm11996 = XATSDAPP(jsx104tnm11995())
+                // I1CMP:return:jsx104tnm11996
+                return jsx104tnm11996
+              } // endtimp(g_print$out(3802))
+              let jsx104tnm11998 = XATSDAPP(jsx104tnm11997())
+              let jsx104tnm11999 = XATSDAPP(jsx104tnm11994(jsx104tnm11993, jsx104tnm11998))
+              // I1CMP:return:jsx104tnm11999
+              return jsx104tnm11999
+            } // endtimp(g_print(1975))
+            let jsx104tnm12001 = XATSDAPP(jsx104tnm12000(XATSSTRN("\n")))
+            // I1CMP:return:jsx104tnm12001
+            return jsx104tnm12001
+          } // endtimp(gs_println_n0(3101))
+          let jsx104tnm12003 = XATSDAPP(jsx104tnm12002())
+          // LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4077(line=136,offs=9)--4085(line=136,offs=17))
+          // I0Etapq(I0Ecst(gs_println_n4(3105));$list(T2JAG($list(T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())))),T2JAG($list(T2Pcst(loctn_tbox))),T2JAG($list(T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())))),T2JAG($list(T2Pcst(d2ecl_tbox)))))
+          // T1IMPallx(gs_println_n4(3105), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(15386(line=1230,offs=1)--15506(line=1242,offs=2)))
+          // T1IMPallx(gs_println_n4(3105), I1Dtmpsub($list(a1[10246]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[10247]T2Pcst(loctn_tbox),a3[10248]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a4[10249]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(gs_println_n4(3105);$list(a1[6686]T2Pvar(a1[10246]),a2[6687]T2Pvar(a2[10247]),a3[6688]T2Pvar(a3[10248]),a4[6689]T2Pvar(a4[10249]))))))
+          let jsx104tnm12071 = function (arg1, arg2, arg3, arg4) { // timp: gs_println_n4(3105)
+            let jsx104tnm12004 = arg1
+            let jsx104tnm12005 = arg2
+            let jsx104tnm12006 = arg3
+            let jsx104tnm12007 = arg4
+            // I1CMP:start
+            // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(15453(line=1239,offs=1)--15464(line=1239,offs=12))
+            // I0Etapq(I0Ecst(gs_print_n4(3094));$list(T2JAG($list(T2Pvar(a1[10246]))),T2JAG($list(T2Pvar(a2[10247]))),T2JAG($list(T2Pvar(a3[10248]))),T2JAG($list(T2Pvar(a4[10249])))))
+            // T1IMPallx(gs_print_n4(3094), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(13813(line=1070,offs=1)--13936(line=1081,offs=2)))
+            // T1IMPallx(gs_print_n4(3094), I1Dtmpsub($list(a1[10184]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[10185]T2Pcst(loctn_tbox),a3[10186]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a4[10187]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(gs_print_n4(3094);$list(a1[6631]T2Pvar(a1[10184]),a2[6632]T2Pvar(a2[10185]),a3[6633]T2Pvar(a3[10186]),a4[6634]T2Pvar(a4[10187]))))))
+            let jsx104tnm12058
+            let jsx104tnm12057 // let
+            { // let
+              // I1Dimplmnt0(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(13892(line=1078,offs=1)--13934(line=1080,offs=26)))
+              // I1Dimplmnt0(DIMPLone2(g_fproc(3060);$list(a[6550]T2Pvar(a0[10188])))):timp
+              // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(13854(line=1074,offs=1)--13865(line=1074,offs=12))
+              // I0Etapq(I0Ecst(gs_fproc_n4(3064));$list(T2JAG($list(T2Pvar(a1[10184]))),T2JAG($list(T2Pvar(a2[10185]))),T2JAG($list(T2Pvar(a3[10186]))),T2JAG($list(T2Pvar(a4[10187])))))
+              // T1IMPallx(gs_fproc_n4(3064), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7734(line=608,offs=1)--7919(line=623,offs=2)))
+              // T1IMPallx(gs_fproc_n4(3064), I1Dtmpsub($list(a1[10108]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[10109]T2Pcst(loctn_tbox),a3[10110]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a4[10111]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(gs_fproc_n4(3064);$list(a1[6557]T2Pvar(a1[10108]),a2[6558]T2Pvar(a2[10109]),a3[6559]T2Pvar(a3[10110]),a4[6560]T2Pvar(a4[10111]))))))
+              let jsx104tnm12056 = function (arg1, arg2, arg3, arg4) { // timp: gs_fproc_n4(3064)
+                let jsx104tnm12008 = arg1
+                let jsx104tnm12009 = arg2
+                let jsx104tnm12010 = arg3
+                let jsx104tnm12011 = arg4
+                // I1CMP:start
+                let jsx104tnm12055 // let
+                { // let
+                  // I1Dvaldclist(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7812(line=619,offs=3)--7836(line=619,offs=27)))
+                  // I1VALDCL
+                  let jsx104tnm12022
+                  // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7821(line=619,offs=12)--7828(line=619,offs=19))
+                  // I0Etapq(I0Ecst(g_fproc(3060));$list(T2JAG($list(T2Pvar(a1[10108])))))
+                  // T1IMPallx(g_fproc(3060), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(13892(line=1078,offs=1)--13934(line=1080,offs=26)))
+                  // T1IMPallx(g_fproc(3060), I1Dtmpsub($list(a0[10188]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a1[10184]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[10185]T2Pcst(loctn_tbox),a3[10186]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a4[10187]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(g_fproc(3060);$list(a[6550]T2Pvar(a0[10188]))))))
+                  let jsx104tnm12020
+                  // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(13923(line=1080,offs=15)--13930(line=1080,offs=22))
+                  // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Pvar(a0[10188])))))
+                  // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4812(line=291,offs=1)--4875(line=293,offs=35)))
+                  // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(strn))))))
+                  let jsx104tnm12019 = function (arg1) { // timp: g_print(1975)
+                    let jsx104tnm12012 = arg1
+                    // I1CMP:start
+                    // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4841(line=293,offs=1)--4852(line=293,offs=12))
+                    // I0Etapq(I0Ecst(strn_fprint(3823));$list(T2JAG($list())))
+                    // T1IMPallx(strn_fprint(3823), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(2276(line=98,offs=1)--2325(line=99,offs=41)))
+                    // T1IMPallx(strn_fprint(3823), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(strn_fprint(3823);$list()))))
+                    let jsx104tnm12013
+                    jsx104tnm12013 = XATS2JS_NODE_strn_fprint
+                    // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4859(line=293,offs=19)--4870(line=293,offs=30))
+                    // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
+                    // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1513(line=49,offs=1)--1570(line=52,offs=23)))
+                    // T1IMPallx(g_print$out(3802), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
+                    let jsx104tnm12016 = function () { // timp: g_print$out(3802)
+                      // I1CMP:start
+                      // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1549(line=52,offs=2)--1557(line=52,offs=10))
+                      // I0Etapq(I0Ecst(g_stdout(3800));$list(T2JAG($list())))
+                      // T1IMPallx(g_stdout(3800), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1823(line=72,offs=1)--1866(line=73,offs=35)))
+                      // T1IMPallx(g_stdout(3800), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stdout(3800);$list()))))
+                      let jsx104tnm12014
+                      jsx104tnm12014 = XATS2JS_NODE_g_stdout
+                      let jsx104tnm12015 = XATSDAPP(jsx104tnm12014())
+                      // I1CMP:return:jsx104tnm12015
+                      return jsx104tnm12015
+                    } // endtimp(g_print$out(3802))
+                    let jsx104tnm12017 = XATSDAPP(jsx104tnm12016())
+                    let jsx104tnm12018 = XATSDAPP(jsx104tnm12013(jsx104tnm12012, jsx104tnm12017))
+                    // I1CMP:return:jsx104tnm12018
+                    return jsx104tnm12018
+                  } // endtimp(g_print(1975))
+                  jsx104tnm12020 = jsx104tnm12019
+                  let jsx104tnm12021 = XATSDAPP(jsx104tnm12020(jsx104tnm12008))
+                  jsx104tnm12022 = jsx104tnm12021
+                  XATS000_patck(true)
+                  // I1Dvaldclist(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7839(line=620,offs=3)--7863(line=620,offs=27)))
+                  // I1VALDCL
+                  let jsx104tnm12032
+                  // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7848(line=620,offs=12)--7855(line=620,offs=19))
+                  // I0Etapq(I0Ecst(g_fproc(3060));$list(T2JAG($list(T2Pvar(a2[10109])))))
+                  // T1IMPallx(g_fproc(3060), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(13892(line=1078,offs=1)--13934(line=1080,offs=26)))
+                  // T1IMPallx(g_fproc(3060), I1Dtmpsub($list(a0[10188]T2Pcst(loctn_tbox),a1[10184]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[10185]T2Pcst(loctn_tbox),a3[10186]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a4[10187]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(g_fproc(3060);$list(a[6550]T2Pvar(a0[10188]))))))
+                  let jsx104tnm12030
+                  // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(13923(line=1080,offs=15)--13930(line=1080,offs=22))
+                  // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Pvar(a0[10188])))))
+                  // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/DATS/xatsopt_tmplib.dats)@(4380(line=192,offs=1)--4445(line=194,offs=35)))
+                  // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(loctn))))))
+                  let jsx104tnm12029 = function (arg1) { // timp: g_print(1975)
+                    let jsx104tnm12023 = arg1
+                    // I1CMP:start
+                    // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/DATS/xatsopt_tmplib.dats)@(4429(line=194,offs=19)--4440(line=194,offs=30))
+                    // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
+                    // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1513(line=49,offs=1)--1570(line=52,offs=23)))
+                    // T1IMPallx(g_print$out(3802), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
+                    let jsx104tnm12026 = function () { // timp: g_print$out(3802)
+                      // I1CMP:start
+                      // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1549(line=52,offs=2)--1557(line=52,offs=10))
+                      // I0Etapq(I0Ecst(g_stdout(3800));$list(T2JAG($list())))
+                      // T1IMPallx(g_stdout(3800), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1823(line=72,offs=1)--1866(line=73,offs=35)))
+                      // T1IMPallx(g_stdout(3800), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stdout(3800);$list()))))
+                      let jsx104tnm12024
+                      jsx104tnm12024 = XATS2JS_NODE_g_stdout
+                      let jsx104tnm12025 = XATSDAPP(jsx104tnm12024())
+                      // I1CMP:return:jsx104tnm12025
+                      return jsx104tnm12025
+                    } // endtimp(g_print$out(3802))
+                    let jsx104tnm12027 = XATSDAPP(jsx104tnm12026())
+                    let jsx104tnm12028 = XATSDAPP(loctn_fprint_3330(jsx104tnm12023, jsx104tnm12027))
+                    // I1CMP:return:jsx104tnm12028
+                    return jsx104tnm12028
+                  } // endtimp(g_print(1975))
+                  jsx104tnm12030 = jsx104tnm12029
+                  let jsx104tnm12031 = XATSDAPP(jsx104tnm12030(jsx104tnm12009))
+                  jsx104tnm12032 = jsx104tnm12031
+                  XATS000_patck(true)
+                  // I1Dvaldclist(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7866(line=621,offs=3)--7890(line=621,offs=27)))
+                  // I1VALDCL
+                  let jsx104tnm12043
+                  // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7875(line=621,offs=12)--7882(line=621,offs=19))
+                  // I0Etapq(I0Ecst(g_fproc(3060));$list(T2JAG($list(T2Pvar(a3[10110])))))
+                  // T1IMPallx(g_fproc(3060), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(13892(line=1078,offs=1)--13934(line=1080,offs=26)))
+                  // T1IMPallx(g_fproc(3060), I1Dtmpsub($list(a0[10188]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a1[10184]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[10185]T2Pcst(loctn_tbox),a3[10186]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a4[10187]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(g_fproc(3060);$list(a[6550]T2Pvar(a0[10188]))))))
+                  let jsx104tnm12041
+                  // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(13923(line=1080,offs=15)--13930(line=1080,offs=22))
+                  // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Pvar(a0[10188])))))
+                  // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4812(line=291,offs=1)--4875(line=293,offs=35)))
+                  // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(strn))))))
+                  let jsx104tnm12040 = function (arg1) { // timp: g_print(1975)
+                    let jsx104tnm12033 = arg1
+                    // I1CMP:start
+                    // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4841(line=293,offs=1)--4852(line=293,offs=12))
+                    // I0Etapq(I0Ecst(strn_fprint(3823));$list(T2JAG($list())))
+                    // T1IMPallx(strn_fprint(3823), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(2276(line=98,offs=1)--2325(line=99,offs=41)))
+                    // T1IMPallx(strn_fprint(3823), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(strn_fprint(3823);$list()))))
+                    let jsx104tnm12034
+                    jsx104tnm12034 = XATS2JS_NODE_strn_fprint
+                    // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4859(line=293,offs=19)--4870(line=293,offs=30))
+                    // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
+                    // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1513(line=49,offs=1)--1570(line=52,offs=23)))
+                    // T1IMPallx(g_print$out(3802), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
+                    let jsx104tnm12037 = function () { // timp: g_print$out(3802)
+                      // I1CMP:start
+                      // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1549(line=52,offs=2)--1557(line=52,offs=10))
+                      // I0Etapq(I0Ecst(g_stdout(3800));$list(T2JAG($list())))
+                      // T1IMPallx(g_stdout(3800), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1823(line=72,offs=1)--1866(line=73,offs=35)))
+                      // T1IMPallx(g_stdout(3800), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stdout(3800);$list()))))
+                      let jsx104tnm12035
+                      jsx104tnm12035 = XATS2JS_NODE_g_stdout
+                      let jsx104tnm12036 = XATSDAPP(jsx104tnm12035())
+                      // I1CMP:return:jsx104tnm12036
+                      return jsx104tnm12036
+                    } // endtimp(g_print$out(3802))
+                    let jsx104tnm12038 = XATSDAPP(jsx104tnm12037())
+                    let jsx104tnm12039 = XATSDAPP(jsx104tnm12034(jsx104tnm12033, jsx104tnm12038))
+                    // I1CMP:return:jsx104tnm12039
+                    return jsx104tnm12039
+                  } // endtimp(g_print(1975))
+                  jsx104tnm12041 = jsx104tnm12040
+                  let jsx104tnm12042 = XATSDAPP(jsx104tnm12041(jsx104tnm12010))
+                  jsx104tnm12043 = jsx104tnm12042
+                  XATS000_patck(true)
+                  // I1Dvaldclist(LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7893(line=622,offs=3)--7917(line=622,offs=27)))
+                  // I1VALDCL
+                  let jsx104tnm12053
+                  // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(7902(line=622,offs=12)--7909(line=622,offs=19))
+                  // I0Etapq(I0Ecst(g_fproc(3060));$list(T2JAG($list(T2Pvar(a4[10111])))))
+                  // T1IMPallx(g_fproc(3060), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(13892(line=1078,offs=1)--13934(line=1080,offs=26)))
+                  // T1IMPallx(g_fproc(3060), I1Dtmpsub($list(a0[10188]T2Pcst(d2ecl_tbox),a1[10184]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a2[10185]T2Pcst(loctn_tbox),a3[10186]T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0())),a4[10187]T2Pcst(d2ecl_tbox));I1Dimplmnt0(DIMPLone2(g_fproc(3060);$list(a[6550]T2Pvar(a0[10188]))))))
+                  let jsx104tnm12051
+                  // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(13923(line=1080,offs=15)--13930(line=1080,offs=22))
+                  // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Pvar(a0[10188])))))
+                  // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/DATS/xatsopt_tmplib.dats)@(22067(line=1263,offs=1)--22132(line=1265,offs=35)))
+                  // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(d2ecl))))))
+                  let jsx104tnm12050 = function (arg1) { // timp: g_print(1975)
+                    let jsx104tnm12044 = arg1
+                    // I1CMP:start
+                    // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen2/DATS/xatsopt_tmplib.dats)@(22116(line=1265,offs=19)--22127(line=1265,offs=30))
+                    // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
+                    // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1513(line=49,offs=1)--1570(line=52,offs=23)))
+                    // T1IMPallx(g_print$out(3802), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
+                    let jsx104tnm12047 = function () { // timp: g_print$out(3802)
+                      // I1CMP:start
+                      // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1549(line=52,offs=2)--1557(line=52,offs=10))
+                      // I0Etapq(I0Ecst(g_stdout(3800));$list(T2JAG($list())))
+                      // T1IMPallx(g_stdout(3800), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1823(line=72,offs=1)--1866(line=73,offs=35)))
+                      // T1IMPallx(g_stdout(3800), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stdout(3800);$list()))))
+                      let jsx104tnm12045
+                      jsx104tnm12045 = XATS2JS_NODE_g_stdout
+                      let jsx104tnm12046 = XATSDAPP(jsx104tnm12045())
+                      // I1CMP:return:jsx104tnm12046
+                      return jsx104tnm12046
+                    } // endtimp(g_print$out(3802))
+                    let jsx104tnm12048 = XATSDAPP(jsx104tnm12047())
+                    let jsx104tnm12049 = XATSDAPP(d2ecl_fprint_27395(jsx104tnm12044, jsx104tnm12048))
+                    // I1CMP:return:jsx104tnm12049
+                    return jsx104tnm12049
+                  } // endtimp(g_print(1975))
+                  jsx104tnm12051 = jsx104tnm12050
+                  let jsx104tnm12052 = XATSDAPP(jsx104tnm12051(jsx104tnm12011))
+                  jsx104tnm12053 = jsx104tnm12052
+                  XATS000_patck(true)
+                  let jsx104tnm12054 = XATSTUP0([])
+                  jsx104tnm12055 = jsx104tnm12054
+                } // endlet
+                // I1CMP:return:jsx104tnm12055
+                return jsx104tnm12055
+              } // endtimp(gs_fproc_n4(3064))
+              jsx104tnm12057 = jsx104tnm12056
+            } // endlet
+            jsx104tnm12058 = jsx104tnm12057
+            let jsx104tnm12059 = XATSDAPP(jsx104tnm12058(jsx104tnm12004, jsx104tnm12005, jsx104tnm12006, jsx104tnm12007))
+            // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(15487(line=1241,offs=14)--15500(line=1241,offs=27))
+            // I0Etapq(I0Ecst(gs_println_n0(3101));$list(T2JAG($list())))
+            // T1IMPallx(gs_println_n0(3101), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(14939(line=1186,offs=1)--14999(line=1189,offs=28)))
+            // T1IMPallx(gs_println_n0(3101), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(gs_println_n0(3101);$list()))))
+            let jsx104tnm12069 = function () { // timp: gs_println_n0(3101)
+              // I1CMP:start
+              // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/prelude/DATS/synoug0.dats)@(14984(line=1189,offs=13)--14991(line=1189,offs=20))
+              // I0Etapq(I0Ecst(g_print(1975));$list(T2JAG($list(T2Papps(T2Pcst(string_i0_tx);$list(T2Pnone0()))))))
+              // T1IMPallx(g_print(1975), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4812(line=291,offs=1)--4875(line=293,offs=35)))
+              // T1IMPallx(g_print(1975), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print(1975);$list(a[4776]T2Pcst(strn))))))
+              let jsx104tnm12067 = function (arg1) { // timp: g_print(1975)
+                let jsx104tnm12060 = arg1
+                // I1CMP:start
+                // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4841(line=293,offs=1)--4852(line=293,offs=12))
+                // I0Etapq(I0Ecst(strn_fprint(3823));$list(T2JAG($list())))
+                // T1IMPallx(strn_fprint(3823), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(2276(line=98,offs=1)--2325(line=99,offs=41)))
+                // T1IMPallx(strn_fprint(3823), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(strn_fprint(3823);$list()))))
+                let jsx104tnm12061
+                jsx104tnm12061 = XATS2JS_NODE_strn_fprint
+                // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(4859(line=293,offs=19)--4870(line=293,offs=30))
+                // I0Etapq(I0Ecst(g_print$out(3802));$list(T2JAG($list())))
+                // T1IMPallx(g_print$out(3802), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1513(line=49,offs=1)--1570(line=52,offs=23)))
+                // T1IMPallx(g_print$out(3802), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_print$out(3802);$list()))))
+                let jsx104tnm12064 = function () { // timp: g_print$out(3802)
+                  // I1CMP:start
+                  // LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/githwxi/DATS/g00iout.dats)@(1549(line=52,offs=2)--1557(line=52,offs=10))
+                  // I0Etapq(I0Ecst(g_stdout(3800));$list(T2JAG($list())))
+                  // T1IMPallx(g_stdout(3800), LCSRCsome1(/Users/qianchengfu/Projects/ATS-Xanadu/srcgen1/xatslib/libcats/DATS/CATS/JS/NODE/libcats.dats)@(1823(line=72,offs=1)--1866(line=73,offs=35)))
+                  // T1IMPallx(g_stdout(3800), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(g_stdout(3800);$list()))))
+                  let jsx104tnm12062
+                  jsx104tnm12062 = XATS2JS_NODE_g_stdout
+                  let jsx104tnm12063 = XATSDAPP(jsx104tnm12062())
+                  // I1CMP:return:jsx104tnm12063
+                  return jsx104tnm12063
+                } // endtimp(g_print$out(3802))
+                let jsx104tnm12065 = XATSDAPP(jsx104tnm12064())
+                let jsx104tnm12066 = XATSDAPP(jsx104tnm12061(jsx104tnm12060, jsx104tnm12065))
+                // I1CMP:return:jsx104tnm12066
+                return jsx104tnm12066
+              } // endtimp(g_print(1975))
+              let jsx104tnm12068 = XATSDAPP(jsx104tnm12067(XATSSTRN("\n")))
+              // I1CMP:return:jsx104tnm12068
+              return jsx104tnm12068
+            } // endtimp(gs_println_n0(3101))
+            let jsx104tnm12070 = XATSDAPP(jsx104tnm12069())
+            // I1CMP:return:jsx104tnm12070
+            return jsx104tnm12070
+          } // endtimp(gs_println_n4(3105))
+          let jsx104tnm12072 = XATSDAPP(jsx104tnm12071(XATSSTRN("FPERR20-ERROR:"), jsx104tnm11992, XATSSTRN(":"), jsx104tnm11984))
+          jsx104tnm12073 = jsx104tnm12072
         } // endlet
-        jsx106tnm11953 = jsx106tnm11952
+        jsx104tnm12074 = jsx104tnm12073
       } // end(if)
-      jsx106tnm11956 = jsx106tnm11953
+      jsx104tnm12077 = jsx104tnm12074
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11954);I0Pany();$list()))
+    // I1GPTpat(I1BNDcons(I1TNM(12075);I0Pany();$list()))
     if (true) { // gpt
-      let jsx106tnm11954 = jsx106tnm11933
-      let jsx106tnm11955 = XATSTUP0([])
-      jsx106tnm11956 = jsx106tnm11955
+      let jsx104tnm12075 = jsx104tnm11985
+      let jsx104tnm12076 = XATSTUP0([])
+      jsx104tnm12077 = jsx104tnm12076
       break // cls
     } // gpt
     // } // cls
     XATS000_cfail()
   } while (false) // end-of(do)
-  // I1CMP:return:jsx106tnm11956
-  return jsx106tnm11956
+  // I1CMP:return:jsx104tnm12077
+  return jsx104tnm12077
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4382(line=148,offs=1)--4480(line=149,offs=55)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4150(line=142,offs=1)--4248(line=143,offs=55)))
 let diagnostic20_d2eclist_1474 = function (arg1, arg2) { // impl
-  let jsx106tnm11957 = arg1
-  let jsx106tnm11958 = arg2
+  let jsx104tnm12078 = arg1
+  let jsx104tnm12079 = arg2
   // I1CMP:start
-  let jsx106tnm11959 = XATSDAPP(list_diagnostic20_fnp_290(jsx106tnm11957, jsx106tnm11958, diagnostic20_d2ecl_924))
-  // I1CMP:return:jsx106tnm11959
-  return jsx106tnm11959
+  let jsx104tnm12080 = XATSDAPP(list_diagnostic20_fnp_290(jsx104tnm12078, jsx104tnm12079, diagnostic20_d2ecl_924))
+  // I1CMP:return:jsx104tnm12080
+  return jsx104tnm12080
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4482(line=151,offs=1)--4655(line=156,offs=8)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4250(line=145,offs=1)--4423(line=150,offs=8)))
 let diagnostic20_teqd2exp_1530 = function (arg1, arg2) { // impl
-  let jsx106tnm11960 = arg1
-  let jsx106tnm11961 = arg2
+  let jsx104tnm12081 = arg1
+  let jsx104tnm12082 = arg2
   // I1CMP:start
-  let jsx106tnm11968 // cas
+  let jsx104tnm12089 // cas
   do {
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11962);I0Pdapp(I0Pcon(TEQD2EXPnone(861));$list());$list()))
-    if (XATS000_ctgeq(jsx106tnm11961, XATSCTAG("TEQD2EXPnone",0))) { // gpt
-      let jsx106tnm11962 = jsx106tnm11961
-      let jsx106tnm11963 = XATSTUP0([])
-      jsx106tnm11968 = jsx106tnm11963
+    // I1GPTpat(I1BNDcons(I1TNM(12083);I0Pdapp(I0Pcon(TEQD2EXPnone(861));$list());$list()))
+    if (XATS000_ctgeq(jsx104tnm12082, XATSCTAG("TEQD2EXPnone",0))) { // gpt
+      let jsx104tnm12083 = jsx104tnm12082
+      let jsx104tnm12084 = XATSTUP0([])
+      jsx104tnm12089 = jsx104tnm12084
       break // cls
     } // gpt
     // } // cls
     // { // cls
-    // I1GPTpat(I1BNDcons(I1TNM(11964);I0Pdapp(I0Pcon(TEQD2EXPsome(862));$list(I0Pvar(teq1(5782)),I0Pvar(d2e2(5783))));$list(teq1(5782)I1Vp1cn(I0Pcon(TEQD2EXPsome(862));I1Vtnm(I1TNM(11964));0),d2e2(5783)I1Vp1cn(I0Pcon(TEQD2EXPsome(862));I1Vtnm(I1TNM(11964));1))))
-    if (XATS000_ctgeq(jsx106tnm11961, XATSCTAG("TEQD2EXPsome",1))) { // gpt
-      let jsx106tnm11964 = jsx106tnm11961
-      let jsx106tnm11967 // let
+    // I1GPTpat(I1BNDcons(I1TNM(12085);I0Pdapp(I0Pcon(TEQD2EXPsome(862));$list(I0Pvar(teq1(5796)),I0Pvar(d2e2(5797))));$list(teq1(5796)I1Vp1cn(I0Pcon(TEQD2EXPsome(862));I1Vtnm(I1TNM(12085));0),d2e2(5797)I1Vp1cn(I0Pcon(TEQD2EXPsome(862));I1Vtnm(I1TNM(12085));1))))
+    if (XATS000_ctgeq(jsx104tnm12082, XATSCTAG("TEQD2EXPsome",1))) { // gpt
+      let jsx104tnm12085 = jsx104tnm12082
+      let jsx104tnm12088 // let
       { // let
-        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4609(line=155,offs=7)--4647(line=155,offs=45)))
+        // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4377(line=149,offs=7)--4415(line=149,offs=45)))
         // I1VALDCL
-        let jsx106tnm11966
-        let jsx106tnm11965 = XATSDAPP(diagnostic20_d2exp_577(jsx106tnm11960, XATSP1CN("TEQD2EXPsome", jsx106tnm11964[1+1])))
-        jsx106tnm11966 = jsx106tnm11965
+        let jsx104tnm12087
+        let jsx104tnm12086 = XATSDAPP(diagnostic20_d2exp_577(jsx104tnm12081, XATSP1CN("TEQD2EXPsome", jsx104tnm12085[1+1])))
+        jsx104tnm12087 = jsx104tnm12086
         XATS000_patck(true)
-        jsx106tnm11967 = []
+        jsx104tnm12088 = []
       } // endlet
-      jsx106tnm11968 = jsx106tnm11967
+      jsx104tnm12089 = jsx104tnm12088
       break // cls
     } // gpt
     // } // cls
     XATS000_cfail()
   } while (false) // end-of(do)
-  // I1CMP:return:jsx106tnm11968
-  return jsx106tnm11968
+  // I1CMP:return:jsx104tnm12089
+  return jsx104tnm12089
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4657(line=158,offs=1)--4947(line=167,offs=4)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4425(line=152,offs=1)--4715(line=161,offs=4)))
 let diagnostic20_d2valdcl_1586 = function (arg1, arg2) { // impl
-  let jsx106tnm11969 = arg1
-  let jsx106tnm11970 = arg2
+  let jsx104tnm12090 = arg1
+  let jsx104tnm12091 = arg2
   // I1CMP:start
-  let jsx106tnm11980 // let
+  let jsx104tnm12101 // let
   { // let
-    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4815(line=163,offs=5)--4849(line=163,offs=39)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4583(line=157,offs=5)--4617(line=157,offs=39)))
     // I1VALDCL
-    let jsx106tnm11972
-    let jsx106tnm11971 = XATSDAPP(d2valdcl_get_dpat_30354(jsx106tnm11970))
-    jsx106tnm11972 = jsx106tnm11971
+    let jsx104tnm12093
+    let jsx104tnm12092 = XATSDAPP(d2valdcl_get_dpat_30354(jsx104tnm12091))
+    jsx104tnm12093 = jsx104tnm12092
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4854(line=164,offs=5)--4888(line=164,offs=39)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4622(line=158,offs=5)--4656(line=158,offs=39)))
     // I1VALDCL
-    let jsx106tnm11974
-    let jsx106tnm11973 = XATSDAPP(d2valdcl_get_tdxp_30394(jsx106tnm11970))
-    jsx106tnm11974 = jsx106tnm11973
+    let jsx104tnm12095
+    let jsx104tnm12094 = XATSDAPP(d2valdcl_get_tdxp_30394(jsx104tnm12091))
+    jsx104tnm12095 = jsx104tnm12094
     XATS000_patck(true)
-    let jsx106tnm11979 // let
+    let jsx104tnm12100 // let
     { // let
-      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4709(line=159,offs=5)--4747(line=159,offs=43)))
+      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4477(line=153,offs=5)--4515(line=153,offs=43)))
       // I1VALDCL
-      let jsx106tnm11976
-      let jsx106tnm11975 = XATSDAPP(diagnostic20_d2pat_528(jsx106tnm11969, jsx106tnm11972))
-      jsx106tnm11976 = jsx106tnm11975
+      let jsx104tnm12097
+      let jsx104tnm12096 = XATSDAPP(diagnostic20_d2pat_528(jsx104tnm12090, jsx104tnm12093))
+      jsx104tnm12097 = jsx104tnm12096
       XATS000_patck(true)
-      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4752(line=160,offs=5)--4793(line=160,offs=46)))
+      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4520(line=154,offs=5)--4561(line=154,offs=46)))
       // I1VALDCL
-      let jsx106tnm11978
-      let jsx106tnm11977 = XATSDAPP(diagnostic20_teqd2exp_1530(jsx106tnm11969, jsx106tnm11974))
-      jsx106tnm11978 = jsx106tnm11977
+      let jsx104tnm12099
+      let jsx104tnm12098 = XATSDAPP(diagnostic20_teqd2exp_1530(jsx104tnm12090, jsx104tnm12095))
+      jsx104tnm12099 = jsx104tnm12098
       XATS000_patck(true)
-      jsx106tnm11979 = []
+      jsx104tnm12100 = []
     } // endlet
-    jsx106tnm11980 = jsx106tnm11979
+    jsx104tnm12101 = jsx104tnm12100
   } // endlet
-  // I1CMP:return:jsx106tnm11980
-  return jsx106tnm11980
+  // I1CMP:return:jsx104tnm12101
+  return jsx104tnm12101
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4949(line=169,offs=1)--5233(line=178,offs=4)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4717(line=163,offs=1)--5001(line=172,offs=4)))
 let diagnostic20_d2vardcl_1641 = function (arg1, arg2) { // impl
-  let jsx106tnm11981 = arg1
-  let jsx106tnm11982 = arg2
+  let jsx104tnm12102 = arg1
+  let jsx104tnm12103 = arg2
   // I1CMP:start
-  let jsx106tnm11988 // let
+  let jsx104tnm12109 // let
   { // let
-    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5195(line=177,offs=5)--5229(line=177,offs=39)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4963(line=171,offs=5)--4997(line=171,offs=39)))
     // I1VALDCL
-    let jsx106tnm11984
-    let jsx106tnm11983 = XATSDAPP(d2vardcl_get_dini_30797(jsx106tnm11982))
-    jsx106tnm11984 = jsx106tnm11983
+    let jsx104tnm12105
+    let jsx104tnm12104 = XATSDAPP(d2vardcl_get_dini_30797(jsx104tnm12103))
+    jsx104tnm12105 = jsx104tnm12104
     XATS000_patck(true)
-    let jsx106tnm11987 // let
+    let jsx104tnm12108 // let
     { // let
-      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5001(line=170,offs=5)--5042(line=170,offs=46)))
+      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(4769(line=164,offs=5)--4810(line=164,offs=46)))
       // I1VALDCL
-      let jsx106tnm11986
-      let jsx106tnm11985 = XATSDAPP(diagnostic20_teqd2exp_1530(jsx106tnm11981, jsx106tnm11984))
-      jsx106tnm11986 = jsx106tnm11985
+      let jsx104tnm12107
+      let jsx104tnm12106 = XATSDAPP(diagnostic20_teqd2exp_1530(jsx104tnm12102, jsx104tnm12105))
+      jsx104tnm12107 = jsx104tnm12106
       XATS000_patck(true)
-      jsx106tnm11987 = []
+      jsx104tnm12108 = []
     } // endlet
-    jsx106tnm11988 = jsx106tnm11987
+    jsx104tnm12109 = jsx104tnm12108
   } // endlet
-  // I1CMP:return:jsx106tnm11988
-  return jsx106tnm11988
+  // I1CMP:return:jsx104tnm12109
+  return jsx104tnm12109
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5235(line=180,offs=1)--5604(line=191,offs=4)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5003(line=174,offs=1)--5372(line=185,offs=4)))
 let diagnostic20_d2fundcl_1696 = function (arg1, arg2) { // impl
-  let jsx106tnm11989 = arg1
-  let jsx106tnm11990 = arg2
+  let jsx104tnm12110 = arg1
+  let jsx104tnm12111 = arg2
   // I1CMP:start
-  let jsx106tnm12000 // let
+  let jsx104tnm12121 // let
   { // let
-    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5447(line=187,offs=5)--5481(line=187,offs=39)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5215(line=181,offs=5)--5249(line=181,offs=39)))
     // I1VALDCL
-    let jsx106tnm11992
-    let jsx106tnm11991 = XATSDAPP(d2fundcl_get_farg_31115(jsx106tnm11990))
-    jsx106tnm11992 = jsx106tnm11991
+    let jsx104tnm12113
+    let jsx104tnm12112 = XATSDAPP(d2fundcl_get_farg_31115(jsx104tnm12111))
+    jsx104tnm12113 = jsx104tnm12112
     XATS000_patck(true)
-    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5526(line=189,offs=5)--5560(line=189,offs=39)))
+    // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5294(line=183,offs=5)--5328(line=183,offs=39)))
     // I1VALDCL
-    let jsx106tnm11994
-    let jsx106tnm11993 = XATSDAPP(d2fundcl_get_tdxp_31198(jsx106tnm11990))
-    jsx106tnm11994 = jsx106tnm11993
+    let jsx104tnm12115
+    let jsx104tnm12114 = XATSDAPP(d2fundcl_get_tdxp_31198(jsx104tnm12111))
+    jsx104tnm12115 = jsx104tnm12114
     XATS000_patck(true)
-    let jsx106tnm11999 // let
+    let jsx104tnm12120 // let
     { // let
-      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5287(line=181,offs=5)--5328(line=181,offs=46)))
+      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5055(line=175,offs=5)--5096(line=175,offs=46)))
       // I1VALDCL
-      let jsx106tnm11996
-      let jsx106tnm11995 = XATSDAPP(diagnostic20_f2arglst_1307(jsx106tnm11989, jsx106tnm11992))
-      jsx106tnm11996 = jsx106tnm11995
+      let jsx104tnm12117
+      let jsx104tnm12116 = XATSDAPP(diagnostic20_f2arglst_1307(jsx104tnm12110, jsx104tnm12113))
+      jsx104tnm12117 = jsx104tnm12116
       XATS000_patck(true)
-      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5333(line=182,offs=5)--5374(line=182,offs=46)))
+      // I1Dvaldclist(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5101(line=176,offs=5)--5142(line=176,offs=46)))
       // I1VALDCL
-      let jsx106tnm11998
-      let jsx106tnm11997 = XATSDAPP(diagnostic20_teqd2exp_1530(jsx106tnm11989, jsx106tnm11994))
-      jsx106tnm11998 = jsx106tnm11997
+      let jsx104tnm12119
+      let jsx104tnm12118 = XATSDAPP(diagnostic20_teqd2exp_1530(jsx104tnm12110, jsx104tnm12115))
+      jsx104tnm12119 = jsx104tnm12118
       XATS000_patck(true)
-      jsx106tnm11999 = []
+      jsx104tnm12120 = []
     } // endlet
-    jsx106tnm12000 = jsx106tnm11999
+    jsx104tnm12121 = jsx104tnm12120
   } // endlet
-  // I1CMP:return:jsx106tnm12000
-  return jsx106tnm12000
+  // I1CMP:return:jsx104tnm12121
+  return jsx104tnm12121
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5606(line=193,offs=1)--5710(line=194,offs=58)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5374(line=187,offs=1)--5478(line=188,offs=58)))
 let diagnostic20_d2valdclist_1752 = function (arg1, arg2) { // impl
-  let jsx106tnm12001 = arg1
-  let jsx106tnm12002 = arg2
+  let jsx104tnm12122 = arg1
+  let jsx104tnm12123 = arg2
   // I1CMP:start
-  let jsx106tnm12003 = XATSDAPP(list_diagnostic20_fnp_290(jsx106tnm12001, jsx106tnm12002, diagnostic20_d2valdcl_1586))
-  // I1CMP:return:jsx106tnm12003
-  return jsx106tnm12003
+  let jsx104tnm12124 = XATSDAPP(list_diagnostic20_fnp_290(jsx104tnm12122, jsx104tnm12123, diagnostic20_d2valdcl_1586))
+  // I1CMP:return:jsx104tnm12124
+  return jsx104tnm12124
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5712(line=196,offs=1)--5816(line=197,offs=58)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5480(line=190,offs=1)--5584(line=191,offs=58)))
 let diagnostic20_d2vardclist_1814 = function (arg1, arg2) { // impl
-  let jsx106tnm12004 = arg1
-  let jsx106tnm12005 = arg2
+  let jsx104tnm12125 = arg1
+  let jsx104tnm12126 = arg2
   // I1CMP:start
-  let jsx106tnm12006 = XATSDAPP(list_diagnostic20_fnp_290(jsx106tnm12004, jsx106tnm12005, diagnostic20_d2vardcl_1641))
-  // I1CMP:return:jsx106tnm12006
-  return jsx106tnm12006
+  let jsx104tnm12127 = XATSDAPP(list_diagnostic20_fnp_290(jsx104tnm12125, jsx104tnm12126, diagnostic20_d2vardcl_1641))
+  // I1CMP:return:jsx104tnm12127
+  return jsx104tnm12127
 } // endfun(impl)
-// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5818(line=199,offs=1)--5922(line=200,offs=58)))
+// I1Dimplmnt0(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5586(line=193,offs=1)--5690(line=194,offs=58)))
 let diagnostic20_d2fundclist_1876 = function (arg1, arg2) { // impl
-  let jsx106tnm12007 = arg1
-  let jsx106tnm12008 = arg2
+  let jsx104tnm12128 = arg1
+  let jsx104tnm12129 = arg2
   // I1CMP:start
-  let jsx106tnm12009 = XATSDAPP(list_diagnostic20_fnp_290(jsx106tnm12007, jsx106tnm12008, diagnostic20_d2fundcl_1696))
-  // I1CMP:return:jsx106tnm12009
-  return jsx106tnm12009
+  let jsx104tnm12130 = XATSDAPP(list_diagnostic20_fnp_290(jsx104tnm12128, jsx104tnm12129, diagnostic20_d2fundcl_1696))
+  // I1CMP:return:jsx104tnm12130
+  return jsx104tnm12130
 } // endfun(impl)
-// LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5922(line=200,offs=58)--5922(line=200,offs=58))
-// I1Dnone1(I0Dnone1(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5922(line=200,offs=58)--5922(line=200,offs=58));D3Cnone0()))
+// LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5690(line=194,offs=58)--5690(line=194,offs=58))
+// I1Dnone1(I0Dnone1(LCSRCsome1(src/DATS/diagnostic20_decl.dats)@(5690(line=194,offs=58)--5690(line=194,offs=58));D3Cnone0()))

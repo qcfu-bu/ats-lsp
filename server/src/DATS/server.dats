@@ -21,9 +21,9 @@
     val path = url_to_path(uri)
     val dpar = d3parsed_of_fildats(path)
     // debug logging
-    val () = prerrln(path)
-    val () = prerrln(dpar)
-    val () = fperr30_d3parsed(g_stderr(), dpar)
+    // val () = prerrln(path)
+    // val () = prerrln(dpar)
+    // val () = fperr30_d3parsed(g_stderr(), dpar)
   in diagnostic30_d3parsed(ds, dpar)
   end
 

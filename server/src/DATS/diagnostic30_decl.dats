@@ -3,12 +3,12 @@
 #include "./../HATS/libxatsopt.hats"
 
 #staload "./../SATS/lsp_bootstrap.sats"
+#staload "./../SATS/diagnostic20.sats"
 #staload "./../SATS/diagnostic30.sats"
-
 
 local
 
-fun auxmain(out: diagnostics, dcl0: d3ecl): void =
+fun diagnostic30_d3ecl_aux(out: diagnostics, dcl0: d3ecl): void =
   case+ dcl0.node() of
   | D3Cstatic(tknd, dcl1) => let 
       val () = diagnostic30_d3ecl(out, dcl1) 
@@ -58,9 +58,7 @@ fun auxmain(out: diagnostics, dcl0: d3ecl): void =
       val () = diagnostic30_d3exp(out, dexp)
     end
   | D3Cnone0 _ => ()
-  | D3Cnone1(d2cl) => 
-    // TODO: diagnostic20_d2ecl(out, d2cl)
-    ()
+  | D3Cnone1(d2cl) => diagnostic20_d2ecl(out, d2cl)
   | D3Cnone2(d3cl) => diagnostic30_d3ecl(out, d3cl)
   | D3Cerrck(lvl1, dcl1) => diagnostic30_d3ecl(out, dcl0)
   | _ => let
@@ -75,22 +73,15 @@ in
 #implfun diagnostic30_d3ecl(out, dcl0) =
   case+ dcl0.node() of
   | D3Cerrck(lvl, d3cl) => (
-    auxmain(out, d3cl);
+    diagnostic30_d3ecl_aux(out, d3cl);
     if (lvl > DIAGNOSTIC30_ERRVL) then () 
     else let
-      val loc0 = dcl0.lctn() 
-      val lsrc = 
-        case loc0.lsrc() of
-        | LCSRCnone0() => "none"
-        | LCSRCsome1(str) => str
-        | LCSRCfpath(path) => path.fnm1()
-      val d = diagnostic_make(
-          severity_warn$make(), 
-          range_of_loctn(loc0), 
-          "diagnostic30_d3ecl", lsrc
-        )
-    in out.push(d)
-    end)
+      // TODO:
+        val loc0 = dcl0.lctn() 
+      in
+        printsln();
+        printsln("FPERR30-ERROR:", loc0, ":", dcl0)
+      end)
   | _ => ()
 
 end
