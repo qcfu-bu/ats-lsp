@@ -5,29 +5,29 @@ const url = require('url');
 // -------------------------------------------------------------------
 
 // url to file path
-function url_to_path(uri) {
+function vscode_url_to_path(uri) {
   return url.fileURLToPath(uri);
 }
 
 // diagnostic severity
-function severity_error$make() {
+function vscode_severity_error$make() {
   return node.DiagnosticSeverity.Error;
 }
 
-function severity_warn$make() {
+function vscode_severity_warn$make() {
   return node.DiagnosticSeverity.Warning;
 }
 
-function severity_hint$make() {
+function vscode_severity_hint$make() {
   return node.DiagnosticSeverity.Hint;
 }
 
-function severity_info$make() {
+function vscode_severity_info$make() {
   return node.DiagnosticSeverity.Information;
 }
 
 // position
-function position_make(line, offs) {
+function vscode_position_make(line, offs) {
   return { 
     line: line, 
     character: offs 
@@ -35,7 +35,7 @@ function position_make(line, offs) {
 }
 
 // range
-function range_make(pbeg, pend) {
+function vscode_range_make(pbeg, pend) {
   return { 
     start: pbeg, 
     end: pend 
@@ -43,7 +43,7 @@ function range_make(pbeg, pend) {
 }
 
 // diagnostic
-function diagnostic_make(severity, range, message, source) {
+function vscode_diagnostic_make(severity, range, message, source) {
   return { 
     severity: severity,
     range: range,
@@ -53,11 +53,7 @@ function diagnostic_make(severity, range, message, source) {
 }
 
 // diagnostics
-function diagnostics_make() {
-  return [];
-}
-
-function diagnostics_push(diagnostics, d) {
+function vscode_diagnostics_push(diagnostics, d) {
   diagnostics.push(d);
 }
 
@@ -128,7 +124,7 @@ function asyncValidatorWrap(validator) {
   return asyncValidator;
 }
 
-function set_validator(validator) {
+function vscode_set_validator(validator) {
   const asyncValidator = asyncValidatorWrap(validator); 
   connection.languages.diagnostics.on(async (params) => {
     const document = documents.get(params.textDocument.uri);
@@ -150,7 +146,7 @@ function set_validator(validator) {
   });
 }
 
-function connect() {
+function vscode_connect() {
   documents.listen(connection);
   connection.listen();
 }

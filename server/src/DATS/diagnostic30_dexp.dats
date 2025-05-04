@@ -5,8 +5,6 @@
 #staload "./../SATS/lsp_bootstrap.sats"
 #staload "./../SATS/diagnostic30.sats"
 
-#staload "./../DATS/lsp_bootstrap.dats"
-
 local
 
 fun auxmain(out: diagnostics, d3p: d3pat): void =

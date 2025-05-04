@@ -5,8 +5,6 @@
 #staload "./../SATS/lsp_bootstrap.sats"
 #staload "./../SATS/diagnostic20.sats"
 
-#staload "./../DATS/lsp_bootstrap.dats"
-
 #implfun list_diagnostic20_fnp{syn:tx}(out, lst, fpr) =
   list_foritm<syn>(lst) 
   where {

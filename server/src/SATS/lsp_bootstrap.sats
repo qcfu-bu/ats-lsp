@@ -1,24 +1,22 @@
-#include "srcgen2/HATS/xatsopt_sats.hats"
-#include "srcgen2/HATS/xatsopt_dpre.hats"
 #include "./../HATS/libxatsopt.hats"
 
 #abstype url <= p0tr
 #extern fun url_to_path(url) : string
 
 #abstype severity <= p0tr
-#extern fun severity_error$make() : severity
-#extern fun severity_warn$make()  : severity 
-#extern fun severity_hint$make()  : severity 
-#extern fun severity_info$make()  : severity 
+fun severity_error$make() : severity
+fun severity_warn$make()  : severity 
+fun severity_hint$make()  : severity 
+fun severity_info$make()  : severity 
 
 #abstype position <= p0tr
-#extern fun position_make(
+fun position_make(
   line: int,
   offs: int
 ) : position
 
 #abstype range <= p0tr
-#extern fun range_make(
+fun range_make(
   pbeg: position,
   pend: position
 ) : range
@@ -26,7 +24,7 @@
 fun range_of_loctn(loctn) : range
 
 #abstype diagnostic <= p0tr
-#extern fun diagnostic_make(
+fun diagnostic_make(
   severity: severity,
   location: range, 
   message: string,
@@ -34,11 +32,11 @@ fun range_of_loctn(loctn) : range
 ) : diagnostic
 
 #abstype diagnostics <= p0tr
-#extern fun diagnostics_push(
+fun diagnostics_push(
   ds: diagnostics, 
   d: diagnostic
 ) : void
 #symload push with diagnostics_push
 
-#extern fun set_validator((diagnostics, url) -> void) : void
-#extern fun connect() : void
+fun set_validator((diagnostics, url) -> void) : void
+fun connect() : void

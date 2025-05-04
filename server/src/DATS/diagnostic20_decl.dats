@@ -5,8 +5,6 @@
 #staload "./../SATS/lsp_bootstrap.sats"
 #staload "./../SATS/diagnostic20.sats"
 
-#staload "./../DATS/lsp_bootstrap.dats"
-
 fun diagnostic20_d2conlst(out: diagnostics, d2cs: d2conlst): void =
   ()
   // case+ d2cs of
