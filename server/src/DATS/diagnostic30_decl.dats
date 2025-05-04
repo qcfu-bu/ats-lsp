@@ -5,6 +5,9 @@
 #staload "./../SATS/lsp_bootstrap.sats"
 #staload "./../SATS/diagnostic30.sats"
 
+
+local
+
 fun auxmain(out: diagnostics, dcl0: d3ecl): void =
   case+ dcl0.node() of
   | D3Cstatic(tknd, dcl1) => let 
@@ -67,6 +70,8 @@ fun auxmain(out: diagnostics, dcl0: d3ecl): void =
       val () = prerrsln("diagnostic30_d3ecl: auxmain: dcl0 = ", dcl0)
     end
 
+in
+
 #implfun diagnostic30_d3ecl(out, dcl0) =
   case+ dcl0.node() of
   | D3Cerrck(lvl, d3cl) => (
@@ -87,6 +92,8 @@ fun auxmain(out: diagnostics, dcl0: d3ecl): void =
     in out.push(d)
     end)
   | _ => ()
+
+end
 
 #implfun diagnostic30_d3eclist(out, dcls) =
   list_diagnostic30_fnp(out, dcls, diagnostic30_d3ecl)
