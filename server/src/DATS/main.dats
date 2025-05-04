@@ -16,10 +16,70 @@
   in range_make(pbeg1, pend1)
   end
 
+// TODO:
+#implfun diagnostics_of_d3exp(ds, dexp) = ()
+#implfun diagnostics_of_f3arglst(ds, args) = ()
+#implfun diagnostics_of_d3valdclist(ds, d3vs) = ()
+#implfun diagnostics_of_d3vardclist(ds, d3vs) = ()
+#implfun diagnostics_of_d3fundclist(ds, d3fs) = ()
+
+local
+    fun auxmain(ds: diagnostics, dcl0: d3ecl) : void =
+      case+ dcl0.node() of
+      | D3Cstatic(tknd, dcl1) => 
+        diagnostics_of_d3ecl(ds, dcl1)
+      | D3Cextern(tknd, dcl1) => 
+        diagnostics_of_d3ecl(ds, dcl1)
+      | D3Cdclst0(dcls) => 
+        diagnostics_of_d3eclist(ds, dcls)
+      | D3Clocal0(dcs1, dcs2) => let 
+          val () = diagnostics_of_d3eclist(ds, dcs1)
+          val () = diagnostics_of_d3eclist(ds, dcs2)
+        endlet
+      | D3Cinclude(knd0, tknd, gsrc, fopt, dopt) =>
+        diagnostics_of_d3eclistopt(ds, dopt)
+      | D3Cstaload(knd0, tknd, gsrc, fopt, dopt) => 
+        // TODO: implement traversal for statics
+        // diagnostics_of_d3eclistopt(ds, dopt)
+        ()
+      | D3Cvaldclst(tknd, d3vs) => 
+        diagnostics_of_d3valdclist(ds, d3vs)
+      | D3Cvardclst(tknd, d3vs) =>
+        diagnostics_of_d3vardclist(ds, d3vs)
+      | D3Cfundclst(tknd, tqas, d2cs, d3fs) => 
+        diagnostics_of_d3fundclist(ds, d3fs)
+      | D3Cimplmnt0(tknd, stmp, sqas, tqas, dimp, tias, f3as, sres, dexp) => let 
+          val () = diagnostics_of_f3arglst(ds, f3as)
+          val () = diagnostics_of_d3exp(ds, dexp)
+        endlet
+      | D3Cnone0 _ => ()
+      | D3Cnone1(d2cl) => 
+        // TODO: implement traverse for d2ecl
+        () 
+      | D3Cnone2(d3cl) => 
+        diagnostics_of_d3ecl(ds, d3cl)
+      | D3Cerrck(lvl1, dcl1) => 
+        diagnostics_of_d3ecl(ds, dcl0)
+      | _ =>
+        let 
+          val loc0 = dcl0.lctn()
+          val lsrc = 
+            case loc0.lsrc() of
+            | LCSRCnone0() => "none"
+            | LCSRCsome1(str) => str
+            | LCSRCfpath(path) => path.fnm1()
+          val d = diagnostic_make(
+            severity_error$make(), 
+            range_of_loctn(loc0), 
+            "hello", lsrc
+          )
+        in ds.push(d)
+        end
+in
 #implfun diagnostics_of_d3ecl(ds, dcl) =
   case+ dcl.node() of
   | D3Cerrck(lvl, d3cl) =>
-    // auxmain(ds, dcl);
+    let val () = auxmain(ds, d3cl) in
     if (lvl > 2) then () else let 
       val loc0 = dcl.lctn()
       val lsrc = 
@@ -34,14 +94,9 @@
       )
     in ds.push(d)
     end
+    end
   | _ => ()
-  where {
-    // fun auxmain(ds: diagnostics, dcl: d3exl) : void =
-    //   case+ dcl.node() of
-    //   | D3Cstatic(tknd, dcl1) => diagnostics_d3ecl(ds, dcl1)
-    //   | D3Cextern(tknd, dcl1) => diagnostics_d3ecl(ds, dcl1)
-    //   | D3Cdclst0(dcls) => diagnostics_d3ecl
-  }
+end
 
 #implfun diagnostics_of_d3eclist(ds, dcls) = 
   list_foritm<d3ecl>(dcls)
@@ -68,6 +123,10 @@
   let 
     val path = url_to_path(uri)
     val dpar = d3parsed_of_fildats(path)
+    // debug logging
+    val () = prerrln(path)
+    val () = prerrln(dpar)
+    val () = fperr30_d3parsed(g_stderr(), dpar)
   in diagnostics_of_d3parsed(ds, dpar)
   end
 
