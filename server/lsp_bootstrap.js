@@ -83,14 +83,10 @@ connection.onInitialize((params) => {
 
   const result = {
     capabilities: {
-      textDocumentSyntax: node.TextDocumentSyncKind.Incremental,
+      textDocumentSyntax: node.TextDocumentSyncKind.Full,
 			// completionProvider: {
 			// 	resolveProvider: true
 			// },
-      diagnosticProvider: {
-				interFileDependencies: false,
-				workspaceDiagnostics: false
-      }
     }
   };
   if (hasWorkspaceFolderCapability) {
@@ -104,7 +100,6 @@ connection.onInitialize((params) => {
 });
 
 connection.onInitialized(() => {
-  console.log("ok");
   if (hasConfigurationCapability) {
     connection.client.register(node.DidChangeConfigurationNotification.type, undefined);
   }
@@ -119,30 +114,18 @@ function asyncValidatorWrap(validator) {
   async function asyncValidator(textDocument) {
     let diagnostics = [];
     validator(diagnostics, textDocument.uri);
-    return diagnostics;
+    connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
   };
   return asyncValidator;
 }
 
 function vscode_set_validator(validator) {
   const asyncValidator = asyncValidatorWrap(validator); 
-  connection.languages.diagnostics.on(async (params) => {
-    const document = documents.get(params.textDocument.uri);
-    if (document !== undefined) {
-      return {
-        kind: node.DocumentDiagnosticReportKind.Full,
-        items: await asyncValidator(document)
-      };
-    } else {
-      return {
-        kind: node.DocumentDiagnosticReportKind.Full,
-        items: []
-      }
-    }
+  connection.onDidChangeConfiguration(_change => {
+    documents.all().forEach(asyncValidator);
   });
   documents.onDidSave(change => {
-    asyncValidator(change.document);
-    connection.languages.diagnostics.refresh()
+	  asyncValidator(change.document);
   });
 }
 
