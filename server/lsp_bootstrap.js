@@ -34,14 +34,19 @@ function position_make(line, offs) {
   };
 }
 
+// range
+function range_make(pbeg, pend) {
+  return { 
+    start: pbeg, 
+    end: pend 
+  };
+}
+
 // diagnostic
-function diagnostic_make(severity, start, end, message, source) {
+function diagnostic_make(severity, range, message, source) {
   return { 
     severity: severity,
-    range: {
-      start: start,
-      end: end
-    },
+    range: range,
     message: message,
     source: source
   };

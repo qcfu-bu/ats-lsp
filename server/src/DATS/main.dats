@@ -2,101 +2,73 @@
 #include "srcgen2/HATS/xatsopt_dpre.hats"
 #include "./../HATS/libxatsopt.hats"
 
-#abstype url <= p0tr
-#extern fun url_to_path(uri: url) : string = $extnam()
+#staload "./../SATS/lsp_bootstrap.sats"
+#staload "./../SATS/server.sats"
+#staload "./../DATS/lsp_bootstrap.dats"
 
-#abstype severity <= p0tr
-#extern fun severity_error$make() : severity = $extnam()
-#extern fun severity_warn$make()  : severity = $extnam()
-#extern fun severity_hint$make()  : severity = $extnam()
-#extern fun severity_info$make()  : severity = $extnam()
-
-#abstype position <= p0tr
-#extern fun position_make(
-  line: int,
-  offs: int
-) : position = $extnam()
-
-#abstype diagnostic <= p0tr
-#extern fun diagnostic_make(
-  severity: severity,
-  startpos: position,
-  endpos: position,
-  message: string,
-  source: string
-) : diagnostic = $extnam()
-
-#abstype diagnostics <= p0tr
-#extern fun diagnostics_push(
-  ds: diagnostics, 
-  d: diagnostic
-) : void = $extnam() 
-#symload push with diagnostics_push
-
-#extern fun bootstrap_set_validator(f: (diagnostics, url) -> void) : void = $extnam()
-#extern fun bootstrap_connect() : void = $extnam()
-
-fun loctn_to_diagnostic(lvl: sint, loc0: loctn, msg: string) : diagnostic =
+#implfun range_of_loctn(loc0) =
   let
     val lsrc0 = loc0.lsrc()
     val pbeg0 = loc0.pbeg()
     val pend0 = loc0.pend()
     val pbeg1 = position_make(pbeg0.nrow(), pbeg0.ncol()) 
     val pend1 = position_make(pend0.nrow(), pend0.ncol()) 
-    val lsrc1 = 
-      case lsrc0 of
-      | LCSRCnone0() => "none"
-      | LCSRCsome1(str) => str
-      | LCSRCfpath(path) => path.fnm1()
-  in
-    diagnostic_make(
-      severity_error$make(), 
-      pbeg1, pend1, msg, lsrc1 
-    )
+  in range_make(pbeg1, pend1)
   end
 
-fun diagnostics_d3ecl(ds: diagnostics, dcl: d3ecl) : void =
+#implfun diagnostics_of_d3ecl(ds, dcl) =
   case+ dcl.node() of
   | D3Cerrck(lvl, d3cl) =>
     // auxmain(ds, dcl);
     if (lvl > 2) then () else let 
       val loc0 = dcl.lctn()
-      val d = loctn_to_diagnostic(lvl, loc0, "hello")
+      val lsrc = 
+        case loc0.lsrc() of
+        | LCSRCnone0() => "none"
+        | LCSRCsome1(str) => str
+        | LCSRCfpath(path) => path.fnm1()
+      val d = diagnostic_make(
+        severity_error$make(), 
+        range_of_loctn(loc0), 
+        "hello", lsrc
+      )
     in ds.push(d)
     end
   | _ => ()
-
-fun list_diagnostics{syn:tbox}(
-  ds: diagnostics, ls: list(syn), 
-  f: (diagnostics, syn) -> void
-) : void = list_foritm<syn>(ls)
   where {
-    #impltmp
-    foritm$work<syn>(syn) = f(ds, syn)
+    // fun auxmain(ds: diagnostics, dcl: d3exl) : void =
+    //   case+ dcl.node() of
+    //   | D3Cstatic(tknd, dcl1) => diagnostics_d3ecl(ds, dcl1)
+    //   | D3Cextern(tknd, dcl1) => diagnostics_d3ecl(ds, dcl1)
+    //   | D3Cdclst0(dcls) => diagnostics_d3ecl
   }
 
-fun d3eclist_diagnostics(ds: diagnostics, dcls: d3eclist) : void =
-  list_diagnostics(ds, dcls, diagnostics_d3ecl)
+#implfun diagnostics_of_d3eclist(ds, dcls) = 
+  list_foritm<d3ecl>(dcls)
+  where {
+    #impltmp
+    foritm$work<d3ecl>(dcl) = diagnostics_of_d3ecl(ds, dcl)
+  }
 
-fun d3eclistopt_diagnostics(ds: diagnostics, dopt: d3eclistopt) : void = 
+#implfun diagnostics_of_d3eclistopt(ds, dopt) = 
   case+ dopt of
   | optn_nil() => ()
-  | optn_cons(d3cs) => d3eclist_diagnostics(ds: diagnostics, d3cs)
+  | optn_cons(d3cs) => diagnostics_of_d3eclist(ds, d3cs)
 
-fun d3parsed_diagnostics(ds: diagnostics, dpar: d3parsed) : void = 
+#implfun diagnostics_of_d3parsed(ds, dpar) = 
   let val nerror = dpar.nerror() in
     if (nerror > 0) then 
       let val parsed = d3parsed_get_parsed(dpar) 
-      in d3eclistopt_diagnostics(ds, parsed)
+      in diagnostics_of_d3eclistopt(ds, parsed)
       end
     else ()
   end
 
-fun ats_validator(ds: diagnostics, uri: url) : void = 
+#implfun ats_validator(ds, uri) = 
   let 
     val path = url_to_path(uri)
     val dpar = d3parsed_of_fildats(path)
-  in d3parsed_diagnostics(ds, dpar)
+  in diagnostics_of_d3parsed(ds, dpar)
   end
 
 // initialize the xatsopt environment
