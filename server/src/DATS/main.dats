@@ -27,14 +27,13 @@
 ) : diagnostic = $extnam()
 
 #abstype diagnostics <= p0tr
-#extern fun diagnostics_make() : diagnostics = $extnam() 
 #extern fun diagnostics_push(
   ds: diagnostics, 
   d: diagnostic
 ) : void = $extnam() 
 #symload push with diagnostics_push
 
-#extern fun bootstrap_set_validator(f: url -> diagnostics) : void = $extnam()
+#extern fun bootstrap_set_validator(f: (diagnostics, url) -> void) : void = $extnam()
 #extern fun bootstrap_connect() : void = $extnam()
 
 fun loctn_to_diagnostic(lvl: sint, loc0: loctn, msg: string) : diagnostic =
@@ -60,19 +59,17 @@ fun diagnostics_d3ecl(ds: diagnostics, dcl: d3ecl) : void =
   case+ dcl.node() of
   | D3Cerrck(lvl, d3cl) =>
     // auxmain(ds, dcl);
-    if (lvl > (2 : int)) then ()
-    else
-    let 
+    if (lvl > 2) then () else let 
       val loc0 = dcl.lctn()
       val d = loctn_to_diagnostic(lvl, loc0, "hello")
-    in
-      ds.push(d)
+    in ds.push(d)
     end
+  | _ => ()
 
 fun list_diagnostics{syn:tbox}(
-  ds: diagnostics, dcls: list(syn), 
+  ds: diagnostics, ls: list(syn), 
   f: (diagnostics, syn) -> void
-) : void = list_foritm<syn>(dcls)
+) : void = list_foritm<syn>(ls)
   where {
     #impltmp
     foritm$work<syn>(syn) = f(ds, syn)
@@ -87,7 +84,7 @@ fun d3eclistopt_diagnostics(ds: diagnostics, dopt: d3eclistopt) : void =
   | optn_cons(d3cs) => d3eclist_diagnostics(ds: diagnostics, d3cs)
 
 fun d3parsed_diagnostics(ds: diagnostics, dpar: d3parsed) : void = 
-  let val nerror = dpar.nerror() in 
+  let val nerror = dpar.nerror() in
     if (nerror > 0) then 
       let val parsed = d3parsed_get_parsed(dpar) 
       in d3eclistopt_diagnostics(ds, parsed)
@@ -95,13 +92,11 @@ fun d3parsed_diagnostics(ds: diagnostics, dpar: d3parsed) : void =
     else ()
   end
 
-fun ats_validator(uri: url) : diagnostics = 
+fun ats_validator(ds: diagnostics, uri: url) : void = 
   let 
     val path = url_to_path(uri)
-    val ds = diagnostics_make()
     val dpar = d3parsed_of_fildats(path)
-    val () = d3parsed_diagnostics(ds, dpar)
-  in ds
+  in d3parsed_diagnostics(ds, dpar)
   end
 
 // initialize the xatsopt environment
@@ -111,5 +106,5 @@ val () = xatsopt_flag$pvsadd0("--_XATSOPT_")
 val () = xatsopt_flag$pvsadd0("--_SRCGEN2_XATSOPT_")
 
 // boostrap the lsp server
-// val () = bootstrap_set_validator(ats_validator)
+val () = bootstrap_set_validator(ats_validator)
 val () = bootstrap_connect()

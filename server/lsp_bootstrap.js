@@ -61,9 +61,6 @@ function diagnostics_push(diagnostics, d) {
 const connection = node.createConnection(node.ProposedFeatures.all);
 const documents = new node.TextDocuments(text.TextDocument);
 
-console.log = connection.console.log.bind(connection.console);
-console.error = connection.console.error.bind(connection.console);
-
 let hasConfigurationCapability = false;
 let hasWorkspaceFolderCapability = false;
 let hasDiagnosticRelatedInformationCapability = false;
@@ -119,7 +116,9 @@ connection.onInitialized(() => {
 
 function asyncValidatorWrap(validator) {
   async function asyncValidator(textDocument) {
-    return validator(textDocument.uri);
+    let diagnostics = [];
+    validator(diagnostics, textDocument.uri);
+    return diagnostics;
   };
   return asyncValidator;
 }
@@ -140,8 +139,9 @@ function bootstrap_set_validator(validator) {
       }
     }
   });
-  documents.onDidChangeContent(async (change) => {
-    return asyncValidator(change.document);
+  documents.onDidSave(change => {
+    asyncValidator(change.document);
+    connection.languages.diagnostics.refresh()
   });
 }
 
