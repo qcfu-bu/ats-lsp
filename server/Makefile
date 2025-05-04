@@ -13,10 +13,9 @@ cleanall:: ; rm -f out/*~
 cleanall:: ; rm -f out/*_out.js
 cleanall:: ; rm -f out/*_out?.js
 
-XATSHOME=./xanadu
 XATS2JS=./xatshome/xassets/JS/xats2js
 XATS2JS_LIB=$(XATS2JS)/lib2xatsopt2js_ats3_opt1.js
-XATS2JS_JSEMIT=$(XATS2JS)/xats2js_jsemit01_ats2_opt1.js
+XATS2JS_JSEMIT=$(XATS2JS)/xats2js_jsemit00_ats2_opt1.js
 
 SRCSATS :=
 SRCDATS := \
@@ -49,7 +48,7 @@ N512=$(N256) $(N256)
 NFILE=$(N064) $(N032) $(N004) # 100=064+032+004
 
 out/%_dats_out0.js: src/DATS/%.dats; \
-$(NODE) --stack-size=8192 $(XATS2JS_JSEMIT) $< &> $@
+$(NODE) --stack-size=8192 $(XATS2JS_JSEMIT) $< > $@
 out/%_dats_out1.js: out/%_dats_out0.js; \
 $(eval NFILE=$(NFILE) X) \
 $(SED) -e 's/jsxtnm/jsx$(words $(NFILE))tnm/g' $< > $@

@@ -1,5 +1,6 @@
-#include "./../../xanadu/srcgen2/HATS/xatsopt_sats.hats"
-#include "./../../xanadu/srcgen2/HATS/xatsopt_dpre.hats"
+#include "srcgen2/HATS/xatsopt_sats.hats"
+#include "srcgen2/HATS/xatsopt_dpre.hats"
+#include "./../HATS/libxatsopt.hats"
 
 #abstype url <= p0tr
 #extern fun url_to_path(uri: url) : string = $extnam()
@@ -55,55 +56,53 @@ fun loctn_to_diagnostic(lvl: sint, loc0: loctn, msg: string) : diagnostic =
     )
   end
 
-// fun diagnostics_d3ecl(ds: diagnostics, dcl: d3ecl) : void =
-//   case+ dcl.node() of
-//   | D3Cerrck(lvl, d3cl) =>
-//     // auxmain(ds, dcl);
-//     if (lvl > (2 : int)) then ()
-//     else
-//     let 
-//       val loc0 = dcl.lctn()
-//       val d = loctn_to_diagnostic(lvl, loc0, "hello")
-//     in
-//       ds.push(d)
-//     end
+fun diagnostics_d3ecl(ds: diagnostics, dcl: d3ecl) : void =
+  case+ dcl.node() of
+  | D3Cerrck(lvl, d3cl) =>
+    // auxmain(ds, dcl);
+    if (lvl > (2 : int)) then ()
+    else
+    let 
+      val loc0 = dcl.lctn()
+      val d = loctn_to_diagnostic(lvl, loc0, "hello")
+    in
+      ds.push(d)
+    end
 
-// fun list_diagnostics{syn:tbox}(
-//   ds: diagnostics, dcls: list(syn), 
-//   f: (diagnostics, syn) -> void
-// ) : void = list_foritm<syn>(dcls)
-//   where {
-//     #impltmp
-//     foritm$work<syn>(syn) = f(ds, syn)
-//   }
+fun list_diagnostics{syn:tbox}(
+  ds: diagnostics, dcls: list(syn), 
+  f: (diagnostics, syn) -> void
+) : void = list_foritm<syn>(dcls)
+  where {
+    #impltmp
+    foritm$work<syn>(syn) = f(ds, syn)
+  }
 
-// fun d3eclist_diagnostics(ds: diagnostics, dcls: d3eclist) : void =
-//   list_diagnostics(ds, dcls, diagnostics_d3ecl)
+fun d3eclist_diagnostics(ds: diagnostics, dcls: d3eclist) : void =
+  list_diagnostics(ds, dcls, diagnostics_d3ecl)
 
-// fun d3eclistopt_diagnostics(ds: diagnostics, dopt: d3eclistopt) : void = 
-//   case+ dopt of
-//   | optn_nil() => ()
-//   | optn_cons(d3cs) => d3eclist_diagnostics(ds: diagnostics, d3cs)
+fun d3eclistopt_diagnostics(ds: diagnostics, dopt: d3eclistopt) : void = 
+  case+ dopt of
+  | optn_nil() => ()
+  | optn_cons(d3cs) => d3eclist_diagnostics(ds: diagnostics, d3cs)
 
-// fun d3parsed_diagnostics(ds: diagnostics, dpar: d3parsed) : void = 
-//   let val nerror = dpar.nerror() in 
-//     if (nerror > 0) then 
-//       let val parsed = d3parsed_get_parsed(dpar) 
-//       in d3eclistopt_diagnostics(ds, parsed)
-//       end
-//     else ()
-//   end
+fun d3parsed_diagnostics(ds: diagnostics, dpar: d3parsed) : void = 
+  let val nerror = dpar.nerror() in 
+    if (nerror > 0) then 
+      let val parsed = d3parsed_get_parsed(dpar) 
+      in d3eclistopt_diagnostics(ds, parsed)
+      end
+    else ()
+  end
 
-// fun ats_validator(uri: url) : diagnostics = 
-//   let 
-//     val path = url_to_path(uri)
-//     val ds = diagnostics_make()
-//     val dpar = d3parsed_of_fildats(path)
-//     val () = d3parsed_diagnostics(ds, dpar)
-//   in ds
-//   end
-
-val _ = 1 > 2
+fun ats_validator(uri: url) : diagnostics = 
+  let 
+    val path = url_to_path(uri)
+    val ds = diagnostics_make()
+    val dpar = d3parsed_of_fildats(path)
+    val () = d3parsed_diagnostics(ds, dpar)
+  in ds
+  end
 
 // initialize the xatsopt environment
 val _ = the_fxtyenv_pvsload()
