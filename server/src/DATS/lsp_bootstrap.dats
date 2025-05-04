@@ -72,7 +72,7 @@
       location: range, 
       message: string,
       source: string
-    ) : diagnostic = $extnam()
+    ): diagnostic = $extnam()
   }
 
 #implfun diagnostics_push(ds, d) = 
@@ -82,10 +82,24 @@
     vscode_diagnostics_push(
       ds: diagnostics, 
       d: diagnostic
-    ) : void = $extnam() 
+    ): void = $extnam() 
   }
 
 #symload push with diagnostics_push
+
+#implfun regex_make(pat) =
+  vscode_regex_make(pat)
+  where {
+    #extern fun
+    vscode_regex_make(pat: string): regex = $extnam()
+  }
+
+#implfun regex_test(re, input) =
+  vscode_regex_test(re, input)
+  where {
+    #extern fun
+    vscode_regex_test(re: regex, input: string): bool = $extnam()
+  }
 
 #implfun set_validator(f) = 
   vscode_set_validator(f)

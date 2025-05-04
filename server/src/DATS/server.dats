@@ -16,15 +16,24 @@
 #staload "./../DATS/diagnostic30_decl.dats"
 #staload "./../DATS/diagnostic30_dexp.dats"
 
+fun fpath_is_dats(fp: strn): bool = let
+    val re = regex_make(".*\\.dats$")
+  in regex_test(re, fp)
+  end
+
 #implfun validator(ds, uri) = 
-  let 
-    val path = url_to_path(uri)
-    val dpar = d3parsed_of_fildats(path)
-    // debug logging
-    // val () = prerrln(path)
-    // val () = prerrln(dpar)
-    // val () = fperr30_d3parsed(g_stderr(), dpar)
-  in diagnostic30_d3parsed(ds, dpar)
+  let val path = url_to_path(uri) in 
+    if fpath_is_dats(path) then let
+        val dpar = d3parsed_of_fildats(path)
+        // debug logging
+        // val () = prerrln(path)
+        // val () = prerrln(dpar)
+        // val () = fperr30_d3parsed(g_stderr(), dpar)
+      in diagnostic30_d3parsed(ds, dpar)
+      end
+    else 
+      // TODO:
+      ()
   end
 
 // initialize the xatsopt environment

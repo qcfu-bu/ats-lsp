@@ -6372,7 +6372,7 @@ let diagnostic30_d3pat_720 = function (arg1, arg2) { // impl
       // T1IMPallx(gint_gt$sint$sint(2560), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(gint_gt$sint$sint(2560);$list()))))
       let jsx107tnm11951
       jsx107tnm11951 = XATS2JS_gint_gt$sint$sint
-      let jsx107tnm11952 = XATSDAPP(jsx107tnm11951(XATSP1CN("D3Perrck", jsx107tnm11949[0+1]), XATSINT0(2)))
+      let jsx107tnm11952 = XATSDAPP(jsx107tnm11951(XATSP1CN("D3Perrck", jsx107tnm11949[0+1]), XATSINT0(1)))
       let jsx107tnm11969 // ift
       if (jsx107tnm11952) // ift
       {
@@ -7667,7 +7667,7 @@ let diagnostic30_d3exp_769 = function (arg1, arg2) { // impl
       // T1IMPallx(gint_gt$sint$sint(2560), I1Dtmpsub($list();I1Dimplmnt0(DIMPLone2(gint_gt$sint$sint(2560);$list()))))
       let jsx107tnm12282
       jsx107tnm12282 = XATS2JS_gint_gt$sint$sint
-      let jsx107tnm12283 = XATSDAPP(jsx107tnm12282(XATSP1CN("D3Eerrck", jsx107tnm12280[0+1]), XATSINT0(2)))
+      let jsx107tnm12283 = XATSDAPP(jsx107tnm12282(XATSP1CN("D3Eerrck", jsx107tnm12280[0+1]), XATSINT0(1)))
       let jsx107tnm12300 // ift
       if (jsx107tnm12283) // ift
       {

@@ -57,6 +57,15 @@ function vscode_diagnostics_push(diagnostics, d) {
   diagnostics.push(d);
 }
 
+// regex
+function vscode_regex_make(pattern) {
+  return new RegExp(pattern);
+}
+
+function vscode_regex_test(re, input) {
+  return re.test(input);
+}
+
 // -------------------------------------------------------------------
 
 const connection = node.createConnection(node.ProposedFeatures.all);

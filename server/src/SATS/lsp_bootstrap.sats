@@ -38,5 +38,9 @@ fun diagnostics_push(
 ) : void
 #symload push with diagnostics_push
 
+#abstype regex <= p0tr
+fun regex_make(pat: string) : regex
+fun regex_test(re: regex, input: string): bool
+
 fun set_validator((diagnostics, url) -> void) : void
 fun connect() : void

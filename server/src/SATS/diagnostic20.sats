@@ -4,7 +4,7 @@
 
 // ----------------------------------------------------
 
-#define DIAGNOSTIC20_ERRVL 2
+#define DIAGNOSTIC20_ERRVL 1
 #typedef diagnostic20_t(syn:tbox) = (diagnostics, syn) -> void
 
 // ----------------------------------------------------
