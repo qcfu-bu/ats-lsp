@@ -110,8 +110,7 @@ end
 
 local
 
-fun
-diagnostic10_s1exp_aux(out: diagnostics, s1e: s1exp): void =
+fun diagnostic10_s1exp_aux(out: diagnostics, s1e: s1exp): void =
   case s1e.node() of
   | S1Eid0 _ => ()
   | S1Eint _ => ()
