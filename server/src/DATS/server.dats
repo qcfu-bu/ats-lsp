@@ -25,6 +25,13 @@ fun fpath_is_dats(fp: strn): bool = let
 #implfun validator(ds, uri) = 
   let val path = url_to_path(uri) in 
     if fpath_is_dats(path) then let
+        // FIXME: 
+        // The ats compiler library does not provide an api to purge cached staload files. 
+        // We will use JS to purge caches directly.
+        val () = topmap_reset(the_d1parenv_pvstmap())
+        val () = topmap_reset(the_d2parenv_pvstmap())
+        val () = topmap_reset(the_d3parenv_pvstmap())
+        //
         val dpar = d3parsed_of_fildats(path)
         // debug logging
         // val () = prerrln(path)

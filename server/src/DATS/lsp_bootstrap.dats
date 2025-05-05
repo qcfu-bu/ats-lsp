@@ -115,3 +115,13 @@
   where {
     #extern fun vscode_connect() = $extnam()
   }
+
+// FIXME: 
+// The ats compiler library does not provide an api to purge cached staload files. 
+// We will use JS to purge caches directly.
+#implfun topmap_reset{syn}(env) =
+  JS_topmap_reset{syn}(env)
+  where {
+    #extern fun 
+    JS_topmap_reset{syn:tx}(env: topmap(syn)): void = $extnam()
+  }

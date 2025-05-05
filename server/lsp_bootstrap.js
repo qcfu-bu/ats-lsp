@@ -66,6 +66,13 @@ function vscode_regex_test(re, input) {
   return re.test(input);
 }
 
+// FIXME: 
+// The ats compiler library does not provide an api to purge cached staload files. 
+// We will use JS to purge caches directly.
+function JS_topmap_reset(env) {
+  for (const prop in env) delete env[prop];
+}
+
 // -------------------------------------------------------------------
 
 const connection = node.createConnection(node.ProposedFeatures.all);

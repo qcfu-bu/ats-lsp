@@ -44,3 +44,8 @@ fun regex_test(re: regex, input: string): bool
 
 fun set_validator((diagnostics, url) -> void) : void
 fun connect() : void
+
+// FIXME: 
+// The ats compiler library does not provide an api to purge cached staload files. 
+// We will use JS to purge caches directly.
+fun topmap_reset{syn:tx}(topmap(syn)): void
