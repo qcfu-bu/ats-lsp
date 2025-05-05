@@ -42,6 +42,9 @@ fun fpath_is_dats(fp: strn): bool = let
 // FIXME: 
 // The ats compiler library does not provide an api to prune cached staload files. 
 // We will use JS to prune caches directly.
+// TODO: 
+// The pruner should take dependencies into account.
+// If file B depends on file A, then modifying A should prune both A and B.
 #implfun cache_pruner(uri) = let
     val path = url_to_path(uri)
     val key = path.fpath().fnm2()
