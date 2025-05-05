@@ -4,4 +4,5 @@
 
 #staload "./../SATS/lsp_bootstrap.sats"
 
-fun validator(diagnostics, url) : void
+fun text_validator(diagnostics, url): void
+fun cache_pruner(url): void

@@ -25,7 +25,7 @@ function activate(context) {
   const clientOptions = {
     documentSelector: [{ scheme: 'file', language: 'ats' }],
     synchronize: {
-      fileEvents: vscode.workspace.createFileSystemWatcher('../.clientrc')
+      fileEvents: vscode.workspace.createFileSystemWatcher('**/*.(sats)|(dats)|(hats)')
     }
   };
 

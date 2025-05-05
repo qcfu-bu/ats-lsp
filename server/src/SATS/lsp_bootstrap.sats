@@ -42,10 +42,11 @@ fun diagnostics_push(
 fun regex_make(pat: string) : regex
 fun regex_test(re: regex, input: string): bool
 
-fun set_validator((diagnostics, url) -> void) : void
-fun connect() : void
-
 // FIXME: 
-// The ats compiler library does not provide an api to purge cached staload files. 
-// We will use JS to purge caches directly.
-fun topmap_reset{syn:tx}(topmap(syn)): void
+// The ats compiler library does not provide an api to prune cached staload files. 
+// We will use JS to prune caches directly.
+fun topmap_reset{syn:tx}(topmap(syn), stamp): void
+
+#typedef text_validator_t = (diagnostics, url) -> void
+#typedef cache_pruner_t = url -> void
+fun initialize(text_validator_t, cache_pruner_t) : void

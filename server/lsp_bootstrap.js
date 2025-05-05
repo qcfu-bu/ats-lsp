@@ -67,10 +67,13 @@ function vscode_regex_test(re, input) {
 }
 
 // FIXME: 
-// The ats compiler library does not provide an api to purge cached staload files. 
-// We will use JS to purge caches directly.
-function JS_topmap_reset(env) {
-  for (const prop in env) delete env[prop];
+// The ats compiler library does not provide an api to prune cached staload files. 
+// We will use JS to prune caches directly.
+function JS_topmap_reset(env, key) {
+  let v = env[key];
+  if (v !== undefined) {
+    delete env[key];
+  }
 }
 
 // -------------------------------------------------------------------
@@ -135,17 +138,24 @@ function textValidatorWrap(validator) {
   return textValidator;
 }
 
-function vscode_set_validator(validator) {
+// FIXME: 
+// The ats compiler library does not provide an api to prune cached staload files. 
+// We will use JS to prune caches directly.
+function vscode_initialize(validator, pruner) {
   const textValidator = textValidatorWrap(validator); 
+
   connection.onDidChangeConfiguration(_change => {
     documents.all().forEach(textValidator);
   });
+
   documents.onDidSave(change => {
 	  textValidator(change.document);
   });
-}
 
-function vscode_connect() {
+  documents.onDidChangeContent(change => {
+    pruner(change.document.uri);
+  })
+
   documents.listen(connection);
   connection.listen();
 }

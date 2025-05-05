@@ -22,26 +22,32 @@ fun fpath_is_dats(fp: strn): bool = let
   in regex_test(re, fp)
   end
 
-#implfun validator(ds, uri) = 
-  let val path = url_to_path(uri) in 
+#implfun text_validator(ds, uri) = let 
+    val path = url_to_path(uri) 
+    val key = fpath_get_fnm2(path.fpath())
+  in 
     if fpath_is_dats(path) then let
-        // FIXME: 
-        // The ats compiler library does not provide an api to purge cached staload files. 
-        // We will use JS to purge caches directly.
-        val () = topmap_reset(the_d1parenv_pvstmap())
-        val () = topmap_reset(the_d2parenv_pvstmap())
-        val () = topmap_reset(the_d3parenv_pvstmap())
-        //
-        val dpar = d3parsed_of_fildats(path)
-        // debug logging
-        // val () = prerrln(path)
-        // val () = prerrln(dpar)
-        // val () = fperr30_d3parsed(g_stderr(), dpar)
-      in diagnostic30_d3parsed(ds, dpar)
+      val dpar = d3parsed_of_fildats(path)
+      // debug logging
+      // val () = prerrln(path)
+      // val () = prerrln(dpar)
+      // val () = fperr30_d3parsed(g_stderr(), dpar)
+      val () = diagnostic30_d3parsed(ds, dpar)
       end
     else 
       // TODO:
       ()
+  end
+
+// FIXME: 
+// The ats compiler library does not provide an api to prune cached staload files. 
+// We will use JS to prune caches directly.
+#implfun cache_pruner(uri) = let
+    val path = url_to_path(uri)
+    val key = path.fpath().fnm2()
+    val () = topmap_reset(the_d1parenv_pvstmap(), key.stmp())
+    val () = topmap_reset(the_d2parenv_pvstmap(), key.stmp())
+    val () = topmap_reset(the_d3parenv_pvstmap(), key.stmp())
   end
 
 // initialize the xatsopt environment
@@ -51,5 +57,4 @@ val () = xatsopt_flag$pvsadd0("--_XATSOPT_")
 val () = xatsopt_flag$pvsadd0("--_SRCGEN2_XATSOPT_")
 
 // boostrap the lsp server
-val () = set_validator(validator)
-val () = connect()
+val () = initialize(text_validator, cache_pruner)

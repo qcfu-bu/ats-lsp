@@ -101,27 +101,22 @@
     vscode_regex_test(re: regex, input: string): bool = $extnam()
   }
 
-#implfun set_validator(f) = 
-  vscode_set_validator(f)
-  where {
-    #extern fun
-    vscode_set_validator(
-      f: (diagnostics, url) -> void
-    ): void = $extnam()
-  }
-
-#implfun connect() = 
-  vscode_connect()
-  where {
-    #extern fun vscode_connect() = $extnam()
-  }
-
 // FIXME: 
-// The ats compiler library does not provide an api to purge cached staload files. 
-// We will use JS to purge caches directly.
-#implfun topmap_reset{syn}(env) =
-  JS_topmap_reset{syn}(env)
+// The ats compiler library does not provide an api to prune cached staload files. 
+// We will use JS to prune caches directly.
+#implfun topmap_reset{syn}(env, key) =
+  JS_topmap_reset{syn}(env, key)
   where {
     #extern fun 
-    JS_topmap_reset{syn:tx}(env: topmap(syn)): void = $extnam()
+    JS_topmap_reset{syn:tx}(env: topmap(syn), key: stamp): void = $extnam()
+  }
+
+#implfun initialize(f, g) = 
+  vscode_initialize(f, g)
+  where {
+    #extern fun
+    vscode_initialize(
+      f: text_validator_t,
+      g: cache_pruner_t
+    ): void = $extnam()
   }

@@ -1,3 +1,5 @@
+#staload "srcgen2/SATS/xstamp0.sats"
+#staload "srcgen2/SATS/xsymbol.sats"
 #staload "srcgen2/SATS/xbasics.sats"
 #staload "srcgen2/SATS/filpath.sats"
 #staload "srcgen2/SATS/xstamp0.sats"
