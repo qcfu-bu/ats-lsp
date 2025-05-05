@@ -119,22 +119,22 @@ connection.onInitialized(() => {
   }
 });
 
-function asyncValidatorWrap(validator) {
-  async function asyncValidator(textDocument) {
+function textValidatorWrap(validator) {
+  function textValidator(textDocument) {
     let diagnostics = [];
     validator(diagnostics, textDocument.uri);
     connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
   };
-  return asyncValidator;
+  return textValidator;
 }
 
 function vscode_set_validator(validator) {
-  const asyncValidator = asyncValidatorWrap(validator); 
+  const textValidator = textValidatorWrap(validator); 
   connection.onDidChangeConfiguration(_change => {
-    documents.all().forEach(asyncValidator);
+    documents.all().forEach(textValidator);
   });
   documents.onDidSave(change => {
-	  asyncValidator(change.document);
+	  textValidator(change.document);
   });
 }
 
