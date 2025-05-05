@@ -101,14 +101,70 @@
     vscode_regex_test(re: regex, input: string): bool = $extnam()
   }
 
+#implfun depset_make() =
+  JS_depset_make()
+  where {
+    #extern fun
+    JS_depset_make(): depset = $extnam()
+  }
+
+#implfun depset_add(dp, key) =
+  JS_depset_add(dp, key)
+  where {
+    #extern fun
+    JS_depset_add(dp: depset, key: stamp): void = $extnam()
+  }
+
+#implfun depset_pop(dp) =
+  JS_depset_pop(dp)
+  where {
+    #extern fun
+    JS_depset_pop(dp: depset): stamp = $extnam()
+  }
+
+#implfun depset_is_empty(dp) =
+  JS_depset_is_empty(dp)
+  where {
+    #extern fun
+    JS_depset_is_empty(dp: depset): bool = $extnam()
+  }
+
+#implfun depset_union(dp1, dp2) =
+  JS_depset_union(dp1, dp2)
+  where {
+    #extern fun
+    JS_depset_union(dp1: depset, dp2: depset): depset = $extnam()
+  }
+
+#implfun depgraph_add(dp, k, v) =
+  JS_depgraph_add(dp, k, v)
+  where {
+    #extern fun
+    JS_depgraph_add(dp: depgraph, k: stamp, v: stamp): void = $extnam()
+  }
+
+#implfun depgraph_delete(dp, k) =
+  JS_depgraph_delete(dp, k)
+  where {
+    #extern fun
+    JS_depgraph_delete(dp: depgraph, k: stamp): void = $extnam()
+  }
+
+#implfun depgraph_find(dp, k) =
+  JS_depgraph_find(dp, k)
+  where {
+    #extern fun
+    JS_depgraph_find(dp: depgraph, k: stamp): depset = $extnam()
+  }
+
 // FIXME: 
 // The ats compiler library does not provide an api to prune cached staload files. 
 // We will use JS to prune caches directly.
-#implfun topmap_reset{syn}(env, key) =
-  JS_topmap_reset{syn}(env, key)
+#implfun env_reset{syn}(env, key) =
+  JS_map_reset{syn}(env, key)
   where {
     #extern fun 
-    JS_topmap_reset{syn:tx}(env: topmap(syn), key: stamp): void = $extnam()
+    JS_map_reset{syn:tx}(env: topmap(syn), key: stamp): void = $extnam()
   }
 
 #implfun initialize(f, g) = 

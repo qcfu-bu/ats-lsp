@@ -3,6 +3,7 @@
 #include "./../HATS/libxatsopt.hats"
 
 #staload "./../SATS/lsp_bootstrap.sats"
+#staload "./../SATS/dependency30.sats"
 #staload "./../SATS/diagnostic10.sats"
 #staload "./../SATS/diagnostic20.sats"
 #staload "./../SATS/diagnostic30.sats"
@@ -22,17 +23,18 @@ fun fpath_is_dats(fp: strn): bool = let
   in regex_test(re, fp)
   end
 
-#implfun text_validator(ds, uri) = let 
+#implfun text_validator(dp, ds, uri) = let 
     val path = url_to_path(uri) 
-    val key = fpath_get_fnm2(path.fpath())
+    val key = path.fpath().fnm2().stmp()
   in 
     if fpath_is_dats(path) then let
       val dpar = d3parsed_of_fildats(path)
+      // val () = dependency30_d3parsed(dp, dpar, key)
       val () = diagnostic30_d3parsed(ds, dpar)
       end
-    else 
-      // TODO:
-      ()
+    else let
+      val dpar = d3parsed_of_filsats(path)
+      end
   end
 
 // FIXME: 
@@ -41,12 +43,23 @@ fun fpath_is_dats(fp: strn): bool = let
 // TODO: 
 // The pruner should take dependencies into account.
 // If file B depends on file A, then modifying A should prune both A and B.
-#implfun cache_pruner(uri) = let
+#implfun cache_pruner(dp, uri) = let
     val path = url_to_path(uri)
-    val key = path.fpath().fnm2()
-    val () = topmap_reset(the_d1parenv_pvstmap(), key.stmp())
-    val () = topmap_reset(the_d2parenv_pvstmap(), key.stmp())
-    val () = topmap_reset(the_d3parenv_pvstmap(), key.stmp())
+    val key = path.fpath().fnm2().stmp()
+    val deps0 = depset_make()
+    val () = depset_add(deps0, key)
+    fun loop(deps0: depset): void =
+      if ~depset_is_empty(deps0) then let
+        val key = depset_pop(deps0)
+        val () = env_reset(the_d1parenv_pvstmap(), key)
+        val () = env_reset(the_d2parenv_pvstmap(), key)
+        val () = env_reset(the_d3parenv_pvstmap(), key)
+        val deps1 = depgraph_find(dp, key)
+        val deps2 = depset_union(deps0, deps1)
+        val () = depgraph_delete(dp, key)
+      in loop(deps2)
+      end
+  in loop(deps0)
   end
 
 // initialize the xatsopt environment

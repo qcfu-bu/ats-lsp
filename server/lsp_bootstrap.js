@@ -66,10 +66,78 @@ function vscode_regex_test(re, input) {
   return re.test(input);
 }
 
+// dependencies
+function JS_depset_make() {
+  return new Set();
+}
+
+/**
+ * @param {Set} dp 
+ */
+function JS_depset_add(dp, k) {
+  dp.add(k);
+}
+
+/**
+ * @param {Set} dp 
+ */
+function JS_depset_pop(dp) {
+  const [elem] = dp;
+  dp.delete(elem);
+  return elem;
+}
+
+/**
+ * @param {Set} dp 
+ */
+function JS_depset_is_empty(dp) {
+  return (dp.size <= 0);
+}
+
+/**
+ * @param {Set} dp1
+ * @param {Set} dp2
+ */
+function JS_depset_union(dp1, dp2) {
+  return dp1.union(dp2);
+}
+
+/**
+ * @param {Map<Any,Set<Any>>} dp 
+ */
+function JS_depgrah_add(dp, k, v) {
+  const edges = dp.get(k)
+  if (edges !== undefined) {
+    edges.add(v);
+  } else {
+    dp.set(k, new Set([v]));
+  }
+}
+
+/**
+ * @param {Map<Any,Set<Any>>} dp 
+ */
+function JS_depgraph_delete(dp, k) {
+  dp.delete(k);
+}
+
+/**
+ * @param {Map<Any,Set<Any>>} dp 
+ */
+function JS_depgraph_find(dp, k) {
+  const edges = dp.get(k);
+  if (edges === undefined) {
+    return new Set();
+  } else {
+    return edges;
+  }
+}
+
+
 // FIXME: 
 // The ats compiler library does not provide an api to prune cached staload files. 
 // We will use JS to prune caches directly.
-function JS_topmap_reset(env, key) {
+function JS_map_reset(env, key) {
   let v = env[key];
   if (v !== undefined) {
     delete env[key];
@@ -129,10 +197,14 @@ connection.onInitialized(() => {
   }
 });
 
+let diagnostics = [];
+let dependencies = new Map();
+
 function textValidatorWrap(validator) {
   function textValidator(textDocument) {
-    let diagnostics = [];
-    validator(diagnostics, textDocument.uri);
+    diagnostics = [];
+    dependencies = new Map();
+    validator(dependencies, diagnostics, textDocument.uri);
     connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
   };
   return textValidator;
@@ -153,7 +225,7 @@ function vscode_initialize(validator, pruner) {
   });
 
   documents.onDidChangeContent(change => {
-    pruner(change.document.uri);
+    pruner(dependencies, change.document.uri);
   })
 
   documents.listen(connection);
