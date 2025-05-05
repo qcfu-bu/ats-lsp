@@ -743,6 +743,11 @@ end
     foritm$work<d1ecl>(dcl1) = diagnostic10_d1ecl(out, dcl1)
   }
 
+#implfun diagnostic10_d1eclistopt(out, dopt) =
+  case+ dopt of
+  | optn_nil() => ()
+  | optn_cons(d2cs) => diagnostic10_d1eclist(out, d2cs)
+
 #implfun diagnostic10_q1arglst(out, q1as) =
   list_foritm<q1arg>(q1as) 
   where {
@@ -831,6 +836,16 @@ end
     val sres = d1cstdcl_get_sres(dcst)
     val dres = d1cstdcl_get_dres(dcst)
   }
+
+#implfun diagnostic10_d1parsed(out, dpar) = let
+    val nerror = d1parsed_get_nerror(dpar)
+  in
+    if (nerror > 0) then let
+        val parsed = d1parsed_get_parsed(dpar)
+      in diagnostic10_d1eclistopt(out, parsed) 
+      end 
+    else ()
+  end
 
 #implfun diagnostic10_d1valdclist(out, d1vs) =
   list_foritm<d1valdcl>(d1vs) 

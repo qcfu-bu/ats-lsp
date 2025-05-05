@@ -28,10 +28,6 @@ fun fpath_is_dats(fp: strn): bool = let
   in 
     if fpath_is_dats(path) then let
       val dpar = d3parsed_of_fildats(path)
-      // debug logging
-      // val () = prerrln(path)
-      // val () = prerrln(dpar)
-      // val () = fperr30_d3parsed(g_stderr(), dpar)
       val () = diagnostic30_d3parsed(ds, dpar)
       end
     else 

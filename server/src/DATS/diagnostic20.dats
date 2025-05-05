@@ -34,5 +34,5 @@
 
 #implfun diagnostic20_d2eclistopt(out, dopt) =
   case+ dopt of
-  | optn_nil() => ((*void*))
+  | optn_nil() => ()
   | optn_cons(d2cs) => diagnostic20_d2eclist(out, d2cs)

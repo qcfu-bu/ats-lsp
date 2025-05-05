@@ -58,7 +58,7 @@ fun diagnostic20_d2vardclist(diagnostics, d2vardclist): void
 
 fun diagnostic20_d2fundclist(diagnostics, d2fundclist): void
 
-fun diagnostic20_d2parsed(diagnostics, d2parsed ): void
+fun diagnostic20_d2parsed(diagnostics, d2parsed): void
 
 fun diagnostic20_d2explstopt(diagnostics, d2explstopt): void
 fun diagnostic20_d2eclistopt(diagnostics, d2eclistopt): void

@@ -101,5 +101,6 @@ fun diagnostic10_d1expopt(diagnostics, d1expopt): void
 
 fun diagnostic10_d1ecl(diagnostics, d1ecl): void
 fun diagnostic10_d1eclist(diagnostics, d1eclist): void
+fun diagnostic10_d1eclistopt(diagnostics, d1eclistopt): void
 
 fun diagnostic10_d1parsed(diagnostics, d1parsed): void

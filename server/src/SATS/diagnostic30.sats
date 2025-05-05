@@ -64,6 +64,6 @@ fun diagnostic30_d3valdclist(diagnostics, d3valdclist): void
 
 fun diagnostic30_d3vardclist(diagnostics, d3vardclist): void
 fun diagnostic30_d3fundclist(diagnostics, d3fundclist): void
-fun diagnostic30_d3parsed(diagnostics, d3parsed ): void
+fun diagnostic30_d3parsed(diagnostics, d3parsed): void
 fun diagnostic30_d3explstopt(diagnostics, d3explstopt): void
 fun diagnostic30_d3eclistopt(diagnostics, d3eclistopt): void
