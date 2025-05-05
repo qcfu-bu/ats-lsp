@@ -3,6 +3,7 @@
 #include "./../HATS/libxatsopt.hats"
 
 #staload "./../SATS/lsp_bootstrap.sats"
+#staload "./../SATS/diagnostic10.sats"
 #staload "./../SATS/diagnostic20.sats"
 
 // FIXME: file staexp2 does not symload s2cst_get_lctn correctly
@@ -108,10 +109,7 @@ fun diagnostic20_d2ecl_aux(out: diagnostics, dcl0: d2ecl): void =
       val () = diagnostic20_s2cstlst(out, s2cs)
     end
   | D2Cnone0 _ => ()
-  | D2Cnone1(d1cl) => 
-    // TODO:
-    // d1ecl_fpemsg(out, d1cl)
-    ()
+  | D2Cnone1(d1cl) => diagnostic10_d1ecl(out, d1cl)
   | D2Cnone2(d2cl) => diagnostic20_d2ecl(out, d2cl)
   | D2Cerrck(lvl1,dcl1) => diagnostic20_d2ecl(out, dcl0)
   | _ => let
