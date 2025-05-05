@@ -105,7 +105,7 @@ function JS_depset_union(dp1, dp2) {
 /**
  * @param {Map<Any,Set<Any>>} dp 
  */
-function JS_depgrah_add(dp, k, v) {
+function JS_depgraph_add(dp, k, v) {
   const edges = dp.get(k)
   if (edges !== undefined) {
     edges.add(v);
@@ -152,72 +152,66 @@ const documents = new node.TextDocuments(text.TextDocument);
 let hasConfigurationCapability = false;
 let hasWorkspaceFolderCapability = false;
 let hasDiagnosticRelatedInformationCapability = false;
-
-/**
- * @param {node.InitializeParams} params 
- */
-connection.onInitialize((params) => {
-  const capabilities = params.capabilities;
-
-  hasConfigurationCapability = !!(
-    capabilities.workspace && !!capabilities.workspace.configuration
-  );
-  hasDiagnosticRelatedInformationCapability = !!(
-    capabilities.textDocument &&
-    capabilities.textDocument.publishDiagnostics &&
-    capabilities.textDocument.publishDiagnostics.relatedInformation
-  );
-
-  const result = {
-    capabilities: {
-      textDocumentSyntax: node.TextDocumentSyncKind.Incremental,
-			// completionProvider: {
-			// 	resolveProvider: true
-			// },
-    }
-  };
-  if (hasWorkspaceFolderCapability) {
-    result.capabilities.workspace = {
-      workspaceFolders: {
-        supported: true
-      }
-    }
-  };
-  return result;
-});
-
-connection.onInitialized(() => {
-  if (hasConfigurationCapability) {
-    connection.client.register(node.DidChangeConfigurationNotification.type, undefined);
-  }
-  if (hasWorkspaceFolderCapability) {
-    connection.workspace.onDidChangeWorkspaceFolders(_event => {
-      connection.console.log("Workspace folder change event received.")
-    });
-  }
-});
-
 let diagnostics = [];
 let dependencies = new Map();
-
-function textValidatorWrap(validator) {
-  function textValidator(textDocument) {
-    diagnostics = [];
-    dependencies = new Map();
-    validator(dependencies, diagnostics, textDocument.uri);
-    connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
-  };
-  return textValidator;
-}
 
 // FIXME: 
 // The ats compiler library does not provide an api to prune cached staload files. 
 // We will use JS to prune caches directly.
 function vscode_initialize(validator, pruner) {
-  const textValidator = textValidatorWrap(validator); 
+  function textValidator(textDocument) {
+    diagnostics = [];
+    validator(dependencies, diagnostics, textDocument.uri);
+    connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
+  };
+
+  connection.onInitialize((params) => {
+    const capabilities = params.capabilities;
+
+    hasConfigurationCapability = !!(
+      capabilities.workspace && !!capabilities.workspace.configuration
+    );
+    hasDiagnosticRelatedInformationCapability = !!(
+      capabilities.textDocument &&
+      capabilities.textDocument.publishDiagnostics &&
+      capabilities.textDocument.publishDiagnostics.relatedInformation
+    );
+
+    const result = {
+      capabilities: {
+        textDocumentSyntax: node.TextDocumentSyncKind.Incremental,
+        // completionProvider: {
+        // 	resolveProvider: true
+        // },
+      }
+    };
+    if (hasWorkspaceFolderCapability) {
+      result.capabilities.workspace = {
+        workspaceFolders: {
+          supported: true
+        }
+      }
+    };
+    return result;
+  });
+
+  connection.onInitialized(() => {
+    if (hasConfigurationCapability) {
+      connection.client.register(node.DidChangeConfigurationNotification.type, undefined);
+    }
+    if (hasWorkspaceFolderCapability) {
+      connection.workspace.onDidChangeWorkspaceFolders(_event => {
+        connection.console.log("Workspace folder change event received.")
+      });
+    }
+  });
 
   connection.onDidChangeConfiguration(_change => {
     documents.all().forEach(textValidator);
+  });
+
+  documents.onDidOpen(change => {
+	  textValidator(change.document);
   });
 
   documents.onDidSave(change => {

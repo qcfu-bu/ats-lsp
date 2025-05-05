@@ -20,6 +20,9 @@ XATS2JS_JSEMIT=$(XATS2JS)/xats2js_jsemit00_ats2_opt1.js
 SRCSATS :=
 SRCDATS := \
 lsp_bootstrap.dats \
+dependency30.dats \
+dependency30_decl.dats \
+dependency30_dexp.dats \
 diagnostic10.dats \
 diagnostic20.dats \
 diagnostic20_decl.dats \

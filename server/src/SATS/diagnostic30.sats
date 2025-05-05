@@ -16,7 +16,7 @@ fun optn_diagnostic30_fnp{syn:tbox}
 
 // ----------------------------------------------------
 
-fun diagnostic30_s2typ(FILR, s2typ): void
+fun diagnostic30_s2typ(diagnostics, s2typ): void
 
 // ----------------------------------------------------
 // QCFU: diagnostic30 for dynamics

@@ -2,6 +2,8 @@
 #include "srcgen2/HATS/xatsopt_dpre.hats"
 #include "./../HATS/libxatsopt.hats"
 
+// ----------------------------------------------------
+
 #staload "./../SATS/lsp_bootstrap.sats"
 #staload "./../SATS/dependency30.sats"
 #staload "./../SATS/diagnostic10.sats"
@@ -9,14 +11,24 @@
 #staload "./../SATS/diagnostic30.sats"
 #staload "./../SATS/server.sats"
 
+// ----------------------------------------------------
+
 #staload "./../DATS/lsp_bootstrap.dats"
+
+#staload "./../DATS/dependency30.dats"
+#staload "./../DATS/dependency30_decl.dats"
+#staload "./../DATS/dependency30_dexp.dats"
+
 #staload "./../DATS/diagnostic10.dats"
 #staload "./../DATS/diagnostic20.dats"
 #staload "./../DATS/diagnostic20_decl.dats"
+
 #staload "./../DATS/diagnostic20_dexp.dats"
 #staload "./../DATS/diagnostic30.dats"
 #staload "./../DATS/diagnostic30_decl.dats"
 #staload "./../DATS/diagnostic30_dexp.dats"
+
+// ----------------------------------------------------
 
 fun fpath_is_dats(fp: strn): bool = let
     val re = regex_make(".*\\.dats$")
@@ -29,13 +41,14 @@ fun fpath_is_dats(fp: strn): bool = let
   in 
     if fpath_is_dats(path) then let
       val dpar = d3parsed_of_fildats(path)
-      // val () = dependency30_d3parsed(dp, dpar, key)
+      val () = dependency30_d3parsed(dp, dpar, key)
       val () = diagnostic30_d3parsed(ds, dpar)
       end
     else let
       val dpar = d3parsed_of_filsats(path)
       end
   end
+
 
 // FIXME: 
 // The ats compiler library does not provide an api to prune cached staload files. 
