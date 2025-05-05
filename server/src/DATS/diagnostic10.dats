@@ -5,8 +5,6 @@
 #staload "./../SATS/lsp_bootstrap.sats"
 #staload "./../SATS/diagnostic10.sats"
 
-#define FPEMSG_ERRVL 1
-
 local
 
 fun diagnostic10_g1exp_aux(out: diagnostics, g1e: g1exp): void =
