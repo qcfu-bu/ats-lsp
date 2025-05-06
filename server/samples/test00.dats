@@ -1,4 +1,4 @@
-#staload "./tes00.sats"
+#include "./test00.sats"
 
 fun foo() : int = 
   let 

@@ -1,9 +1,11 @@
+RM=rm
 CAT=cat
 SED=sed
 BUN=bun
 ECHO=echo
 NODE=node
 PRINTF=printf
+CLOSURE=google-closure-compiler
 
 all::
 
@@ -43,6 +45,8 @@ OUT0DATS := \
 $(patsubst %.dats, out/%_dats_out0.js, $(SRCDATS))
 OUT1DATS := \
 $(patsubst %.dats, out/%_dats_out1.js, $(SRCDATS))
+OUT2DATS := \
+$(patsubst %.dats, out/%_dats_out2.js, $(SRCDATS))
 
 all:: all_sats
 all_sats:: $(OUTSATS)
@@ -69,9 +73,13 @@ out/%_dats_out1.js: out/%_dats_out0.js; \
 $(eval NFILE=$(NFILE) X) \
 $(SED) -e 's/jsxtnm/jsx$(words $(NFILE))tnm/g' $< > $@
 
-all:: ats_lsp
-ats_lsp: $(OUT1DATS); \
-$(PRINTF) "// %s\n" "`date`" > out/$@_out.js && \
-$(CAT) $(XATS2JS_LIB) >> out/$@_out.js && \
-$(CAT) src/CATS/lsp_bootstrap.js >> out/$@_out.js && \
-$(CAT) $(OUT1DATS) >> out/$@_out.js
+out/ats_lsp_out0.js: $(OUT1DATS); \
+$(PRINTF) "// %s\n" "`date`" > $@ && \
+$(CAT) $(XATS2JS_LIB) >> $@ && \
+$(CAT) src/CATS/lsp_bootstrap.js >> $@ && \
+$(CAT) $(OUT1DATS) >> $@
+
+all:: out/ats_lsp_out1.js
+out/ats_lsp_out1.js: out/ats_lsp_out0.js; \
+$(CLOSURE) -W QUIET -O SIMPLE --js $< --js_output_file $@ && \
+$(RM) $<

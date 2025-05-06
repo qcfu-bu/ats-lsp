@@ -80,9 +80,54 @@ fun diagnostic20_d2ecl_aux(out: diagnostics, dcl0: d2ecl): void =
   | D2Cstacst0(s2c1, s2t2) => ()
   | D2Csortdef(sym1, s2tx) => ()
   | D2Csexpdef(s2c1, s2e2) => ()
-  | D2Cinclude(knd0, tknd, gsrc, fopt, dopt) => let
-      val () = diagnostic20_d2eclistopt(out, dopt)
-    end
+  | D2Cinclude(knd0, tknd, gsrc, fopt, dopt) => (
+    case+ dopt of
+    | optn_nil() => let
+        val loc0 = dcl0.lctn()
+        val lsrc = 
+          case loc0.lsrc() of
+          | LCSRCnone0() => "none"
+          | LCSRCsome1(str) => str
+          | LCSRCfpath(path) => path.fnm1()
+        // FIXME:
+        val () = stderr_capture_start()
+        val () = prerrsln("D2Cinclude_error:\n", dcl0)
+        val () = stderr_capture_stop()
+        val msg = stderr_capture_get()
+        //
+        val d = diagnostic_make(
+            severity_error$make(), 
+            range_of_loctn(loc0), 
+            msg, 
+            lsrc
+          )
+      in out.push(d)
+      end
+    | optn_cons(dcls) => diagnostic20_d2eclist(out, dcls))
+  | D2Cstaload(knd0, tknd, gsrc, fopt, dopt) => (
+    case+ fopt of
+    | optn_nil() => let
+        val loc0 = dcl0.lctn()
+        val lsrc = 
+          case loc0.lsrc() of
+          | LCSRCnone0() => "none"
+          | LCSRCsome1(str) => str
+          | LCSRCfpath(path) => path.fnm1()
+        // FIXME:
+        val () = stderr_capture_start()
+        val () = prerrsln("D2Cstaload_error:\n", dcl0)
+        val () = stderr_capture_stop()
+        val msg = stderr_capture_get()
+        //
+        val d = diagnostic_make(
+            severity_error$make(), 
+            range_of_loctn(loc0), 
+            msg, 
+            lsrc
+          )
+      in out.push(d)
+      end
+    | optn_cons _ => ())
   | D2Cvaldclst(tknd, d2vs) => let
       val () = diagnostic20_d2valdclist(out, d2vs)
     end

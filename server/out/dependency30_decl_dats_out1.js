@@ -5457,190 +5457,190 @@
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("./../SATS/dependency30.sats";29));$optn(FPATH(src/SATS/dependency30.sats));...)))
 // I1Dimplmnt0(LCSRCsome1(src/DATS/dependency30_decl.dats)@(243(line=10,offs=1)--946(line=30,offs=12)))
 let dependency30_d3ecl_625 = function (arg1, arg2, arg3) { // impl
-  let jsx107tnm11711 = arg1
-  let jsx107tnm11712 = arg2
-  let jsx107tnm11713 = arg3
+  let jsx108tnm11711 = arg1
+  let jsx108tnm11712 = arg2
+  let jsx108tnm11713 = arg3
   // I1CMP:start
-  let jsx107tnm11714 = XATSDAPP(d3ecl_get_node_17801(jsx107tnm11712))
-  let jsx107tnm11744 // cas
+  let jsx108tnm11714 = XATSDAPP(d3ecl_get_node_17801(jsx108tnm11712))
+  let jsx108tnm11744 // cas
   do {
     // { // cls
     // I1GPTpat(I1BNDcons(I1TNM(11715);I0Pdapp(I0Pcon(D3Clocal0(1013));$list(I0Pvar(dcls1(5719)),I0Pvar(dcls2(5720))));$list(dcls1(5719)I1Vp1cn(I0Pcon(D3Clocal0(1013));I1Vtnm(I1TNM(11715));0),dcls2(5720)I1Vp1cn(I0Pcon(D3Clocal0(1013));I1Vtnm(I1TNM(11715));1))))
-    if (XATS000_ctgeq(jsx107tnm11714, XATSCTAG("D3Clocal0",5))) { // gpt
-      let jsx107tnm11715 = jsx107tnm11714
-      let jsx107tnm11720 // let
+    if (XATS000_ctgeq(jsx108tnm11714, XATSCTAG("D3Clocal0",5))) { // gpt
+      let jsx108tnm11715 = jsx108tnm11714
+      let jsx108tnm11720 // let
       { // let
         // I1Dvaldclist(LCSRCsome1(src/DATS/dependency30_decl.dats)@(353(line=13,offs=7)--400(line=13,offs=54)))
         // I1VALDCL
-        let jsx107tnm11717
-        let jsx107tnm11716 = XATSDAPP(dependency30_d3eclist_678(jsx107tnm11711, XATSP1CN("D3Clocal0", jsx107tnm11715[0+1]), jsx107tnm11713))
-        jsx107tnm11717 = jsx107tnm11716
+        let jsx108tnm11717
+        let jsx108tnm11716 = XATSDAPP(dependency30_d3eclist_678(jsx108tnm11711, XATSP1CN("D3Clocal0", jsx108tnm11715[0+1]), jsx108tnm11713))
+        jsx108tnm11717 = jsx108tnm11716
         XATS000_patck(true)
         // I1Dvaldclist(LCSRCsome1(src/DATS/dependency30_decl.dats)@(407(line=14,offs=7)--454(line=14,offs=54)))
         // I1VALDCL
-        let jsx107tnm11719
-        let jsx107tnm11718 = XATSDAPP(dependency30_d3eclist_678(jsx107tnm11711, XATSP1CN("D3Clocal0", jsx107tnm11715[1+1]), jsx107tnm11713))
-        jsx107tnm11719 = jsx107tnm11718
+        let jsx108tnm11719
+        let jsx108tnm11718 = XATSDAPP(dependency30_d3eclist_678(jsx108tnm11711, XATSP1CN("D3Clocal0", jsx108tnm11715[1+1]), jsx108tnm11713))
+        jsx108tnm11719 = jsx108tnm11718
         XATS000_patck(true)
-        jsx107tnm11720 = []
+        jsx108tnm11720 = []
       } // endlet
-      jsx107tnm11744 = jsx107tnm11720
+      jsx108tnm11744 = jsx108tnm11720
       break // cls
     } // gpt
     // } // cls
     // { // cls
     // I1GPTpat(I1BNDcons(I1TNM(11721);I0Pdapp(I0Pcon(D3Cinclude(1016));$list(I0Pany(),I0Pany(),I0Pany(),I0Pany(),I0Pvar(dopt(5721))));$list(dopt(5721)I1Vp1cn(I0Pcon(D3Cinclude(1016));I1Vtnm(I1TNM(11721));4))))
-    if (XATS000_ctgeq(jsx107tnm11714, XATSCTAG("D3Cinclude",8))) { // gpt
-      let jsx107tnm11721 = jsx107tnm11714
-      let jsx107tnm11726 // cas
+    if (XATS000_ctgeq(jsx108tnm11714, XATSCTAG("D3Cinclude",8))) { // gpt
+      let jsx108tnm11721 = jsx108tnm11714
+      let jsx108tnm11726 // cas
       do {
         // { // cls
         // I1GPTpat(I1BNDcons(I1TNM(11722);I0Pdapp(I0Pcon(optn_nil(4));$list());$list()))
-        if (XATS000_ctgeq(XATSP1CN("D3Cinclude", jsx107tnm11721[4+1]), XATSCTAG("optn_nil",0))) { // gpt
-          let jsx107tnm11722 = XATSP1CN("D3Cinclude", jsx107tnm11721[4+1])
-          let jsx107tnm11723 = XATSTUP0([])
-          jsx107tnm11726 = jsx107tnm11723
+        if (XATS000_ctgeq(XATSP1CN("D3Cinclude", jsx108tnm11721[4+1]), XATSCTAG("optn_nil",0))) { // gpt
+          let jsx108tnm11722 = XATSP1CN("D3Cinclude", jsx108tnm11721[4+1])
+          let jsx108tnm11723 = XATSTUP0([])
+          jsx108tnm11726 = jsx108tnm11723
           break // cls
         } // gpt
         // } // cls
         // { // cls
         // I1GPTpat(I1BNDcons(I1TNM(11724);I0Pdapp(I0Pcon(optn_cons(5));$list(I0Pvar(dcls(5722))));$list(dcls(5722)I1Vp1cn(I0Pcon(optn_cons(5));I1Vtnm(I1TNM(11724));0))))
-        if (XATS000_ctgeq(XATSP1CN("D3Cinclude", jsx107tnm11721[4+1]), XATSCTAG("optn_cons",1))) { // gpt
-          let jsx107tnm11724 = XATSP1CN("D3Cinclude", jsx107tnm11721[4+1])
-          let jsx107tnm11725 = XATSDAPP(dependency30_d3eclist_678(jsx107tnm11711, XATSP1CN("optn_cons", jsx107tnm11724[0+1]), jsx107tnm11713))
-          jsx107tnm11726 = jsx107tnm11725
+        if (XATS000_ctgeq(XATSP1CN("D3Cinclude", jsx108tnm11721[4+1]), XATSCTAG("optn_cons",1))) { // gpt
+          let jsx108tnm11724 = XATSP1CN("D3Cinclude", jsx108tnm11721[4+1])
+          let jsx108tnm11725 = XATSDAPP(dependency30_d3eclist_678(jsx108tnm11711, XATSP1CN("optn_cons", jsx108tnm11724[0+1]), jsx108tnm11713))
+          jsx108tnm11726 = jsx108tnm11725
           break // cls
         } // gpt
         // } // cls
         XATS000_cfail()
       } while (false) // end-of(do)
-      jsx107tnm11744 = jsx107tnm11726
+      jsx108tnm11744 = jsx108tnm11726
       break // cls
     } // gpt
     // } // cls
     // { // cls
     // I1GPTpat(I1BNDcons(I1TNM(11727);I0Pdapp(I0Pcon(D3Cstaload(1017));$list(I0Pvar(stadyn(5723)),I0Pvar(tok(5724)),I0Pvar(src(5725)),I0Pvar(fopt(5726)),I0Pvar(s3opt(5727))));$list(stadyn(5723)I1Vp1cn(I0Pcon(D3Cstaload(1017));I1Vtnm(I1TNM(11727));0),tok(5724)I1Vp1cn(I0Pcon(D3Cstaload(1017));I1Vtnm(I1TNM(11727));1),src(5725)I1Vp1cn(I0Pcon(D3Cstaload(1017));I1Vtnm(I1TNM(11727));2),fopt(5726)I1Vp1cn(I0Pcon(D3Cstaload(1017));I1Vtnm(I1TNM(11727));3),s3opt(5727)I1Vp1cn(I0Pcon(D3Cstaload(1017));I1Vtnm(I1TNM(11727));4))))
-    if (XATS000_ctgeq(jsx107tnm11714, XATSCTAG("D3Cstaload",9))) { // gpt
-      let jsx107tnm11727 = jsx107tnm11714
-      let jsx107tnm11741 // cas
+    if (XATS000_ctgeq(jsx108tnm11714, XATSCTAG("D3Cstaload",9))) { // gpt
+      let jsx108tnm11727 = jsx108tnm11714
+      let jsx108tnm11741 // cas
       do {
         // { // cls
         // I1GPTpat(I1BNDcons(I1TNM(11728);I0Pdapp(I0Pcon(optn_cons(5));$list(I0Pvar(fpath(5728))));$list(fpath(5728)I1Vp1cn(I0Pcon(optn_cons(5));I1Vtnm(I1TNM(11728));0))))
-        if (XATS000_ctgeq(XATSP1CN("D3Cstaload", jsx107tnm11727[3+1]), XATSCTAG("optn_cons",1))) { // gpt
-          let jsx107tnm11728 = XATSP1CN("D3Cstaload", jsx107tnm11727[3+1])
-          let jsx107tnm11738 // let
+        if (XATS000_ctgeq(XATSP1CN("D3Cstaload", jsx108tnm11727[3+1]), XATSCTAG("optn_cons",1))) { // gpt
+          let jsx108tnm11728 = XATSP1CN("D3Cstaload", jsx108tnm11727[3+1])
+          let jsx108tnm11738 // let
           { // let
             // I1Dvaldclist(LCSRCsome1(src/DATS/dependency30_decl.dats)@(713(line=23,offs=9)--736(line=23,offs=32)))
             // I1VALDCL
-            let jsx107tnm11730
-            let jsx107tnm11729 = XATSDAPP(fpath_get_fnm2_2944(XATSP1CN("optn_cons", jsx107tnm11728[0+1])))
-            jsx107tnm11730 = jsx107tnm11729
+            let jsx108tnm11730
+            let jsx108tnm11729 = XATSDAPP(fpath_get_fnm2_2944(XATSP1CN("optn_cons", jsx108tnm11728[0+1])))
+            jsx108tnm11730 = jsx108tnm11729
             XATS000_patck(true)
             // I1Dvaldclist(LCSRCsome1(src/DATS/dependency30_decl.dats)@(745(line=24,offs=9)--854(line=26,offs=57)))
             // I1VALDCL
-            let jsx107tnm11735
-            let jsx107tnm11731 = XATSDAPP(depgraph_has_1175(jsx107tnm11711, jsx107tnm11730))
-            let jsx107tnm11734 // ift
-            if (jsx107tnm11731) // ift
+            let jsx108tnm11735
+            let jsx108tnm11731 = XATSDAPP(depgraph_has_1175(jsx108tnm11711, jsx108tnm11730))
+            let jsx108tnm11734 // ift
+            if (jsx108tnm11731) // ift
             {
-              let jsx107tnm11732 = XATSTUP0([])
-              jsx107tnm11734 = jsx107tnm11732
+              let jsx108tnm11732 = XATSTUP0([])
+              jsx108tnm11734 = jsx108tnm11732
             } else {
-              let jsx107tnm11733 = XATSDAPP(dependency30_s3taloadopt_862(jsx107tnm11711, XATSP1CN("D3Cstaload", jsx107tnm11727[4+1]), jsx107tnm11730))
-              jsx107tnm11734 = jsx107tnm11733
+              let jsx108tnm11733 = XATSDAPP(dependency30_s3taloadopt_862(jsx108tnm11711, XATSP1CN("D3Cstaload", jsx108tnm11727[4+1]), jsx108tnm11730))
+              jsx108tnm11734 = jsx108tnm11733
             } // end(if)
-            jsx107tnm11735 = jsx107tnm11734
+            jsx108tnm11735 = jsx108tnm11734
             XATS000_patck(true)
             // I1Dvaldclist(LCSRCsome1(src/DATS/dependency30_decl.dats)@(863(line=27,offs=9)--900(line=27,offs=46)))
             // I1VALDCL
-            let jsx107tnm11737
-            let jsx107tnm11736 = XATSDAPP(depgraph_add_1085(jsx107tnm11711, jsx107tnm11730, jsx107tnm11713))
-            jsx107tnm11737 = jsx107tnm11736
+            let jsx108tnm11737
+            let jsx108tnm11736 = XATSDAPP(depgraph_add_1085(jsx108tnm11711, jsx108tnm11730, jsx108tnm11713))
+            jsx108tnm11737 = jsx108tnm11736
             XATS000_patck(true)
-            jsx107tnm11738 = []
+            jsx108tnm11738 = []
           } // endlet
-          jsx107tnm11741 = jsx107tnm11738
+          jsx108tnm11741 = jsx108tnm11738
           break // cls
         } // gpt
         // } // cls
         // { // cls
         // I1GPTpat(I1BNDcons(I1TNM(11739);I0Pdapp(I0Pcon(optn_nil(4));$list());$list()))
-        if (XATS000_ctgeq(XATSP1CN("D3Cstaload", jsx107tnm11727[3+1]), XATSCTAG("optn_nil",0))) { // gpt
-          let jsx107tnm11739 = XATSP1CN("D3Cstaload", jsx107tnm11727[3+1])
-          let jsx107tnm11740 = XATSTUP0([])
-          jsx107tnm11741 = jsx107tnm11740
+        if (XATS000_ctgeq(XATSP1CN("D3Cstaload", jsx108tnm11727[3+1]), XATSCTAG("optn_nil",0))) { // gpt
+          let jsx108tnm11739 = XATSP1CN("D3Cstaload", jsx108tnm11727[3+1])
+          let jsx108tnm11740 = XATSTUP0([])
+          jsx108tnm11741 = jsx108tnm11740
           break // cls
         } // gpt
         // } // cls
         XATS000_cfail()
       } while (false) // end-of(do)
-      jsx107tnm11744 = jsx107tnm11741
+      jsx108tnm11744 = jsx108tnm11741
       break // cls
     } // gpt
     // } // cls
     // { // cls
     // I1GPTpat(I1BNDcons(I1TNM(11742);I0Pany();$list()))
     if (true) { // gpt
-      let jsx107tnm11742 = jsx107tnm11714
-      let jsx107tnm11743 = XATSTUP0([])
-      jsx107tnm11744 = jsx107tnm11743
+      let jsx108tnm11742 = jsx108tnm11714
+      let jsx108tnm11743 = XATSTUP0([])
+      jsx108tnm11744 = jsx108tnm11743
       break // cls
     } // gpt
     // } // cls
     XATS000_cfail()
   } while (false) // end-of(do)
-  // I1CMP:return:jsx107tnm11744
-  return jsx107tnm11744
+  // I1CMP:return:jsx108tnm11744
+  return jsx108tnm11744
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/dependency30_decl.dats)@(948(line=32,offs=1)--1183(line=37,offs=69)))
 let dependency30_s3taloadopt_862 = function (arg1, arg2, arg3) { // impl
-  let jsx107tnm11745 = arg1
-  let jsx107tnm11746 = arg2
-  let jsx107tnm11747 = arg3
+  let jsx108tnm11745 = arg1
+  let jsx108tnm11746 = arg2
+  let jsx108tnm11747 = arg3
   // I1CMP:start
-  let jsx107tnm11754 // cas
+  let jsx108tnm11754 // cas
   do {
     // { // cls
     // I1GPTpat(I1BNDcons(I1TNM(11748);I0Pdapp(I0Pcon(S3TALOADdpar(1031));$list(I0Pvar(stadyn(5733)),I0Pvar(dpar(5734))));$list(stadyn(5733)I1Vp1cn(I0Pcon(S3TALOADdpar(1031));I1Vtnm(I1TNM(11748));0),dpar(5734)I1Vp1cn(I0Pcon(S3TALOADdpar(1031));I1Vtnm(I1TNM(11748));1))))
-    if (XATS000_ctgeq(jsx107tnm11746, XATSCTAG("S3TALOADdpar",1))) { // gpt
-      let jsx107tnm11748 = jsx107tnm11746
-      let jsx107tnm11751 // let
+    if (XATS000_ctgeq(jsx108tnm11746, XATSCTAG("S3TALOADdpar",1))) { // gpt
+      let jsx108tnm11748 = jsx108tnm11746
+      let jsx108tnm11751 // let
       { // let
         // I1Dvaldclist(LCSRCsome1(src/DATS/dependency30_decl.dats)@(1060(line=35,offs=5)--1106(line=35,offs=51)))
         // I1VALDCL
-        let jsx107tnm11750
-        let jsx107tnm11749 = XATSDAPP(dependency30_d3parsed_803(jsx107tnm11745, XATSP1CN("S3TALOADdpar", jsx107tnm11748[1+1]), jsx107tnm11747))
-        jsx107tnm11750 = jsx107tnm11749
+        let jsx108tnm11750
+        let jsx108tnm11749 = XATSDAPP(dependency30_d3parsed_803(jsx108tnm11745, XATSP1CN("S3TALOADdpar", jsx108tnm11748[1+1]), jsx108tnm11747))
+        jsx108tnm11750 = jsx108tnm11749
         XATS000_patck(true)
-        jsx107tnm11751 = []
+        jsx108tnm11751 = []
       } // endlet
-      jsx107tnm11754 = jsx107tnm11751
+      jsx108tnm11754 = jsx108tnm11751
       break // cls
     } // gpt
     // } // cls
     // { // cls
     // I1GPTpat(I1BNDcons(I1TNM(11752);I0Pdapp(I0Pcon(S3TALOADnone(1030));$list(I0Pvar(s2opt(5735))));$list(s2opt(5735)I1Vp1cn(I0Pcon(S3TALOADnone(1030));I1Vtnm(I1TNM(11752));0))))
-    if (XATS000_ctgeq(jsx107tnm11746, XATSCTAG("S3TALOADnone",0))) { // gpt
-      let jsx107tnm11752 = jsx107tnm11746
-      let jsx107tnm11753 = XATSDAPP(dependency20_s2taloadopt_862(jsx107tnm11745, XATSP1CN("S3TALOADnone", jsx107tnm11752[0+1]), jsx107tnm11747))
-      jsx107tnm11754 = jsx107tnm11753
+    if (XATS000_ctgeq(jsx108tnm11746, XATSCTAG("S3TALOADnone",0))) { // gpt
+      let jsx108tnm11752 = jsx108tnm11746
+      let jsx108tnm11753 = XATSDAPP(dependency20_s2taloadopt_862(jsx108tnm11745, XATSP1CN("S3TALOADnone", jsx108tnm11752[0+1]), jsx108tnm11747))
+      jsx108tnm11754 = jsx108tnm11753
       break // cls
     } // gpt
     // } // cls
     XATS000_cfail()
   } while (false) // end-of(do)
-  // I1CMP:return:jsx107tnm11754
-  return jsx107tnm11754
+  // I1CMP:return:jsx108tnm11754
+  return jsx108tnm11754
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/dependency30_decl.dats)@(1185(line=39,offs=1)--1293(line=40,offs=60)))
 let dependency30_d3eclist_678 = function (arg1, arg2, arg3) { // impl
-  let jsx107tnm11755 = arg1
-  let jsx107tnm11756 = arg2
-  let jsx107tnm11757 = arg3
+  let jsx108tnm11755 = arg1
+  let jsx108tnm11756 = arg2
+  let jsx108tnm11757 = arg3
   // I1CMP:start
-  let jsx107tnm11758 = XATSDAPP(list_dependency30_fnp_265(jsx107tnm11755, jsx107tnm11756, jsx107tnm11757, dependency30_d3ecl_625))
-  // I1CMP:return:jsx107tnm11758
-  return jsx107tnm11758
+  let jsx108tnm11758 = XATSDAPP(list_dependency30_fnp_265(jsx108tnm11755, jsx108tnm11756, jsx108tnm11757, dependency30_d3ecl_625))
+  // I1CMP:return:jsx108tnm11758
+  return jsx108tnm11758
 } // endfun(impl)
 // LCSRCsome1(src/DATS/dependency30_decl.dats)@(1293(line=40,offs=60)--1293(line=40,offs=60))
 // I1Dnone1(I0Dnone1(LCSRCsome1(src/DATS/dependency30_decl.dats)@(1293(line=40,offs=60)--1293(line=40,offs=60));D3Cnone0()))

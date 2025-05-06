@@ -11,7 +11,7 @@ function activate(context) {
   console.log("Client starting.")
 
   const serverModule = context.asAbsolutePath(
-    path.join('server', 'out', "ats_lsp_out.js")
+    path.join('server', 'out', "ats_lsp_out1.js")
   );
 
   const serverOptions = {
