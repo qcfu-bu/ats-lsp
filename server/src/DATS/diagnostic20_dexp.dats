@@ -58,9 +58,10 @@ in
           range_of_loctn(loc0), 
           "diagnostic20_d2pat", lsrc
         )
-    in out.push(d)
+    in diagnostics_push(out, d)
     end)
   | _ => ()
+
 
 end
 
@@ -200,11 +201,11 @@ in
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
       val d = diagnostic_make(
-        severity_error$make(), 
-        range_of_loctn(loc0), 
-        "diagnostic20_d2exp", lsrc
-      )
-    in out.push(d)
+          severity_error$make(), 
+          range_of_loctn(loc0), 
+          "diagnostic20_d2exp", lsrc
+        )
+    in diagnostics_push(out, d)
     end)
   | _ => ()
 

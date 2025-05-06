@@ -3,6 +3,7 @@
 #include "./../HATS/libxatsopt.hats"
 
 #staload "./../SATS/lsp_bootstrap.sats"
+#staload "./../SATS/dependency20.sats"
 #staload "./../SATS/dependency30.sats"
 
 
@@ -19,18 +20,21 @@
   | D3Cstaload(stadyn, tok, src, fopt, s3opt) => (
     case+ fopt of
     | optn_cons(fpath) => let
-        val key1 = fpath.fnm2().stmp()
+        val key1 = fpath.fnm2()
+        val () =
+          if depgraph_has(dp, key1) then ()
+          else dependency30_s3taloadopt(dp, s3opt, key1)
         val () = depgraph_add(dp, key1, key0)
-      in
-        case+ s3opt of
-        | S3TALOADdpar(stadyn, dpar) =>
-          dependency30_d3parsed(dp, dpar, key1)
-        | S3TALOADnone(s2opt) => 
-          // TODO:
-          ()
       end
     | optn_nil() => ())
   | _ => ()
+
+#implfun dependency30_s3taloadopt(dp, s3opt, key0) =
+  case+ s3opt of
+  | S3TALOADdpar(stadyn, dpar) => let
+    val () = dependency30_d3parsed(dp, dpar, key0)
+    end
+  | S3TALOADnone(s2opt) => dependency20_s2taloadopt(dp, s2opt, key0)
 
 #implfun dependency30_d3eclist(dp, dcls, key0) =
   list_dependency30_fnp(dp, dcls, key0, dependency30_d3ecl)

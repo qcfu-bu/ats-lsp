@@ -105,12 +105,12 @@ function JS_depset_union(dp1, dp2) {
 /**
  * @param {Map<Any,Set<Any>>} dp 
  */
-function JS_depgraph_add(dp, k, v) {
+function JS_depgraph_add(dp, k, k0, v) {
   const edges = dp.get(k)
-  if (edges !== undefined) {
-    edges.add(v);
+  if (edges === undefined) {
+    dp.set(k, [k0, new Set([v])]);
   } else {
-    dp.set(k, new Set([v]));
+    edges[1].add(v);
   }
 }
 
@@ -124,12 +124,19 @@ function JS_depgraph_delete(dp, k) {
 /**
  * @param {Map<Any,Set<Any>>} dp 
  */
+function JS_depgraph_has(dp, k) {
+  return (dp.get(k) !== undefined);
+}
+
+/**
+ * @param {Map<Any,Set<Any>>} dp 
+ */
 function JS_depgraph_find(dp, k) {
   const edges = dp.get(k);
   if (edges === undefined) {
     return new Set();
   } else {
-    return edges;
+    return edges[1];
   }
 }
 
@@ -142,6 +149,7 @@ function JS_map_reset(env, key) {
   if (v !== undefined) {
     delete env[key];
   }
+  // for (k in env) delete env[k];
 }
 
 // -------------------------------------------------------------------

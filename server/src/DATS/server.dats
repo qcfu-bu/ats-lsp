@@ -15,6 +15,10 @@
 
 #staload "./../DATS/lsp_bootstrap.dats"
 
+#staload "./../DATS/dependency20.dats"
+#staload "./../DATS/dependency20_decl.dats"
+#staload "./../DATS/dependency20_dexp.dats"
+
 #staload "./../DATS/dependency30.dats"
 #staload "./../DATS/dependency30_decl.dats"
 #staload "./../DATS/dependency30_dexp.dats"
@@ -36,8 +40,9 @@ fun fpath_is_dats(fp: strn): bool = let
   end
 
 #implfun text_validator(dp, ds, uri) = let 
+    // FIXME:
     val path = url_to_path(uri) 
-    val key = path.fpath().fnm2().stmp()
+    val key = path.fpath().fnm2()
   in 
     if fpath_is_dats(path) then let
       val dpar = d3parsed_of_fildats(path)
@@ -46,6 +51,7 @@ fun fpath_is_dats(fp: strn): bool = let
       end
     else let
       val dpar = d3parsed_of_filsats(path)
+      val () = dependency30_d3parsed(dp, dpar, key)
       end
   end
 
@@ -58,7 +64,7 @@ fun fpath_is_dats(fp: strn): bool = let
 // If file B depends on file A, then modifying A should prune both A and B.
 #implfun cache_pruner(dp, uri) = let
     val path = url_to_path(uri)
-    val key = path.fpath().fnm2().stmp()
+    val key = path.fpath().fnm2()
     val deps0 = depset_make()
     val () = depset_add(deps0, key)
     fun loop(deps0: depset): void =
@@ -74,6 +80,7 @@ fun fpath_is_dats(fp: strn): bool = let
       end
   in loop(deps0)
   end
+
 
 // initialize the xatsopt environment
 val _ = the_fxtyenv_pvsload()

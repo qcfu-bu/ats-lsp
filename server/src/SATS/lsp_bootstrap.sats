@@ -44,20 +44,21 @@ fun regex_test(re: regex, input: string): bool
 
 #abstype depset <= p0tr
 fun depset_make(): depset
-fun depset_add(depset, stamp): void
-fun depset_pop(depset): stamp
+fun depset_add(depset, sym_t): void
+fun depset_pop(depset): sym_t
 fun depset_is_empty(depset): bool
 fun depset_union(depset, depset): depset
 
 #abstype depgraph <= p0tr
-fun depgraph_add(depgraph, stamp, stamp): void
-fun depgraph_delete(depgraph, stamp): void
-fun depgraph_find(depgraph, stamp): depset
+fun depgraph_add(depgraph, sym_t, sym_t): void
+fun depgraph_delete(depgraph, sym_t): void
+fun depgraph_has(depgraph, sym_t): bool
+fun depgraph_find(depgraph, sym_t): depset
 
 // FIXME: 
 // The ats compiler library does not provide an api to prune cached staload files. 
 // We will use JS to prune caches directly.
-fun env_reset{syn:tx}(topmap(syn), stamp): void
+fun env_reset{syn:tx}(topmap(syn), sym_t): void
 
 #typedef text_validator_t = (depgraph, diagnostics, url) -> void
 #typedef cache_pruner_t = (depgraph, url) -> void

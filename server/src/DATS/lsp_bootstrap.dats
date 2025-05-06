@@ -112,14 +112,14 @@
   JS_depset_add(dp, key)
   where {
     #extern fun
-    JS_depset_add(dp: depset, key: stamp): void = $extnam()
+    JS_depset_add(dp: depset, key: sym_t): void = $extnam()
   }
 
 #implfun depset_pop(dp) =
   JS_depset_pop(dp)
   where {
     #extern fun
-    JS_depset_pop(dp: depset): stamp = $extnam()
+    JS_depset_pop(dp: depset): sym_t = $extnam()
   }
 
 #implfun depset_is_empty(dp) =
@@ -137,21 +137,28 @@
   }
 
 #implfun depgraph_add(dp, k, v) =
-  JS_depgraph_add(dp, k, v)
+  JS_depgraph_add(dp, k.stmp(), k, v)
   where {
     #extern fun
-    JS_depgraph_add(dp: depgraph, k: stamp, v: stamp): void = $extnam()
+    JS_depgraph_add(dp: depgraph, k: stamp, k0: sym_t, v: sym_t): void = $extnam()
   }
 
 #implfun depgraph_delete(dp, k) =
-  JS_depgraph_delete(dp, k)
+  JS_depgraph_delete(dp, k.stmp())
   where {
     #extern fun
     JS_depgraph_delete(dp: depgraph, k: stamp): void = $extnam()
   }
 
+#implfun depgraph_has(dp, k) =
+  JS_depgraph_has(dp, k.stmp())
+  where {
+    #extern fun
+    JS_depgraph_has(dp: depgraph, k: stamp): bool = $extnam()
+  }
+
 #implfun depgraph_find(dp, k) =
-  JS_depgraph_find(dp, k)
+  JS_depgraph_find(dp, k.stmp())
   where {
     #extern fun
     JS_depgraph_find(dp: depgraph, k: stamp): depset = $extnam()
@@ -161,7 +168,7 @@
 // The ats compiler library does not provide an api to prune cached staload files. 
 // We will use JS to prune caches directly.
 #implfun env_reset{syn}(env, key) =
-  JS_map_reset{syn}(env, key)
+  JS_map_reset{syn}(env, key.stmp())
   where {
     #extern fun 
     JS_map_reset{syn:tx}(env: topmap(syn), key: stamp): void = $extnam()
