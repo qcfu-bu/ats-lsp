@@ -53,6 +53,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
+      val () = prerrsln("diagnostic20_d2pat: ", d2p1)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
@@ -200,6 +201,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
+      val () = prerrsln("diagnostic20_d2exp: ", d2e1)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 

@@ -50,6 +50,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
+      val () = prerrsln("diagnostic10_g1exp: ", g1e1)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
@@ -88,7 +89,7 @@ in
 #implfun diagnostic10_sort1(out, s1t0) =
   case+ s1t0.node() of
   | S1Terrck(lvl, s1t1) => (
-    diagnostic10_sort1_aux( out, s1t1 ); 
+    diagnostic10_sort1_aux(out, s1t1); 
     if (lvl > DIAGNOSTIC10_ERRVL) then () 
     else let
       val loc0 = s1t0.lctn()
@@ -97,6 +98,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
+      val () = prerrsln("diagnostic10_sort1: ", s1t1)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
@@ -175,6 +177,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
+      val () = prerrsln("diagnostic10_s1exp: ", s1e1)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
@@ -256,7 +259,7 @@ in
 #implfun diagnostic10_d1pat(out, d1p0) =
   case+ d1p0.node() of
   | D1Perrck(lvl, d1p1) => (
-    diagnostic10_d1pat_aux( out, d1p1 ); 
+    diagnostic10_d1pat_aux(out, d1p1); 
     if (lvl > DIAGNOSTIC10_ERRVL) then () 
     else let
       val loc0 = d1p0.lctn()
@@ -265,6 +268,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
+      val () = prerrsln("diagnostic10_d1pat: ", d1p1)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
@@ -379,6 +383,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
+      val () = prerrsln("diagnostic10_d1exp: ", d1e1)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
@@ -477,6 +482,7 @@ fun diagnostic10_d1ecl_aux(out: diagnostics , dcl: d1ecl): void =
           | LCSRCnone0() => "none"
           | LCSRCsome1(str) => str
           | LCSRCfpath(path) => path.fnm1()
+        val () = prerrsln("diagnostic10_d1ecl_D1Cinclude: ", dcl)
         val d = diagnostic_make(
             severity_error$make(), 
             range_of_loctn(loc0), 
@@ -494,6 +500,7 @@ fun diagnostic10_d1ecl_aux(out: diagnostics , dcl: d1ecl): void =
           | LCSRCnone0() => "none"
           | LCSRCsome1(str) => str
           | LCSRCfpath(path) => path.fnm1()
+        val () = prerrsln("diagnostic10_d1ecl_D1Cstaload: ", dcl)
         val d = diagnostic_make(
             severity_error$make(), 
             range_of_loctn(loc0), 
@@ -547,7 +554,7 @@ in
 #implfun diagnostic10_d1ecl(out, dcl0) =
   case+ dcl0.node() of
   | D1Cerrck(lvl, d1cl)  => (
-    diagnostic10_d1ecl_aux( out, d1cl );
+    diagnostic10_d1ecl_aux(out, d1cl);
     if (lvl > DIAGNOSTIC10_ERRVL) then () 
     else let 
       val loc0 = dcl0.lctn() 
@@ -556,6 +563,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
+      val () = prerrsln("diagnostic10_d1ecl: ", d1cl)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
