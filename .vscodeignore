@@ -8,3 +8,8 @@ vsc-extension-quickstart.md
 **/*.map
 **/eslint.config.mjs
 **/.vscode-test.*
+
+server/src/**
+server/xatshome/**
+server/out/*.js
+!server/out/ats_lsp_out1.js
