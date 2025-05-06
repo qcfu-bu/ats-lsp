@@ -50,11 +50,17 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_g1exp: ", g1e0)
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("g1exp_error:\n", g1e0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
-          "diagnostic10_g1exp", lsrc
+          msg, 
+          lsrc
         )
     in out.push(d)
     end)
@@ -98,11 +104,17 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_sort1: ", s1t0)
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("sort1_error:\n", s1t0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
-          "diagnostic10_sort1", lsrc
+          msg, 
+          lsrc
         )
     in out.push(d)
     end)
@@ -177,11 +189,17 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_s1exp: ", s1e0)
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("s1exp_error:\n", s1e0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
-          "diagnostic10_s1exp", lsrc
+          msg, 
+          lsrc
         )
     in out.push(d)
     end)
@@ -268,11 +286,17 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_d1pat: ", d1p0)
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("d1pat_error:\n", d1p0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
-          "diagnostic10_d1pat", lsrc
+          msg, 
+          lsrc
         )
     in out.push(d)
     end)
@@ -383,11 +407,17 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_d1exp: ", d1e0)
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("d1exp_error:\n", d1e0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
-          "diagnostic10_d1exp", lsrc
+          msg, 
+          lsrc
         )
     in out.push(d)
     end)
@@ -482,11 +512,17 @@ fun diagnostic10_d1ecl_aux(out: diagnostics , dcl: d1ecl): void =
           | LCSRCnone0() => "none"
           | LCSRCsome1(str) => str
           | LCSRCfpath(path) => path.fnm1()
-        val () = prerrsln("diagnostic10_d1ecl_D1Cinclude: ", dcl)
+        // FIXME:
+        val () = stderr_capture_start()
+        val () = prerrsln("D1Cinclude_error:\n", dcl)
+        val () = stderr_capture_stop()
+        val msg = stderr_capture_get()
+        //
         val d = diagnostic_make(
             severity_error$make(), 
             range_of_loctn(loc0), 
-            "diagnostic10_d1ecl_D1Cinclude", lsrc
+            msg, 
+            lsrc
           )
       in out.push(d)
       end
@@ -500,11 +536,17 @@ fun diagnostic10_d1ecl_aux(out: diagnostics , dcl: d1ecl): void =
           | LCSRCnone0() => "none"
           | LCSRCsome1(str) => str
           | LCSRCfpath(path) => path.fnm1()
-        val () = prerrsln("diagnostic10_d1ecl_D1Cstaload: ", dcl)
+        // FIXME:
+        val () = stderr_capture_start()
+        val () = prerrsln("D1Cstaload_error:\n", dcl)
+        val () = stderr_capture_stop()
+        val msg = stderr_capture_get()
+        //
         val d = diagnostic_make(
             severity_error$make(), 
             range_of_loctn(loc0), 
-            "diagnostic10_d1ecl_D1Cstaload", lsrc
+            msg, 
+            lsrc
           )
       in out.push(d)
       end
@@ -563,11 +605,17 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_d1ecl: ", dcl0)
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("d1ecl_error:\n", dcl0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
-          "diagnostic10_d1ecl", lsrc
+          msg, 
+          lsrc
         )
     in out.push(d)
     end)

@@ -147,6 +147,33 @@ function JS_depgraph_find(dp, k) {
   }
 }
 
+// FIXME:
+// The ats compiler only provides print methods and not to_string methods.
+// We will use JS to capture printing and turn them into strings.
+let JS_process_stderr_write = process.stderr.write;
+let JS_stderr_buffer = '';
+
+// Begin stderr capturing.
+function JS_stderr_capture_start() {
+  JS_stderr_buffer = '';
+  process.stderr.write = (chunk, encoding, callback) => {
+    if (typeof chunk === 'string') {
+      JS_stderr_buffer += chunk;
+    }
+  };
+}
+
+// Stop stderr capturing.
+function JS_stderr_capture_stop() {
+  process.stderr.write = JS_process_stderr_write;
+}
+
+// Get captured stderr string.
+function JS_stderr_capture_get() {
+  const result = JS_stderr_buffer 
+  JS_stderr_buffer = '';
+  return result;
+}
 
 // FIXME: 
 // The ats compiler library does not provide an api to prune cached staload files. 
@@ -156,7 +183,6 @@ function JS_map_reset(env, key) {
   if (v !== undefined) {
     delete env[key];
   }
-  // for (k in env) delete env[k];
 }
 
 // -------------------------------------------------------------------

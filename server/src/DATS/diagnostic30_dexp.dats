@@ -43,11 +43,17 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic30_d3pat: ", d3p0)
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("d3pat_error:\n", d3p0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
-          "diagnostic30_d3pat", lsrc
+          msg, 
+          lsrc
         )
     in out.push(d)
     end)
@@ -143,12 +149,18 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic30_d3exp: ", d3e0)
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("d3exp_error:\n", d3e0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
-        severity_error$make(), 
-        range_of_loctn(loc0), 
-        "diagnostic30_d3exp", lsrc
-      )
+          severity_error$make(), 
+          range_of_loctn(loc0), 
+          msg, 
+          lsrc
+        )
     in out.push(d)
     end)
   | _ => ()

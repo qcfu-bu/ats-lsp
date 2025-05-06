@@ -53,11 +53,17 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic20_d2pat: ", d2p0)
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("d2pat_error:\n", d2p0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
-          "diagnostic20_d2pat", lsrc
+          msg,
+          lsrc
         )
     in diagnostics_push(out, d)
     end)
@@ -201,11 +207,17 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic20_d2exp: ", d2e0)
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("d2exp_error:\n", d2e0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
-          "diagnostic20_d2exp", lsrc
+          msg, 
+          lsrc
         )
     in diagnostics_push(out, d)
     end)

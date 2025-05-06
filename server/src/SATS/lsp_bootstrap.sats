@@ -55,6 +55,13 @@ fun depgraph_delete(depgraph, sym_t): void
 fun depgraph_has(depgraph, sym_t): bool
 fun depgraph_find(depgraph, sym_t): depset
 
+// FIXME:
+// The ats compiler only provides print methods and not to_string methods.
+// We will use JS to capture printing and turn them into strings.
+fun stderr_capture_start(): void
+fun stderr_capture_stop(): void
+fun stderr_capture_get(): string
+
 // FIXME: 
 // The ats compiler library does not provide an api to prune cached staload files. 
 // We will use JS to prune caches directly.

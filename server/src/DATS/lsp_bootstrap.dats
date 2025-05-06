@@ -164,6 +164,30 @@
     JS_depgraph_find(dp: depgraph, k: stamp): depset = $extnam()
   }
 
+// FIXME:
+// The ats compiler only provides print methods and not to_string methods.
+// We will use JS to capture printing and turn them into strings.
+#implfun stderr_capture_start() = 
+  JS_stderr_capture_start()
+  where {
+    #extern fun
+    JS_stderr_capture_start(): void = $extnam()
+  }
+
+#implfun stderr_capture_stop() =
+  JS_stderr_capture_stop() 
+  where {
+    #extern fun
+    JS_stderr_capture_stop(): void = $extnam()
+  }
+
+#implfun stderr_capture_get() =
+  JS_stderr_capture_get()
+  where {
+    #extern fun
+    JS_stderr_capture_get(): string = $extnam()
+  }
+
 // FIXME: 
 // The ats compiler library does not provide an api to prune cached staload files. 
 // We will use JS to prune caches directly.

@@ -1,8 +1,8 @@
-#staload "./test00.sats"
+#staload "./tes00.sats"
 
 fun foo() : int = 
   let 
     val x = 1
-    val y = z
+    val y = 2
   in x
   end
