@@ -81,7 +81,7 @@ function JS_depset_add(dp, k) {
 /**
  * @param {number} x0 
  */
-function JS_number_to_string(x0) {
+function JS_number_repr(x0) {
   return x0.toString();
 }
 
@@ -194,7 +194,7 @@ function vscode_initialize(validator, pruner) {
 
     const result = {
       capabilities: {
-        textDocumentSyntax: node.TextDocumentSyncKind.Incremental,
+        textDocumentSyntax: node.TextDocumentSyncKind.None,
         // completionProvider: {
         // 	resolveProvider: true
         // },

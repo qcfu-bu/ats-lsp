@@ -21,6 +21,7 @@ SRCSATS :=
 SRCDATS := \
 templates.dats \
 lsp_bootstrap.dats \
+repr30.dats \
 dependency20.dats \
 dependency20_decl.dats \
 dependency20_dexp.dats \

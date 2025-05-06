@@ -3,14 +3,6 @@
 
 #staload "./../SATS/templates.sats"
 
-#impltmp g_repr<string>(x0) = x0
-#impltmp g_repr<int>(x0) =
-  JS_number_repr(x0) 
-  where {
-    #extern fun
-    JS_number_repr(x0: int): string = $extnam()
-  }
-
 #impltmp<> gs_repr$beg() = ""
 #impltmp<> gs_repr$sep() = ""
 #impltmp<> gs_repr$end() = ""
@@ -225,3 +217,34 @@ gs_repr_a12(
   + g_repr<x9>(x9)+ gs_repr$sep()
   + g_repr<x10>(x10)+ gs_repr$sep()
   + g_repr<x11>(x11)+ gs_repr$end()
+
+// ----------------------------------------------------
+// default repr for common datatypes
+
+#impltmp g_repr<string>(x0) = x0
+
+#impltmp g_repr<bool>(b) =
+  if b then "true" else "false"
+
+#impltmp g_repr<int>(x0) =
+  JS_number_repr(x0) 
+  where {
+    #extern fun
+    JS_number_repr(x0: int): string = $extnam()
+  }
+
+#impltmp{a} g_repr<list(a)>(xs) =
+  "[" + g_repr_list_rec(xs) + "]"
+  where {
+    fun g_repr_list_rec(xs: list(a)): string =
+      case+ xs of
+      | list_nil() => ""
+      | list_cons(x, list_nil()) => x.repr()
+      | list_cons(x, xs) => 
+        x.repr() + ", " + g_repr_list_rec(xs)
+  }
+
+#impltmp{a} g_repr<optn(a)>(opt) =
+  case+ opt of
+  | optn_nil() => "none"
+  | optn_cons(x) => "some(" + x.repr() + ")" 
