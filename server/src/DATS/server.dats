@@ -4,6 +4,7 @@
 
 // ----------------------------------------------------
 
+#staload "./../SATS/templates.sats"
 #staload "./../SATS/lsp_bootstrap.sats"
 #staload "./../SATS/dependency30.sats"
 #staload "./../SATS/diagnostic10.sats"
@@ -13,6 +14,7 @@
 
 // ----------------------------------------------------
 
+#staload "./../DATS/templates.dats"
 #staload "./../DATS/lsp_bootstrap.dats"
 
 #staload "./../DATS/dependency20.dats"

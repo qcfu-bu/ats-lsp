@@ -19,6 +19,7 @@ XATS2JS_JSEMIT=$(XATS2JS)/xats2js_jsemit00_ats2_opt1.js
 
 SRCSATS :=
 SRCDATS := \
+templates.dats \
 lsp_bootstrap.dats \
 dependency20.dats \
 dependency20_decl.dats \
@@ -71,5 +72,5 @@ all:: ats_lsp
 ats_lsp: $(OUT1DATS); \
 $(PRINTF) "// %s\n" "`date`" > out/$@_out.js && \
 $(CAT) $(XATS2JS_LIB) >> out/$@_out.js && \
-$(CAT) lsp_bootstrap.js >> out/$@_out.js && \
+$(CAT) src/CATS/lsp_bootstrap.js >> out/$@_out.js && \
 $(CAT) $(OUT1DATS) >> out/$@_out.js

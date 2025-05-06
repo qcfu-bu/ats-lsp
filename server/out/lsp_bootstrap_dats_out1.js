@@ -5453,9 +5453,9 @@
 // I1Di0dcl(I0Dd3ecl(D3Cstaload(0;T_SRP_STALOAD();G1Estr(T_STRN1_clsd("./../SATS/lsp_bootstrap.sats";30));$optn(FPATH(src/SATS/lsp_bootstrap.sats));...)))
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(164(line=7,offs=1)--303(line=12,offs=4)))
 let url_to_path_71 = function (arg1) { // impl
-  let jsx101tnm11711 = arg1
+  let jsx102tnm11711 = arg1
   // I1CMP:start
-  let jsx101tnm11714 // let
+  let jsx102tnm11714 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(233(line=10,offs=5)--299(line=11,offs=54)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(241(line=10,offs=13)--299(line=11,offs=54))
@@ -5464,16 +5464,16 @@ let url_to_path_71 = function (arg1) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11712);I0Pvar(uri(5718));$list(uri(5718)I1Vtnm(I1TNM(11712))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_url_to_path);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11713 = XATSDAPP(vscode_url_to_path(jsx101tnm11711))
-    jsx101tnm11714 = jsx101tnm11713
+    let jsx102tnm11713 = XATSDAPP(vscode_url_to_path(jsx102tnm11711))
+    jsx102tnm11714 = jsx102tnm11713
   } // endlet
-  // I1CMP:return:jsx101tnm11714
-  return jsx101tnm11714
+  // I1CMP:return:jsx102tnm11714
+  return jsx102tnm11714
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(305(line=14,offs=1)--456(line=19,offs=4)))
 let severity_error$make_128 = function () { // impl
   // I1CMP:start
-  let jsx101tnm11716 // let
+  let jsx102tnm11716 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(384(line=17,offs=5)--452(line=18,offs=56)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(392(line=17,offs=13)--452(line=18,offs=56))
@@ -5482,16 +5482,16 @@ let severity_error$make_128 = function () { // impl
       // FJARGdarg($list())
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_severity_error$make);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11715 = XATSDAPP(vscode_severity_error$make())
-    jsx101tnm11716 = jsx101tnm11715
+    let jsx102tnm11715 = XATSDAPP(vscode_severity_error$make())
+    jsx102tnm11716 = jsx102tnm11715
   } // endlet
-  // I1CMP:return:jsx101tnm11716
-  return jsx101tnm11716
+  // I1CMP:return:jsx102tnm11716
+  return jsx102tnm11716
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(458(line=21,offs=1)--606(line=26,offs=4)))
 let severity_warn$make_165 = function () { // impl
   // I1CMP:start
-  let jsx101tnm11718 // let
+  let jsx102tnm11718 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(535(line=24,offs=5)--602(line=25,offs=55)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(543(line=24,offs=13)--602(line=25,offs=55))
@@ -5500,16 +5500,16 @@ let severity_warn$make_165 = function () { // impl
       // FJARGdarg($list())
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_severity_warn$make);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11717 = XATSDAPP(vscode_severity_warn$make())
-    jsx101tnm11718 = jsx101tnm11717
+    let jsx102tnm11717 = XATSDAPP(vscode_severity_warn$make())
+    jsx102tnm11718 = jsx102tnm11717
   } // endlet
-  // I1CMP:return:jsx101tnm11718
-  return jsx101tnm11718
+  // I1CMP:return:jsx102tnm11718
+  return jsx102tnm11718
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(608(line=28,offs=1)--756(line=33,offs=4)))
 let severity_hint$make_203 = function () { // impl
   // I1CMP:start
-  let jsx101tnm11720 // let
+  let jsx102tnm11720 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(685(line=31,offs=5)--752(line=32,offs=55)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(693(line=31,offs=13)--752(line=32,offs=55))
@@ -5518,16 +5518,16 @@ let severity_hint$make_203 = function () { // impl
       // FJARGdarg($list())
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_severity_hint$make);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11719 = XATSDAPP(vscode_severity_hint$make())
-    jsx101tnm11720 = jsx101tnm11719
+    let jsx102tnm11719 = XATSDAPP(vscode_severity_hint$make())
+    jsx102tnm11720 = jsx102tnm11719
   } // endlet
-  // I1CMP:return:jsx101tnm11720
-  return jsx101tnm11720
+  // I1CMP:return:jsx102tnm11720
+  return jsx102tnm11720
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(758(line=35,offs=1)--905(line=40,offs=4)))
 let severity_info$make_241 = function () { // impl
   // I1CMP:start
-  let jsx101tnm11722 // let
+  let jsx102tnm11722 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(834(line=38,offs=5)--901(line=39,offs=55)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(842(line=38,offs=13)--901(line=39,offs=55))
@@ -5536,18 +5536,18 @@ let severity_info$make_241 = function () { // impl
       // FJARGdarg($list())
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_severity_info$make);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11721 = XATSDAPP(vscode_severity_info$make())
-    jsx101tnm11722 = jsx101tnm11721
+    let jsx102tnm11721 = XATSDAPP(vscode_severity_info$make())
+    jsx102tnm11722 = jsx102tnm11721
   } // endlet
-  // I1CMP:return:jsx101tnm11722
-  return jsx101tnm11722
+  // I1CMP:return:jsx102tnm11722
+  return jsx102tnm11722
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(907(line=42,offs=1)--1090(line=47,offs=4)))
 let position_make_306 = function (arg1, arg2) { // impl
-  let jsx101tnm11723 = arg1
-  let jsx101tnm11724 = arg2
+  let jsx102tnm11723 = arg1
+  let jsx102tnm11724 = arg2
   // I1CMP:start
-  let jsx101tnm11728 // let
+  let jsx102tnm11728 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1005(line=45,offs=5)--1086(line=46,offs=69)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1013(line=45,offs=13)--1086(line=46,offs=69))
@@ -5556,18 +5556,18 @@ let position_make_306 = function (arg1, arg2) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11725);I0Pvar(line(5726));$list(line(5726)I1Vtnm(I1TNM(11725)))),I1BNDcons(I1TNM(11726);I0Pvar(offs(5727));$list(offs(5727)I1Vtnm(I1TNM(11726))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_position_make);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11727 = XATSDAPP(vscode_position_make(jsx101tnm11723, jsx101tnm11724))
-    jsx101tnm11728 = jsx101tnm11727
+    let jsx102tnm11727 = XATSDAPP(vscode_position_make(jsx102tnm11723, jsx102tnm11724))
+    jsx102tnm11728 = jsx102tnm11727
   } // endlet
-  // I1CMP:return:jsx101tnm11728
-  return jsx101tnm11728
+  // I1CMP:return:jsx102tnm11728
+  return jsx102tnm11728
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1092(line=49,offs=1)--1268(line=54,offs=4)))
 let range_make_387 = function (arg1, arg2) { // impl
-  let jsx101tnm11729 = arg1
-  let jsx101tnm11730 = arg2
+  let jsx102tnm11729 = arg1
+  let jsx102tnm11730 = arg2
   // I1CMP:start
-  let jsx101tnm11734 // let
+  let jsx102tnm11734 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1180(line=52,offs=5)--1264(line=53,offs=73)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1188(line=52,offs=13)--1264(line=53,offs=73))
@@ -5576,66 +5576,66 @@ let range_make_387 = function (arg1, arg2) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11731);I0Pvar(pbeg(5731));$list(pbeg(5731)I1Vtnm(I1TNM(11731)))),I1BNDcons(I1TNM(11732);I0Pvar(pend(5732));$list(pend(5732)I1Vtnm(I1TNM(11732))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_range_make);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11733 = XATSDAPP(vscode_range_make(jsx101tnm11729, jsx101tnm11730))
-    jsx101tnm11734 = jsx101tnm11733
+    let jsx102tnm11733 = XATSDAPP(vscode_range_make(jsx102tnm11729, jsx102tnm11730))
+    jsx102tnm11734 = jsx102tnm11733
   } // endlet
-  // I1CMP:return:jsx101tnm11734
-  return jsx101tnm11734
+  // I1CMP:return:jsx102tnm11734
+  return jsx102tnm11734
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1270(line=56,offs=1)--1545(line=64,offs=6)))
 let range_of_loctn_449 = function (arg1) { // impl
-  let jsx101tnm11735 = arg1
+  let jsx102tnm11735 = arg1
   // I1CMP:start
-  let jsx101tnm11751 // let
+  let jsx102tnm11751 // let
   { // let
     // I1Dvaldclist(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1312(line=58,offs=5)--1335(line=58,offs=28)))
     // I1VALDCL
-    let jsx101tnm11737
-    let jsx101tnm11736 = XATSDAPP(loctn_get_lsrc_3058(jsx101tnm11735))
-    jsx101tnm11737 = jsx101tnm11736
+    let jsx102tnm11737
+    let jsx102tnm11736 = XATSDAPP(loctn_get_lsrc_3058(jsx102tnm11735))
+    jsx102tnm11737 = jsx102tnm11736
     XATS000_patck(true)
     // I1Dvaldclist(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1340(line=59,offs=5)--1363(line=59,offs=28)))
     // I1VALDCL
-    let jsx101tnm11739
-    let jsx101tnm11738 = XATSDAPP(loctn_get_pbeg_3091(jsx101tnm11735))
-    jsx101tnm11739 = jsx101tnm11738
+    let jsx102tnm11739
+    let jsx102tnm11738 = XATSDAPP(loctn_get_pbeg_3091(jsx102tnm11735))
+    jsx102tnm11739 = jsx102tnm11738
     XATS000_patck(true)
     // I1Dvaldclist(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1368(line=60,offs=5)--1391(line=60,offs=28)))
     // I1VALDCL
-    let jsx101tnm11741
-    let jsx101tnm11740 = XATSDAPP(loctn_get_pend_3124(jsx101tnm11735))
-    jsx101tnm11741 = jsx101tnm11740
+    let jsx102tnm11741
+    let jsx102tnm11740 = XATSDAPP(loctn_get_pend_3124(jsx102tnm11735))
+    jsx102tnm11741 = jsx102tnm11740
     XATS000_patck(true)
     // I1Dvaldclist(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1396(line=61,offs=5)--1449(line=61,offs=58)))
     // I1VALDCL
-    let jsx101tnm11745
-    let jsx101tnm11742 = XATSDAPP(postn_get_nrow_2675(jsx101tnm11739))
-    let jsx101tnm11743 = XATSDAPP(postn_get_ncol_2707(jsx101tnm11739))
-    let jsx101tnm11744 = XATSDAPP(position_make_306(jsx101tnm11742, jsx101tnm11743))
-    jsx101tnm11745 = jsx101tnm11744
+    let jsx102tnm11745
+    let jsx102tnm11742 = XATSDAPP(postn_get_nrow_2675(jsx102tnm11739))
+    let jsx102tnm11743 = XATSDAPP(postn_get_ncol_2707(jsx102tnm11739))
+    let jsx102tnm11744 = XATSDAPP(position_make_306(jsx102tnm11742, jsx102tnm11743))
+    jsx102tnm11745 = jsx102tnm11744
     XATS000_patck(true)
     // I1Dvaldclist(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1455(line=62,offs=5)--1508(line=62,offs=58)))
     // I1VALDCL
-    let jsx101tnm11749
-    let jsx101tnm11746 = XATSDAPP(postn_get_nrow_2675(jsx101tnm11741))
-    let jsx101tnm11747 = XATSDAPP(postn_get_ncol_2707(jsx101tnm11741))
-    let jsx101tnm11748 = XATSDAPP(position_make_306(jsx101tnm11746, jsx101tnm11747))
-    jsx101tnm11749 = jsx101tnm11748
+    let jsx102tnm11749
+    let jsx102tnm11746 = XATSDAPP(postn_get_nrow_2675(jsx102tnm11741))
+    let jsx102tnm11747 = XATSDAPP(postn_get_ncol_2707(jsx102tnm11741))
+    let jsx102tnm11748 = XATSDAPP(position_make_306(jsx102tnm11746, jsx102tnm11747))
+    jsx102tnm11749 = jsx102tnm11748
     XATS000_patck(true)
-    let jsx101tnm11750 = XATSDAPP(range_make_387(jsx101tnm11745, jsx101tnm11749))
-    jsx101tnm11751 = jsx101tnm11750
+    let jsx102tnm11750 = XATSDAPP(range_make_387(jsx102tnm11745, jsx102tnm11749))
+    jsx102tnm11751 = jsx102tnm11750
   } // endlet
-  // I1CMP:return:jsx101tnm11751
-  return jsx101tnm11751
+  // I1CMP:return:jsx102tnm11751
+  return jsx102tnm11751
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1547(line=66,offs=1)--1868(line=76,offs=4)))
 let diagnostic_make_512 = function (arg1, arg2, arg3, arg4) { // impl
-  let jsx101tnm11752 = arg1
-  let jsx101tnm11753 = arg2
-  let jsx101tnm11754 = arg3
-  let jsx101tnm11755 = arg4
+  let jsx102tnm11752 = arg1
+  let jsx102tnm11753 = arg2
+  let jsx102tnm11754 = arg3
+  let jsx102tnm11755 = arg4
   // I1CMP:start
-  let jsx101tnm11761 // let
+  let jsx102tnm11761 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1701(line=69,offs=5)--1864(line=75,offs=30)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1709(line=69,offs=13)--1864(line=75,offs=30))
@@ -5644,18 +5644,18 @@ let diagnostic_make_512 = function (arg1, arg2, arg3, arg4) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11756);I0Pvar(severity(5744));$list(severity(5744)I1Vtnm(I1TNM(11756)))),I1BNDcons(I1TNM(11757);I0Pvar(location(5745));$list(location(5745)I1Vtnm(I1TNM(11757)))),I1BNDcons(I1TNM(11758);I0Pvar(message(5746));$list(message(5746)I1Vtnm(I1TNM(11758)))),I1BNDcons(I1TNM(11759);I0Pvar(source(5747));$list(source(5747)I1Vtnm(I1TNM(11759))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_diagnostic_make);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11760 = XATSDAPP(vscode_diagnostic_make(jsx101tnm11752, jsx101tnm11753, jsx101tnm11754, jsx101tnm11755))
-    jsx101tnm11761 = jsx101tnm11760
+    let jsx102tnm11760 = XATSDAPP(vscode_diagnostic_make(jsx102tnm11752, jsx102tnm11753, jsx102tnm11754, jsx102tnm11755))
+    jsx102tnm11761 = jsx102tnm11760
   } // endlet
-  // I1CMP:return:jsx101tnm11761
-  return jsx101tnm11761
+  // I1CMP:return:jsx102tnm11761
+  return jsx102tnm11761
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1870(line=78,offs=1)--2066(line=86,offs=4)))
 let diagnostics_push_656 = function (arg1, arg2) { // impl
-  let jsx101tnm11762 = arg1
-  let jsx101tnm11763 = arg2
+  let jsx102tnm11762 = arg1
+  let jsx102tnm11763 = arg2
   // I1CMP:start
-  let jsx101tnm11767 // let
+  let jsx102tnm11767 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1953(line=81,offs=5)--2061(line=85,offs=24)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(1961(line=81,offs=13)--2061(line=85,offs=24))
@@ -5664,19 +5664,19 @@ let diagnostics_push_656 = function (arg1, arg2) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11764);I0Pvar(ds(5751));$list(ds(5751)I1Vtnm(I1TNM(11764)))),I1BNDcons(I1TNM(11765);I0Pvar(d(5752));$list(d(5752)I1Vtnm(I1TNM(11765))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_diagnostics_push);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11766 = XATSDAPP(vscode_diagnostics_push(jsx101tnm11762, jsx101tnm11763))
-    jsx101tnm11767 = jsx101tnm11766
+    let jsx102tnm11766 = XATSDAPP(vscode_diagnostics_push(jsx102tnm11762, jsx102tnm11763))
+    jsx102tnm11767 = jsx102tnm11766
   } // endlet
-  // I1CMP:return:jsx101tnm11767
-  return jsx101tnm11767
+  // I1CMP:return:jsx102tnm11767
+  return jsx102tnm11767
 } // endfun(impl)
 // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2068(line=88,offs=1)--2103(line=88,offs=36))
 // I1Di0dcl(I0Dd3ecl(D3Cd2ecl(D2Csymload(T_SRP_SYMLOAD();push;D2PTMsome(0;D2ITMcst($list(diagnostics_push(6923))))))))
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2105(line=90,offs=1)--2240(line=95,offs=4)))
 let regex_make_783 = function (arg1) { // impl
-  let jsx101tnm11768 = arg1
+  let jsx102tnm11768 = arg1
   // I1CMP:start
-  let jsx101tnm11771 // let
+  let jsx102tnm11771 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2171(line=93,offs=5)--2236(line=94,offs=54)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2179(line=93,offs=13)--2236(line=94,offs=54))
@@ -5685,18 +5685,18 @@ let regex_make_783 = function (arg1) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11769);I0Pvar(pat(5755));$list(pat(5755)I1Vtnm(I1TNM(11769))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_regex_make);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11770 = XATSDAPP(vscode_regex_make(jsx101tnm11768))
-    jsx101tnm11771 = jsx101tnm11770
+    let jsx102tnm11770 = XATSDAPP(vscode_regex_make(jsx102tnm11768))
+    jsx102tnm11771 = jsx102tnm11770
   } // endlet
-  // I1CMP:return:jsx101tnm11771
-  return jsx101tnm11771
+  // I1CMP:return:jsx102tnm11771
+  return jsx102tnm11771
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2242(line=97,offs=1)--2401(line=102,offs=4)))
 let regex_test_819 = function (arg1, arg2) { // impl
-  let jsx101tnm11772 = arg1
-  let jsx101tnm11773 = arg2
+  let jsx102tnm11772 = arg1
+  let jsx102tnm11773 = arg2
   // I1CMP:start
-  let jsx101tnm11777 // let
+  let jsx102tnm11777 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2320(line=100,offs=5)--2397(line=101,offs=66)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2328(line=100,offs=13)--2397(line=101,offs=66))
@@ -5705,16 +5705,16 @@ let regex_test_819 = function (arg1, arg2) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11774);I0Pvar(re(5759));$list(re(5759)I1Vtnm(I1TNM(11774)))),I1BNDcons(I1TNM(11775);I0Pvar(input(5760));$list(input(5760)I1Vtnm(I1TNM(11775))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_regex_test);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11776 = XATSDAPP(vscode_regex_test(jsx101tnm11772, jsx101tnm11773))
-    jsx101tnm11777 = jsx101tnm11776
+    let jsx102tnm11776 = XATSDAPP(vscode_regex_test(jsx102tnm11772, jsx102tnm11773))
+    jsx102tnm11777 = jsx102tnm11776
   } // endlet
-  // I1CMP:return:jsx101tnm11777
-  return jsx101tnm11777
+  // I1CMP:return:jsx102tnm11777
+  return jsx102tnm11777
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2403(line=104,offs=1)--2517(line=109,offs=4)))
 let depset_make_891 = function () { // impl
   // I1CMP:start
-  let jsx101tnm11779 // let
+  let jsx102tnm11779 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2461(line=107,offs=5)--2513(line=108,offs=41)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2469(line=107,offs=13)--2513(line=108,offs=41))
@@ -5723,18 +5723,18 @@ let depset_make_891 = function () { // impl
       // FJARGdarg($list())
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(JS_depset_make);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11778 = XATSDAPP(JS_depset_make())
-    jsx101tnm11779 = jsx101tnm11778
+    let jsx102tnm11778 = XATSDAPP(JS_depset_make())
+    jsx102tnm11779 = jsx102tnm11778
   } // endlet
-  // I1CMP:return:jsx101tnm11779
-  return jsx101tnm11779
+  // I1CMP:return:jsx102tnm11779
+  return jsx102tnm11779
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2519(line=111,offs=1)--2664(line=116,offs=4)))
 let depset_add_917 = function (arg1, arg2) { // impl
-  let jsx101tnm11780 = arg1
-  let jsx101tnm11781 = arg2
+  let jsx102tnm11780 = arg1
+  let jsx102tnm11781 = arg2
   // I1CMP:start
-  let jsx101tnm11785 // let
+  let jsx102tnm11785 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2589(line=114,offs=5)--2660(line=115,offs=60)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2597(line=114,offs=13)--2660(line=115,offs=60))
@@ -5743,17 +5743,17 @@ let depset_add_917 = function (arg1, arg2) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11782);I0Pvar(dp(5765));$list(dp(5765)I1Vtnm(I1TNM(11782)))),I1BNDcons(I1TNM(11783);I0Pvar(key(5766));$list(key(5766)I1Vtnm(I1TNM(11783))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(JS_depset_add);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11784 = XATSDAPP(JS_depset_add(jsx101tnm11780, jsx101tnm11781))
-    jsx101tnm11785 = jsx101tnm11784
+    let jsx102tnm11784 = XATSDAPP(JS_depset_add(jsx102tnm11780, jsx102tnm11781))
+    jsx102tnm11785 = jsx102tnm11784
   } // endlet
-  // I1CMP:return:jsx101tnm11785
-  return jsx101tnm11785
+  // I1CMP:return:jsx102tnm11785
+  return jsx102tnm11785
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2666(line=118,offs=1)--2790(line=123,offs=4)))
 let depset_pop_953 = function (arg1) { // impl
-  let jsx101tnm11786 = arg1
+  let jsx102tnm11786 = arg1
   // I1CMP:start
-  let jsx101tnm11789 // let
+  let jsx102tnm11789 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2726(line=121,offs=5)--2786(line=122,offs=49)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2734(line=121,offs=13)--2786(line=122,offs=49))
@@ -5762,17 +5762,17 @@ let depset_pop_953 = function (arg1) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11787);I0Pvar(dp(5769));$list(dp(5769)I1Vtnm(I1TNM(11787))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(JS_depset_pop);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11788 = XATSDAPP(JS_depset_pop(jsx101tnm11786))
-    jsx101tnm11789 = jsx101tnm11788
+    let jsx102tnm11788 = XATSDAPP(JS_depset_pop(jsx102tnm11786))
+    jsx102tnm11789 = jsx102tnm11788
   } // endlet
-  // I1CMP:return:jsx101tnm11789
-  return jsx101tnm11789
+  // I1CMP:return:jsx102tnm11789
+  return jsx102tnm11789
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2792(line=125,offs=1)--2930(line=130,offs=4)))
 let depset_is_empty_983 = function (arg1) { // impl
-  let jsx101tnm11790 = arg1
+  let jsx102tnm11790 = arg1
   // I1CMP:start
-  let jsx101tnm11793 // let
+  let jsx102tnm11793 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2862(line=128,offs=5)--2926(line=129,offs=53)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2870(line=128,offs=13)--2926(line=129,offs=53))
@@ -5781,18 +5781,18 @@ let depset_is_empty_983 = function (arg1) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11791);I0Pvar(dp(5772));$list(dp(5772)I1Vtnm(I1TNM(11791))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(JS_depset_is_empty);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11792 = XATSDAPP(JS_depset_is_empty(jsx101tnm11790))
-    jsx101tnm11793 = jsx101tnm11792
+    let jsx102tnm11792 = XATSDAPP(JS_depset_is_empty(jsx102tnm11790))
+    jsx102tnm11793 = jsx102tnm11792
   } // endlet
-  // I1CMP:return:jsx101tnm11793
-  return jsx101tnm11793
+  // I1CMP:return:jsx102tnm11793
+  return jsx102tnm11793
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(2932(line=132,offs=1)--3089(line=137,offs=4)))
 let depset_union_1017 = function (arg1, arg2) { // impl
-  let jsx101tnm11794 = arg1
-  let jsx101tnm11795 = arg2
+  let jsx102tnm11794 = arg1
+  let jsx102tnm11795 = arg2
   // I1CMP:start
-  let jsx101tnm11799 // let
+  let jsx102tnm11799 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3008(line=135,offs=5)--3085(line=136,offs=66)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3016(line=135,offs=13)--3085(line=136,offs=66))
@@ -5801,19 +5801,19 @@ let depset_union_1017 = function (arg1, arg2) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11796);I0Pvar(dp1(5776));$list(dp1(5776)I1Vtnm(I1TNM(11796)))),I1BNDcons(I1TNM(11797);I0Pvar(dp2(5777));$list(dp2(5777)I1Vtnm(I1TNM(11797))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(JS_depset_union);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11798 = XATSDAPP(JS_depset_union(jsx101tnm11794, jsx101tnm11795))
-    jsx101tnm11799 = jsx101tnm11798
+    let jsx102tnm11798 = XATSDAPP(JS_depset_union(jsx102tnm11794, jsx102tnm11795))
+    jsx102tnm11799 = jsx102tnm11798
   } // endlet
-  // I1CMP:return:jsx101tnm11799
-  return jsx101tnm11799
+  // I1CMP:return:jsx102tnm11799
+  return jsx102tnm11799
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3091(line=139,offs=1)--3275(line=144,offs=4)))
 let depgraph_add_1085 = function (arg1, arg2, arg3) { // impl
-  let jsx101tnm11800 = arg1
-  let jsx101tnm11801 = arg2
-  let jsx101tnm11802 = arg3
+  let jsx102tnm11800 = arg1
+  let jsx102tnm11801 = arg2
+  let jsx102tnm11802 = arg3
   // I1CMP:start
-  let jsx101tnm11809 // let
+  let jsx102tnm11809 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3177(line=142,offs=5)--3271(line=143,offs=83)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3185(line=142,offs=13)--3271(line=143,offs=83))
@@ -5822,19 +5822,19 @@ let depgraph_add_1085 = function (arg1, arg2, arg3) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11803);I0Pvar(dp(5782));$list(dp(5782)I1Vtnm(I1TNM(11803)))),I1BNDcons(I1TNM(11804);I0Pvar(k(5783));$list(k(5783)I1Vtnm(I1TNM(11804)))),I1BNDcons(I1TNM(11805);I0Pvar(k0(5784));$list(k0(5784)I1Vtnm(I1TNM(11805)))),I1BNDcons(I1TNM(11806);I0Pvar(v(5785));$list(v(5785)I1Vtnm(I1TNM(11806))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(JS_depgraph_add);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11807 = XATSDAPP(symbl_get_stmp_2238(jsx101tnm11801))
-    let jsx101tnm11808 = XATSDAPP(JS_depgraph_add(jsx101tnm11800, jsx101tnm11807, jsx101tnm11801, jsx101tnm11802))
-    jsx101tnm11809 = jsx101tnm11808
+    let jsx102tnm11807 = XATSDAPP(symbl_get_stmp_2238(jsx102tnm11801))
+    let jsx102tnm11808 = XATSDAPP(JS_depgraph_add(jsx102tnm11800, jsx102tnm11807, jsx102tnm11801, jsx102tnm11802))
+    jsx102tnm11809 = jsx102tnm11808
   } // endlet
-  // I1CMP:return:jsx101tnm11809
-  return jsx101tnm11809
+  // I1CMP:return:jsx102tnm11809
+  return jsx102tnm11809
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3277(line=146,offs=1)--3440(line=151,offs=4)))
 let depgraph_delete_1132 = function (arg1, arg2) { // impl
-  let jsx101tnm11810 = arg1
-  let jsx101tnm11811 = arg2
+  let jsx102tnm11810 = arg1
+  let jsx102tnm11811 = arg2
   // I1CMP:start
-  let jsx101tnm11816 // let
+  let jsx102tnm11816 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3360(line=149,offs=5)--3436(line=150,offs=65)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3368(line=149,offs=13)--3436(line=150,offs=65))
@@ -5843,19 +5843,19 @@ let depgraph_delete_1132 = function (arg1, arg2) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11812);I0Pvar(dp(5789));$list(dp(5789)I1Vtnm(I1TNM(11812)))),I1BNDcons(I1TNM(11813);I0Pvar(k(5790));$list(k(5790)I1Vtnm(I1TNM(11813))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(JS_depgraph_delete);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11814 = XATSDAPP(symbl_get_stmp_2238(jsx101tnm11811))
-    let jsx101tnm11815 = XATSDAPP(JS_depgraph_delete(jsx101tnm11810, jsx101tnm11814))
-    jsx101tnm11816 = jsx101tnm11815
+    let jsx102tnm11814 = XATSDAPP(symbl_get_stmp_2238(jsx102tnm11811))
+    let jsx102tnm11815 = XATSDAPP(JS_depgraph_delete(jsx102tnm11810, jsx102tnm11814))
+    jsx102tnm11816 = jsx102tnm11815
   } // endlet
-  // I1CMP:return:jsx101tnm11816
-  return jsx101tnm11816
+  // I1CMP:return:jsx102tnm11816
+  return jsx102tnm11816
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3442(line=153,offs=1)--3596(line=158,offs=4)))
 let depgraph_has_1175 = function (arg1, arg2) { // impl
-  let jsx101tnm11817 = arg1
-  let jsx101tnm11818 = arg2
+  let jsx102tnm11817 = arg1
+  let jsx102tnm11818 = arg2
   // I1CMP:start
-  let jsx101tnm11823 // let
+  let jsx102tnm11823 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3519(line=156,offs=5)--3592(line=157,offs=62)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3527(line=156,offs=13)--3592(line=157,offs=62))
@@ -5864,19 +5864,19 @@ let depgraph_has_1175 = function (arg1, arg2) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11819);I0Pvar(dp(5794));$list(dp(5794)I1Vtnm(I1TNM(11819)))),I1BNDcons(I1TNM(11820);I0Pvar(k(5795));$list(k(5795)I1Vtnm(I1TNM(11820))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(JS_depgraph_has);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11821 = XATSDAPP(symbl_get_stmp_2238(jsx101tnm11818))
-    let jsx101tnm11822 = XATSDAPP(JS_depgraph_has(jsx101tnm11817, jsx101tnm11821))
-    jsx101tnm11823 = jsx101tnm11822
+    let jsx102tnm11821 = XATSDAPP(symbl_get_stmp_2238(jsx102tnm11818))
+    let jsx102tnm11822 = XATSDAPP(JS_depgraph_has(jsx102tnm11817, jsx102tnm11821))
+    jsx102tnm11823 = jsx102tnm11822
   } // endlet
-  // I1CMP:return:jsx101tnm11823
-  return jsx101tnm11823
+  // I1CMP:return:jsx102tnm11823
+  return jsx102tnm11823
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3598(line=160,offs=1)--3757(line=165,offs=4)))
 let depgraph_find_1215 = function (arg1, arg2) { // impl
-  let jsx101tnm11824 = arg1
-  let jsx101tnm11825 = arg2
+  let jsx102tnm11824 = arg1
+  let jsx102tnm11825 = arg2
   // I1CMP:start
-  let jsx101tnm11830 // let
+  let jsx102tnm11830 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3677(line=163,offs=5)--3753(line=164,offs=65)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3685(line=163,offs=13)--3753(line=164,offs=65))
@@ -5885,19 +5885,19 @@ let depgraph_find_1215 = function (arg1, arg2) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11826);I0Pvar(dp(5799));$list(dp(5799)I1Vtnm(I1TNM(11826)))),I1BNDcons(I1TNM(11827);I0Pvar(k(5800));$list(k(5800)I1Vtnm(I1TNM(11827))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(JS_depgraph_find);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11828 = XATSDAPP(symbl_get_stmp_2238(jsx101tnm11825))
-    let jsx101tnm11829 = XATSDAPP(JS_depgraph_find(jsx101tnm11824, jsx101tnm11828))
-    jsx101tnm11830 = jsx101tnm11829
+    let jsx102tnm11828 = XATSDAPP(symbl_get_stmp_2238(jsx102tnm11825))
+    let jsx102tnm11829 = XATSDAPP(JS_depgraph_find(jsx102tnm11824, jsx102tnm11828))
+    jsx102tnm11830 = jsx102tnm11829
   } // endlet
-  // I1CMP:return:jsx101tnm11830
-  return jsx101tnm11830
+  // I1CMP:return:jsx102tnm11830
+  return jsx102tnm11830
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3898(line=170,offs=1)--4074(line=175,offs=4)))
 let env_reset_1398 = function (arg1, arg2) { // impl
-  let jsx101tnm11831 = arg1
-  let jsx101tnm11832 = arg2
+  let jsx102tnm11831 = arg1
+  let jsx102tnm11832 = arg2
   // I1CMP:start
-  let jsx101tnm11837 // let
+  let jsx102tnm11837 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3985(line=173,offs=5)--4070(line=174,offs=73)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(3993(line=173,offs=13)--4070(line=174,offs=73))
@@ -5906,19 +5906,19 @@ let env_reset_1398 = function (arg1, arg2) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11833);I0Pvar(env(5804));$list(env(5804)I1Vtnm(I1TNM(11833)))),I1BNDcons(I1TNM(11834);I0Pvar(key(5805));$list(key(5805)I1Vtnm(I1TNM(11834))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(JS_map_reset);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11835 = XATSDAPP(symbl_get_stmp_2238(jsx101tnm11832))
-    let jsx101tnm11836 = XATSDAPP(JS_map_reset(jsx101tnm11831, jsx101tnm11835))
-    jsx101tnm11837 = jsx101tnm11836
+    let jsx102tnm11835 = XATSDAPP(symbl_get_stmp_2238(jsx102tnm11832))
+    let jsx102tnm11836 = XATSDAPP(JS_map_reset(jsx102tnm11831, jsx102tnm11835))
+    jsx102tnm11837 = jsx102tnm11836
   } // endlet
-  // I1CMP:return:jsx101tnm11837
-  return jsx101tnm11837
+  // I1CMP:return:jsx102tnm11837
+  return jsx102tnm11837
 } // endfun(impl)
 // I1Dimplmnt0(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(4076(line=177,offs=1)--4258(line=185,offs=4)))
 let initialize_1562 = function (arg1, arg2) { // impl
-  let jsx101tnm11838 = arg1
-  let jsx101tnm11839 = arg2
+  let jsx102tnm11838 = arg1
+  let jsx102tnm11839 = arg2
   // I1CMP:start
-  let jsx101tnm11843 // let
+  let jsx102tnm11843 // let
   { // let
     // I1Dextern(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(4145(line=180,offs=5)--4254(line=184,offs=24)))
     // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(4153(line=180,offs=13)--4254(line=184,offs=24))
@@ -5927,11 +5927,11 @@ let initialize_1562 = function (arg1, arg2) { // impl
       // FJARGdarg($list(I1BNDcons(I1TNM(11840);I0Pvar(f(5809));$list(f(5809)I1Vtnm(I1TNM(11840)))),I1BNDcons(I1TNM(11841);I0Pvar(g(5810));$list(g(5810)I1Vtnm(I1TNM(11841))))))
       // I1CMP:start
       // I1CMP(ival):I1Vextnam(T_DLR_EXTNAM();I1Vvar(vscode_initialize);G1Nlist($list())) // I1CMP:return
-    let jsx101tnm11842 = XATSDAPP(vscode_initialize(jsx101tnm11838, jsx101tnm11839))
-    jsx101tnm11843 = jsx101tnm11842
+    let jsx102tnm11842 = XATSDAPP(vscode_initialize(jsx102tnm11838, jsx102tnm11839))
+    jsx102tnm11843 = jsx102tnm11842
   } // endlet
-  // I1CMP:return:jsx101tnm11843
-  return jsx101tnm11843
+  // I1CMP:return:jsx102tnm11843
+  return jsx102tnm11843
 } // endfun(impl)
 // LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(4258(line=185,offs=4)--4258(line=185,offs=4))
 // I1Dnone1(I0Dnone1(LCSRCsome1(src/DATS/lsp_bootstrap.dats)@(4258(line=185,offs=4)--4258(line=185,offs=4));D3Cnone0()))
