@@ -129,9 +129,7 @@ in
     else let
       // TODO:
         val loc0 = dcl0.lctn() 
-      in
-        printsln();
-        printsln("FPERR20-ERROR:", loc0, ":", dcl0)
+      in prerrsln("diagnostic20_d2ecl: ", loc0)
       end)
   | _ => ()
 

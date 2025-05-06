@@ -3,6 +3,6 @@
 fun foo() : int = 
   let 
     val x = 1
-    val y = 2
+    val y = z
   in x
   end

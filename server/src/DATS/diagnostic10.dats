@@ -50,7 +50,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_g1exp: ", g1e1)
+      val () = prerrsln("diagnostic10_g1exp: ", g1e0)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
@@ -98,7 +98,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_sort1: ", s1t1)
+      val () = prerrsln("diagnostic10_sort1: ", s1t0)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
@@ -177,7 +177,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_s1exp: ", s1e1)
+      val () = prerrsln("diagnostic10_s1exp: ", s1e0)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
@@ -268,7 +268,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_d1pat: ", d1p1)
+      val () = prerrsln("diagnostic10_d1pat: ", d1p0)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
@@ -383,7 +383,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_d1exp: ", d1e1)
+      val () = prerrsln("diagnostic10_d1exp: ", d1e0)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
@@ -563,7 +563,7 @@ in
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
-      val () = prerrsln("diagnostic10_d1ecl: ", d1cl)
+      val () = prerrsln("diagnostic10_d1ecl: ", dcl0)
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc0), 
