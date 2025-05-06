@@ -2,6 +2,7 @@ node_modules
 .vscode-test/
 *.vsix
 .env
+server/out/
 
 # General
 .DS_Store
