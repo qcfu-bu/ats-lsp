@@ -13,6 +13,9 @@
   "categories": [
     "Other"
   ],
+	"activationEvents": [
+		"onLanguage:ats"
+	],
   "main": "./client/src/extension.js",
   "contributes": {
     "languages": [

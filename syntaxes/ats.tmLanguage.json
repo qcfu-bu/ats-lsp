@@ -1,9 +1,5 @@
 {
-  "fileTypes": [
-    "dats",
-    "sats",
-    "hats"
-  ],
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "ATS-Temptory",
   "patterns": [
     {
@@ -139,7 +135,7 @@
       ]
     },
     "definition_type": {
-      "begin": "\\b(abstype|abstflt|abstbox|absvtflt|absvtbox|absviewtype|absvtype|absview|absprop|datatype|datavtype|dataviewtype|dataview|dataprop|datasort|sortdef|propdef|viewdef|viewtypedef|vtypedef|stadef|typedef)\\b",
+      "begin": "(?<!\\w)(#abstype|#abstflt|#abstbox|#absvtft|#absvtbx|#absview|#absprop|#absvwtp|#absimpl|#absopen|#sortdef|#propdef|#viewdef|#tboxdef|#typedef|#vwtpdef|dataprop|dataview|datatype|datavwtp)\\b",
       "beginCaptures": {
         "0": {
           "name": "keyword"
@@ -148,7 +144,7 @@
       "end": "\\b[a-zA-Z][a-zA-Z0-9_']*\\b",
       "endCaptures": {
         "0": {
-          "name": "entity.name.type storage.type"
+          "name": "entity.name.class"
         }
       },
       "name": "meta.type-definition",

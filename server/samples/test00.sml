@@ -2,14 +2,12 @@ datatype x =
   | A of int
   | B of int
 
-#abstype x
-
-#impltmp main() : int = 
+fun main() : int = 
   let 
     val x = 1
     val y = 2
   in x + y
-  endlet
+  end
 
 fun foo() : int = 
   let 
@@ -17,7 +15,3 @@ fun foo() : int =
     val y = 2
   in x + y
   end
-  where {
-    val x = 1
-    val y = 2
-  }

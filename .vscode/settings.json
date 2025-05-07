@@ -4,5 +4,10 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false
+  },
+  "files.associations": {
+    "*.ml": "sml",
+    "*.sml": "sml",
+    "*.cs": "sml"
   }
 }
