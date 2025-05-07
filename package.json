@@ -1,17 +1,19 @@
 {
   "name": "ats-lsp",
   "displayName": "ATS-LSP",
+	"publisher": "qcfu-bu",
   "description": "",
   "version": "0.0.1",
   "repository": {
     "type": "git",
 		"url": "https://github.com/qcfu-bu/ats-lsp.git"
   },
+	"icon": "assets/ATS-Logo.png",
   "engines": {
     "vscode": "^1.99.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages"
   ],
 	"activationEvents": [
 		"onLanguage:ats"
