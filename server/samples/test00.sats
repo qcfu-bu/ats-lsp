@@ -1,2 +1,2 @@
 
-fun bar(): char
+fun bar(): int

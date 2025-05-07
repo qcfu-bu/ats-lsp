@@ -13,11 +13,30 @@
   "categories": [
     "Other"
   ],
-	"activationEvents": [
-		"onLanguage:ats"
-	],
   "main": "./client/src/extension.js",
   "contributes": {
+    "languages": [
+			{
+				"id": "ats",
+				"aliases": [
+					"ATS", 
+          "ats"
+				],
+				"extensions": [
+					".dats",
+					".sats",
+					".hats"
+				],
+				"configuration": "./syntaxes/language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "ats",
+				"scopeName": "source.ats",
+				"path": "./syntaxes/ats.tmLanguage.json"
+			}
+		],
 		"configuration": {
 			"type": "object",
 			"title": "Server configuration",
