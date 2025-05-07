@@ -21,10 +21,17 @@ fun diagnostic20_d2conlst(out: diagnostics, d2cs: d2conlst): void =
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("d2con_error:\n", d2c1)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc1), 
-          "diagnostic20_d2conlst", lsrc
+          msg, 
+          lsrc
         )
       val () = out.push(d)
     in diagnostic20_d2conlst(out, d2cs)
@@ -42,10 +49,17 @@ fun diagnostic20_s2cstlst(out: diagnostics, s2cs: s2cstlst): void =
         | LCSRCnone0() => "none"
         | LCSRCsome1(str) => str
         | LCSRCfpath(path) => path.fnm1()
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("s2cst_error:\n", s2c1)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
       val d = diagnostic_make(
           severity_error$make(), 
           range_of_loctn(loc1), 
-          "diagnostic20_d2conlst", lsrc
+          msg, 
+          lsrc
         )
       val () = out.push(d)
       val () =
@@ -76,58 +90,6 @@ fun diagnostic20_d2ecl_aux(out: diagnostics, dcl0: d2ecl): void =
       val () = diagnostic20_d2eclist(out, dcs1)
       val () = diagnostic20_d2eclist(out, dcs2)
     end
-  | D2Cabssort _ => ()
-  | D2Cstacst0(s2c1, s2t2) => ()
-  | D2Csortdef(sym1, s2tx) => ()
-  | D2Csexpdef(s2c1, s2e2) => ()
-  | D2Cinclude(knd0, tknd, gsrc, fopt, dopt) => (
-    case+ dopt of
-    | optn_nil() => let
-        val loc0 = dcl0.lctn()
-        val lsrc = 
-          case loc0.lsrc() of
-          | LCSRCnone0() => "none"
-          | LCSRCsome1(str) => str
-          | LCSRCfpath(path) => path.fnm1()
-        // FIXME:
-        val () = stderr_capture_start()
-        val () = prerrsln("D2Cinclude_error:\n", dcl0)
-        val () = stderr_capture_stop()
-        val msg = stderr_capture_get()
-        //
-        val d = diagnostic_make(
-            severity_error$make(), 
-            range_of_loctn(loc0), 
-            msg, 
-            lsrc
-          )
-      in out.push(d)
-      end
-    | optn_cons(dcls) => diagnostic20_d2eclist(out, dcls))
-  | D2Cstaload(knd0, tknd, gsrc, fopt, dopt) => (
-    case+ fopt of
-    | optn_nil() => let
-        val loc0 = dcl0.lctn()
-        val lsrc = 
-          case loc0.lsrc() of
-          | LCSRCnone0() => "none"
-          | LCSRCsome1(str) => str
-          | LCSRCfpath(path) => path.fnm1()
-        // FIXME:
-        val () = stderr_capture_start()
-        val () = prerrsln("D2Cstaload_error:\n", dcl0)
-        val () = stderr_capture_stop()
-        val msg = stderr_capture_get()
-        //
-        val d = diagnostic_make(
-            severity_error$make(), 
-            range_of_loctn(loc0), 
-            msg, 
-            lsrc
-          )
-      in out.push(d)
-      end
-    | optn_cons _ => ())
   | D2Cvaldclst(tknd, d2vs) => let
       val () = diagnostic20_d2valdclist(out, d2vs)
     end
@@ -158,10 +120,25 @@ fun diagnostic20_d2ecl_aux(out: diagnostics, dcl0: d2ecl): void =
   | D2Cnone2(d2cl) => diagnostic20_d2ecl(out, d2cl)
   | D2Cerrck(lvl1,dcl1) => diagnostic20_d2ecl(out, dcl0)
   | _ => let
-      // TODO:
       val loc0 = dcl0.lctn()
-      val () = prerrsln("diagnostic20_d2ecl: auxmain: loc0 = ", loc0)
-      val () = prerrsln("diagnostic20_d2ecl: auxmain: dcl0 = ", dcl0)
+      val lsrc = 
+        case loc0.lsrc() of
+        | LCSRCnone0() => "none"
+        | LCSRCsome1(str) => str
+        | LCSRCfpath(path) => path.fnm1()
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("d2ecl_error:\n", dcl0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
+      val d = diagnostic_make(
+          severity_error$make(), 
+          range_of_loctn(loc0), 
+          msg, 
+          lsrc
+        )
+    in out.push(d)
     end
 
 in

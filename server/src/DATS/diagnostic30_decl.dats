@@ -23,54 +23,6 @@ fun diagnostic30_d3ecl_aux(out: diagnostics, dcl0: d3ecl): void =
       val () = diagnostic30_d3eclist(out, dcs1)
       val () = diagnostic30_d3eclist(out, dcs2)
     end
-  | D3Cinclude(knd0, tknd, gsrc, fopt, dopt) => (
-    case+ dopt of
-    | optn_nil() => let
-        val loc0 = dcl0.lctn()
-        val lsrc = 
-          case loc0.lsrc() of
-          | LCSRCnone0() => "none"
-          | LCSRCsome1(str) => str
-          | LCSRCfpath(path) => path.fnm1()
-        // FIXME:
-        val () = stderr_capture_start()
-        val () = prerrsln("D3Cinclude_error:\n", dcl0)
-        val () = stderr_capture_stop()
-        val msg = stderr_capture_get()
-        //
-        val d = diagnostic_make(
-            severity_error$make(), 
-            range_of_loctn(loc0), 
-            msg, 
-            lsrc
-          )
-      in out.push(d)
-      end
-    | optn_cons(dcls) => diagnostic30_d3eclist(out, dcls))
-  | D3Cstaload(knd0, tknd, gsrc, fopt, dopt) => (
-    case+ fopt of
-    | optn_nil() => let
-        val loc0 = dcl0.lctn()
-        val lsrc = 
-          case loc0.lsrc() of
-          | LCSRCnone0() => "none"
-          | LCSRCsome1(str) => str
-          | LCSRCfpath(path) => path.fnm1()
-        // FIXME:
-        val () = stderr_capture_start()
-        val () = prerrsln("D3Cstaload_error:\n", dcl0)
-        val () = stderr_capture_stop()
-        val msg = stderr_capture_get()
-        //
-        val d = diagnostic_make(
-            severity_error$make(), 
-            range_of_loctn(loc0), 
-            msg, 
-            lsrc
-          )
-      in out.push(d)
-      end
-    | optn_cons _ => ())
   | D3Cvaldclst(tknd, d3vs) => let
       val () = diagnostic30_d3valdclist(out, d3vs)
     end
@@ -103,10 +55,25 @@ fun diagnostic30_d3ecl_aux(out: diagnostics, dcl0: d3ecl): void =
   | D3Cnone2(d3cl) => diagnostic30_d3ecl(out, d3cl)
   | D3Cerrck(lvl1, dcl1) => diagnostic30_d3ecl(out, dcl0)
   | _ => let
-      // TODO:
       val loc0 = dcl0.lctn()
-      val () = prerrsln("diagnostic30_d3ecl: auxmain: loc0 = ", loc0)
-      val () = prerrsln("diagnostic30_d3ecl: auxmain: dcl0 = ", dcl0)
+      val lsrc = 
+        case loc0.lsrc() of
+        | LCSRCnone0() => "none"
+        | LCSRCsome1(str) => str
+        | LCSRCfpath(path) => path.fnm1()
+      // FIXME:
+      val () = stderr_capture_start()
+      val () = prerrsln("d3ecl_error:\n", dcl0)
+      val () = stderr_capture_stop()
+      val msg = stderr_capture_get()
+      //
+      val d = diagnostic_make(
+          severity_error$make(), 
+          range_of_loctn(loc0), 
+          msg, 
+          lsrc
+        )
+    in out.push(d)
     end
 
 in
