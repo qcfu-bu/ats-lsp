@@ -15,7 +15,7 @@ datatype x_t =
 
 fun foo() : int = 
   let 
-    val x = 1
+    vl x = 1
     val y = 2
   in x + y
   end

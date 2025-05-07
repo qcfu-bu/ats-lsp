@@ -29,14 +29,71 @@ function activate(context) {
     }
   };
 
-  client = new node.LanguageClient(
-    'ATSLanguageServer',
-    'ATS Language Server',
-    serverOptions,
-    clientOptions
+  if (vscode.workspace.getConfiguration('ats-lsp').get('enabled')) {
+    client = new node.LanguageClient(
+      'ats-lsp',
+      'ATS Language Server',
+      serverOptions,
+      clientOptions
+    );
+    client.start();
+  }
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand('ats-lsp.startServer', () => {
+      if (!vscode.workspace.getConfiguration('ats-lsp').get('enabled')) {
+        vscode.window.showInformationMessage('ATS Language Server is disabled in workspace.');
+        return;
+      }
+      if (!client) {
+        client = new node.LanguageClient(
+          'ats-lsp',
+          'ATS Language Server',
+          serverOptions,
+          clientOptions
+        );
+        client.start();
+      } else {
+        vscode.window.showInformationMessage('ATS Language Server is already running.');
+      }
+    })
   );
 
-  client.start();
+  context.subscriptions.push(
+    vscode.commands.registerCommand('ats-lsp.stopServer', () => {
+      if (!vscode.workspace.getConfiguration('ats-lsp').get('enabled')) {
+        vscode.window.showInformationMessage('ATS Language Server is disabled in workspace.');
+        return;
+      }
+      if (client) {
+        client.stop();
+        client = null;
+      } else {
+        vscode.window.showInformationMessage('ATS Language Server is not running.');
+      }
+    })
+  );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand('ats-lsp.restartServer', () => {
+      if (!vscode.workspace.getConfiguration('ats-lsp').get('enabled')) {
+        vscode.window.showInformationMessage('ATS Language Server is disabled in workspace.');
+        return;
+      }
+      if (client) {
+        client.stop();
+        client = null;
+      }
+      client = new node.LanguageClient(
+        'ats-lsp',
+        'ATS Language Server',
+        serverOptions,
+        clientOptions
+      );
+      client.start();
+      vscode.window.showInformationMessage('ATS Language Server restarted.');
+    })
+  );
 }
 
 function deactivate() {
