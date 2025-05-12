@@ -15,9 +15,9 @@ datatype x_t =
 
 fun foo() : int = 
   let 
-    vl x = 1
+    val x = 1
     val y = 2
-  in x + y
+  in x + bar()
   end
   where {
     val x = 1
